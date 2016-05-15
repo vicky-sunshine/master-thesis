@@ -1,0 +1,60 @@
+% Basic configuration
+\input{./configure}
+
+% Cover
+\input{./cover}
+
+\begin{document}
+
+% Add watermark
+\AddToShipoutPicture{\WatermarkPicture}
+
+\baselineskip 24pt
+
+\pagenumbering{roman}
+
+\maketitle
+
+\addcontentsline{toc}{chapter}{Abstract}
+
+\newcommand{\ThankOne}{This work was supported in part by the NTHU-Delta Project on ``Demand-Side Management in Universities and Enterprise Campuses''.}
+
+% Abstract
+\input{./chapter/abstract}
+\newpage
+
+\tableofcontents
+
+\listoffigures
+\newpage
+
+\listoftables
+\newpage
+
+\listofalgorithmes
+\newpage
+
+\pagenumbering{arabic} \setcounter{page}{1}
+
+% Introduction
+\input{./chapter/introduction}
+
+% Review
+\input{./chapter/review}
+
+% System
+\input{./chapter/system}
+
+% Learning
+\input{./chapter/learning}
+
+% Simulation
+\input{./chapter/simulation}
+
+% Conclusion
+\input{./chapter/conclusion}
+
+\bibliographystyle{unsrt}
+\bibliography{template}
+
+\end{document}

@@ -1,0 +1,142 @@
+\begin{thebibliography}{10}
+
+\bibitem{breslow:2013}
+Lori Breslow, David~E Pritchard, Jennifer DeBoer, Glenda~S Stump, Andrew~D Ho,
+  and Daniel~T Seaton.
+\newblock Studying learning in the worldwide classroom: Research into edx's
+  first mooc.
+\newblock {\em Research \& Practice in Assessment}, 8, 2013.
+
+\bibitem{seaton2014}
+Daniel~T Seaton, Yoav Bergner, Isaac Chuang, Piotr Mitros, and David~E
+  Pritchard.
+\newblock Who does what in a massive open online course?
+\newblock {\em Communications of the ACM}, 57(4):58--65, 2014.
+
+\bibitem{king:2001}
+Chris~S King.
+\newblock The economics of real-time and time-of-use pricing for residential
+  consumers.
+\newblock {\em American Energy Institute, Tech. Rep}, 2001.
+
+\bibitem{chen:2013}
+Xiaodao Chen, Tongquan Wei, and Shiyan Hu.
+\newblock Uncertainty-aware household appliance scheduling considering dynamic
+  electricity pricing in smart home.
+\newblock {\em IEEE Transactions on Smart Grid}, 4(2):932--941, 2013.
+
+\bibitem{allcott:2011}
+Hunt Allcott.
+\newblock Rethinking real-time electricity pricing.
+\newblock {\em Resource and Energy Economics}, 33(4):820 -- 842, 2011.
+
+\bibitem{smitha:2013}
+S.D. Smitha, J.S. Savier, and F.M. Chacko.
+\newblock Intelligent control system for efficient energy management in
+  commercial buildings.
+\newblock In {\em Proc. Annual International Conference on Communications and
+  Renewable Energy}, pages 1--6, June 2013.
+
+\bibitem{han:2014}
+Jinsoo Han, Chang sic Choi, Wan-Ki Park, Ilwoo Lee, and Sang-Ha Kim.
+\newblock Smart home energy management system including renewable energy based
+  on zigbee and plc.
+\newblock {\em IEEE Transactions on Consumer Electronics}, 60(2):198--202, May
+  2014.
+
+\bibitem{lee:2014}
+Sungjin Lee, Beom Kwon, and Sanghoon Lee.
+\newblock Joint energy management system of electric supply and demand in
+  houses and buildings.
+\newblock {\em IEEE Transactions on Power Systems}, 29(6):2804--2812, Nov 2014.
+
+\bibitem{li:2013}
+Li~Ping Qian, Y.J.A. Zhang, Jianwei Huang, and Yuan Wu.
+\newblock Demand response management via real-time electricity price control in
+  smart grids.
+\newblock {\em IEEE Journal on Selected Areas in Communications},
+  31(7):1268--1280, July 2013.
+
+\bibitem{jiang:2011}
+L.~Jiang and S.~Low.
+\newblock Multi-period optimal energy procurement and demand response in smart
+  grid with uncertain supply.
+\newblock In {\em Porc. IEEE Conference on Decision and Control and European
+  Control Conference (CDC-ECC)}, pages 4348--4353, 2011.
+
+\bibitem{atzeni:2013}
+I.~Atzeni, L.G. Ordonez, G.~Scutari, D.P. Palomar, and J.R. Fonollosa.
+\newblock Demand-side management via distributed energy generation and storage
+  optimization.
+\newblock {\em IEEE Transactions on Smart Grid}, 4(2):866--876, 2013.
+
+\bibitem{koutsopoulos:2011}
+I.~Koutsopoulos, V.~Hatzi, and L.~Tassiulas.
+\newblock Optimal energy storage control policies for the smart power grid.
+\newblock In {\em Proc. IEEE International Conference on Smart Grid
+  Communications (SmartGridComm)}, pages 475--480, 2011.
+
+\bibitem{erseghe:2014}
+T.~Erseghe, A.~Zanella, and C.G. Codemo.
+\newblock Optimal and compact control policies for energy storage units with
+  single and multiple batteries.
+\newblock {\em IEEE Transactions on Smart Grid}, 5(3):1308--1317, 2014.
+
+\bibitem{maly:1995}
+D.K. Maly and K.S. Kwan.
+\newblock Optimal battery energy storage system (bess) charge scheduling with
+  dynamic programming.
+\newblock {\em IEE Proceedings Science, Measurement and Technology},
+  142(6):453--458, 1995.
+
+\bibitem{ven:2013}
+P.M. van~de Ven, N.~Hegde, L.~Massoulie, and T.~Salonidis.
+\newblock Optimal control of end-user energy storage.
+\newblock {\em IEEE Transactions on Smart Grid}, 4(2):789--797, 2013.
+
+\bibitem{xin:2012}
+Li~Xin, Zang Chuanzhi, Zeng Peng, and Yu~Haibin.
+\newblock Genetic based fuzzy q-learning energy management for smart grid.
+\newblock In {\em Proc. Chinese Control Conference (CCC)}, pages 6924--6927,
+  July 2012.
+
+\bibitem{hannah:2011}
+Lauren Hannah and David~B Dunson.
+\newblock Approximate dynamic programming for storage problems.
+\newblock In {\em Proc. International Conference on Machine Learning}, pages
+  337--344, 2011.
+
+\bibitem{lagoudakis:2003}
+Michail~G Lagoudakis and Ronald Parr.
+\newblock Least-squares policy iteration.
+\newblock {\em The Journal of Machine Learning Research}, 4:1107--1149, 2003.
+
+\bibitem{linden:1865}
+David Linden and Thomas~B Reddy.
+\newblock Handbook of batteries, 1865.
+
+\bibitem{dallinger:2013}
+David Dallinger.
+\newblock {\em Plug-in electric vehicles integrating fluctuating renewable
+  electricity}, volume~20.
+\newblock Kassel University Press, 2013.
+
+\bibitem{ramavajjala:2012}
+Vivek Ramavajjala and Charles Elkan.
+\newblock Policy iteration based on a learned transition model.
+\newblock In PeterA. Flach, Tijl De~Bie, and Nello Cristianini, editors, {\em
+  Machine Learning and Knowledge Discovery in Databases}, volume 7524 of {\em
+  Lecture Notes in Computer Science}, pages 211--226. Springer Berlin
+  Heidelberg, 2012.
+
+\bibitem{comed:}
+ComEd.
+\newblock \url{http://www.comed.com/}.
+\newblock Accessed: 2015-05-10.
+
+\bibitem{nrel:}
+NREL.
+\newblock \url{http://pvwatts.nrel.gov}.
+\newblock Accessed: 2015-05-10.
+
+\end{thebibliography}

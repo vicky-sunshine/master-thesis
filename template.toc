@@ -1,0 +1,19 @@
+\contentsline {chapter}{Abstract}{i}
+\contentsline {chapter}{Contents}{ii}
+\contentsline {chapter}{List of Figures}{iv}
+\contentsline {chapter}{List of Tables}{v}
+\contentsline {chapter}{List of Algorithms}{vi}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {chapter}{\numberline {2}Brief Review of Reinforcement Learning and Least-Square Policy Iteration}{5}
+\contentsline {section}{\numberline {2.1}Markov Decision Process}{5}
+\contentsline {section}{\numberline {2.2}Least-Square Policy Iteration}{6}
+\contentsline {chapter}{\numberline {3}System Model and Problem Formulation}{12}
+\contentsline {section}{\numberline {3.1}Cost of Energy Purchase}{13}
+\contentsline {section}{\numberline {3.2}Cost of Battery Usage}{14}
+\contentsline {chapter}{\numberline {4}Learning-Based Energy Management Policy with DoD Considerations}{17}
+\contentsline {section}{\numberline {4.1}State Transition}{18}
+\contentsline {section}{\numberline {4.2}Basis}{20}
+\contentsline {section}{\numberline {4.3}Real-Life Data Prediction}{22}
+\contentsline {chapter}{\numberline {5}Simulation}{29}
+\contentsline {chapter}{\numberline {6}Conclusion}{39}
+\contentsline {chapter}{Bibliography}{40}

@@ -1,0 +1,64 @@
+\documentclass[12pt]{report}
+
+% ---------------------------------------------------------------------------------------
+
+% Math
+\usepackage{amssymb, amsmath, amsthm}
+
+% Algorithm
+\usepackage[ruled,linesnumbered]{algorithm2e}
+
+% Color
+% \usepackage{color} % Enable color
+\usepackage[monochrome]{color} % Disable color
+
+% Figure
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% Table
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{diagbox}
+
+% Cite
+\usepackage[noadjust]{cite}
+
+% URL links
+\usepackage{url}
+
+% Appendix chapter
+% \usepackage[toc,page]{appendix}
+
+% Watermark
+\usepackage{eso-pic}
+
+% float option
+\usepackage{float}
+
+% listofalgorithmes
+\usepackage{tocbibind}
+\newcommand{\listofalgorithmes}{\tocfile{\listalgorithmcfname}{loa}}
+
+% Change page size
+\usepackage[a4paper]{geometry}
+% \usepackage[a4paper, top=2.54cm, bottom=2.54cm, left=3.17cm, right=3.17cm]{geometry}
+
+% ---------------------------------------------------------------------------------------
+
+\input{thwdef.tex}
+\def\tDA{\text{DA}}
+\def\tRT{\text{RT}}
+
+% Watermark Settings
+\newcommand\WatermarkPicture{%
+   \put(0,0){%
+   \parbox[b][\paperheight]{\paperwidth}{%
+     \vfill
+     \centering
+     \includegraphics[width=100pt,keepaspectratio]{logo/nthu.eps}%
+     \vfill
+     }
+   }
+}

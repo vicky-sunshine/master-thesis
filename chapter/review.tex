@@ -1,0 +1,157 @@
+\chapter{Brief Review of Reinforcement Learning and Least-Square Policy Iteration}\label{cha: Brief Review of Reinforcement Learning and Least-Square Policy Iteration}
+
+In this chapter, we present a brief review of the Markov decision process (MDP) and its solution through reinforcement learning. In particular, we consider the least-square policy iteration (LSPI) \cite{lagoudakis:2003}, which utilize linear approximation of value function to approximate the reward of a Markovian transition.
+
+\section{Markov Decision Process}
+
+An MDP is defined by the five tuple $\left(\calS,\calA,\calP,\calR',\gamma\right)$ where $\calS$ is a finite set of states, $\calA$ is a finite set of actions, $\calP:\calS\times\calA\times\calS\mapsto\left[0,1\right]$ is the probability model defined such that $\calP\left(s,a,s'\right)$ yields the probability of taking a transition to state $s'$ under action $a$ in state $s$, $\calR':\calS\times\calA\times\calS\mapsto\mathbb{R}$ is a reward function such that $\calR'\left(s,a,s'\right)$ is the reward of making a transition to state $s'$ when taking action $a$ in state $s$, and $\gamma\in\left[0,1\right]$ is the discount factor for future reward. We also can define the expected reward for state-action pair $\left(s,a\right)$, as $\calR\left(s,a\right)=\sum_{s'\in\calS}\calP\left(s,a,s'\right)\calR'\left(s,a,s'\right)$.
+
+\section{Least-Square Policy Iteration}
+
+After we have the knowledge of MDP, we can introduce the LSPI algorithm. Let $\pi:\calS\rightarrow\calA$ be a deterministic policy that specifies an action $\pi(s)$ for every $s\in\calS$. The value function $Q^{\pi}\left(s,a\right)$ under the policy $\pi$ is the expected future reward starting from state $s$ if action $a$ is taken, and can be expressed as
+\begin{equation}
+    Q^{\pi}(s,a) = \calR(s,a) + \gamma\sum_{s'\in\calS}\calP(s,a,s')Q^{\pi}(s',\pi(s')).
+\end{equation}
+The optimal policy $\pi^*$ can be found by the policy iteration
+\begin{equation}
+    \pi^{(m+1)}(s) = \arg\max_{a'} Q^{\pi^{(m)}}\left(s,a'\right)
+\end{equation}
+for all $s\in\calS$, until it converges (i.e., $\pi^*=\pi^{(\infty)}$).
+However, in most practical cases, the action-value $Q^\pi$ is unknown or is too complicated to compute. In this case, we can adopt a linear approximation, where $Q^\pi$ is approximated by \cite{lagoudakis:2003}
+\begin{equation}\label{eq: value func approx.}
+    \widehat{Q}^{\pi}(s,a;\bfw) = \sum_{j=1}^{k} \phi_j\left(s,a\right)w_j
+\end{equation}
+with $\bfw = \left(w_1,w_2,\ldots,w_k\right)$ being the weight vector and $\{\phi_j\}_{j=1}^k$ being an appropriately chosen set of basis functions where $k$ is the number of basis. We require that the basis functions $\phi_j$ are linearly independent to ensure that there are no redundant parameters and that the matrices involved in the computations are full rank. The way to find the weight is as follow. Let $\bfQ^\pi$ be the column vector of the value function under the policy $\pi$ with size $|\calS||\calA|$. Let also $\widehat \bfQ^\pi$ be the column vector of the approximated value function that computed by a linear approximation with basis function $\phi_j$ and parameter $w_j$. Define $\bfphi(s,a)$ to be the column vector of basis where each entry $j$ is the corresponding basis function $\phi_j$ computed at $(s,a)$. Then, $\widehat \bfQ^\pi$ can be expressed as
+\begin{equation}
+    \widehat \bfQ^\pi = \bfPhi\bfw,
+\end{equation}
+where $\bfPhi$ is a matrix of the form
+\begin{equation}
+    \bfPhi =
+    \begin{bmatrix}
+        \bfphi(s_1,a_1)^T \\
+        \bfphi(s_2,a_2)^T \\
+        \vdots \\
+        \bfphi(s_{|\calS|},a_{|\calA|})^T
+    \end{bmatrix}.
+\end{equation}
+To solve the linear approximation, we define the Bellman operator $B$ by
+\begin{equation}
+    B(Q^\pi)(s,a) = \calR(s,a) + \gamma\sum_{s'\in\calS}\calP(s,a,s')Q^{\pi}(s',\pi(s'))
+\end{equation}
+and we can see that the value function $\bfQ^\pi$ is the fixed point of the Bellman operator, that is,
+\begin{equation}
+    B(\bfQ^\pi) = \bfQ^\pi.
+\end{equation}
+The way to find an approximation is to force the approximate value function to be fixed point under the Bellman operator, that is,
+\begin{equation}
+    B(\widehat \bfQ^\pi) = \widehat \bfQ^\pi.
+\end{equation}
+For that to be possible, the fixed point has to lie in the space of approximate value functions which is the space spanned by the basis functions. Even though $\widehat \bfQ^\pi$ lies in that space by definition, $B(\widehat \bfQ^\pi)$ may, in general, be out of that space and hence needs to be projected back onto that space. More specifically, the projection finds a least square approximation of $B(\widehat \bfQ^\pi)$ on the space spanned by $\bfPhi$, that is, find $\bfw'$ that minimizes the norm $\|B(\bfPhi\bfw) - \bfPhi\bfw\|$. By the orthogonality principle, we have
+\begin{equation}
+    \bfPhi^T(B(\bfPhi\bfw) - \bfPhi\bfw) = 0,
+\end{equation}
+which leads to
+\begin{equation}
+    \bfw = (\bfPhi^T\bfPhi)^{-1}\bfPhi B(\bfPhi\bfw).
+\end{equation}
+The fixed-point approximation by using least-square approximation $\bfPhi\bfw'$ is given as
+\begin{align}
+    \widehat \bfQ^\pi &= \bfPhi\bfw \label{eq: linear approx. 2}\\
+                     &= \bfPhi(\bfPhi^T\bfPhi)^{-1}\bfPhi^T B(\widehat \bfQ^\pi) \\
+                     &= \bfPhi(\bfPhi^T\bfPhi)^{-1}\bfPhi^T \left(\calR + \gamma \calP \widehat\bfQ^{\pi} \right) \\
+                     &= \bfPhi(\bfPhi^T\bfPhi)^{-1}\bfPhi^T \left(\calR + \gamma \calP \bfPhi\bfw \right). \label{eq: linear approx. 1}
+\end{align}
+where $\calR + \gamma \calP \widehat\bfQ^{\pi}$ is the matrix form of $B(\widehat \bfQ^\pi)$. Then,
+\begin{align}
+    \bfPhi(\bfPhi^T\bfPhi)^{-1}\bfPhi^T \left(\calR + \gamma \calP \bfPhi\bfw \right) &= \bfPhi\bfw \\
+    \bfPhi\left[(\bfPhi^T\bfPhi)^{-1}\bfPhi^T \left(\calR + \gamma \calP \bfPhi\bfw \right)-\bfw\right] &= 0 \\
+    \bfPhi^T\left(\bfPhi-\gamma\bfP\bfPhi\right)\bfw &= \bfPhi\calR.
+\end{align}
+By solving the above equations, the resultant solution can be expressed as follows,
+\begin{equation}
+    \bfw = [\bfPhi^T(\bfPhi-\gamma\calP\bfPhi)]^{-1}\bfPhi^T\calR.
+\end{equation}
+Note that the distribution of the approximation error can be control by means of weighted projection. To do this, let $\nu$ be a probability distribution over $(s,a)$ and $\Delta_\nu$ be the diagonal matrix with the projection weights $\nu(s,a)$, then the weighted least-squares fixed point solution is \cite{lagoudakis:2003}
+\begin{equation}
+    \bfw = [\bfPhi^T\Delta_\nu(\bfPhi-\gamma\calP\bfPhi)]^{-1}\bfPhi^T\Delta_\nu\calR,
+\end{equation}
+where the exact values of $\bfw$ can be computed by solving the linear system of equations
+\begin{equation}
+    \bfA\bfw = \bfc,
+\end{equation}
+where $\bfA = \bfPhi^T\Delta_\nu(\bfPhi-\gamma\calP\bfPhi)$, $\bfc = \bfPhi^T\Delta_\nu\calR$. Since $\calP$ and $\calR$, in general, is unknown, $\bfA$ and $\bfc$ cannot be determined a prior, but they can be learned using samples. The learned linear system can then be solved to yield the learned parameters $\bfw$. More specifically, we have
+\begin{align}\label{eq: machine learning summation}
+    \bfA &= \bfPhi^T\Delta_\nu(\bfPhi-\gamma\calP\bfPhi) \\
+        &= \sum_{s\in\calS}\sum_{a\in\calA} \phi(s,a)\nu(s,a)\left(\phi(s,a)-\gamma\sum_{s'\in\calS}\calP(s,a,s')\phi(s',\pi(s'))\right)^T \\
+        &= \sum_{s\in\calS}\sum_{a\in\calA}\nu(s,a)\sum_{s'\in\calS}\calP(s,a,s')[\phi(s,a)(\phi(s,a)-\gamma\phi(s',\pi(s')))^T],\\
+    \bfc &= \bfPhi^T\Delta_\nu\calR \\
+        &= \sum_{s\in\calS}\sum_{a\in\calA}\phi(s,a)\nu(s,a)\sum_{s'\in\calS}\calP(s,a,s')\calR(s,a,s') \\
+        &= \sum_{s\in\calS}\sum_{a\in\calA}\nu(s,a)\sum_{s'\in\calS}\calP(s,a,s')[\phi(s,a)R(s,a,s')].
+\end{align}
+Since these summations are taken over $s$, $a$, and $s'$ and weighted by the projection weight $\nu(s,a)$ and probability $P(s,a,s')$, the special form is that $\bfA$ is the sum of many rank one matrices of the form
+\begin{equation}
+    \phi(s,a)(\phi(s,a)-\gamma\phi(s',\pi(s')))^T,
+\end{equation}
+and $\bfc$ is the sum of many vectors of the form
+\begin{equation}
+    \phi(s,a)R(s,a,s').
+\end{equation}
+In the general case, it is impractical to compute this summation over all $(s,a,s')$ triplet. Given any finite set of samples $\calD=\{(s_i,a_i,s'_i,r_i)\}_{i=1}^N$ where $N$ is the number of samples, $\bfA$ and $\bfc$ can be learned as
+\begin{align}
+    \widetilde\bfA &= \frac{1}{N}\sum_{i=1}^N \left[\phi(s_i,a_i)(\phi(s_i,a_i)-\gamma\phi(s'_i,\pi(s'_i)))^T\right], \\
+    \widetilde\bfc &= \frac{1}{N}\sum_{i=1}^N \left[\phi(s_i,a_i)r_i\right].
+\end{align}
+By assuming that the distribution $\nu_{\calD}$ of the samples in $\calD$ over $(\calS\times\calA)$ matches the desired distribution $\nu$.
+We can rewrite the above equation as
+\begin{equation}
+    \widetilde\bfA = \frac{1}{N}\widetilde{\bfPhi}^T(\widetilde{\bfPhi}-\gamma\widetilde{\calP\Pi_{\pi}\bfPhi}),~\widetilde\bfc = \frac{1}{N}\widetilde{\bfPhi}^T\widetilde{\calR}
+\end{equation}
+where
+\begin{equation}
+    \widetilde{\bfPhi} =
+    \begin{pmatrix}
+        \phi(s_1,a_1)^T \\
+        \vdots \\
+        \phi(s_N,a_N)^T
+    \end{pmatrix},
+    \widetilde{\calP\Pi_{\pi}\bfPhi} =
+    \begin{pmatrix}
+        \phi(s'_1,\pi(s'_1))^T \\
+        \vdots \\
+        \phi(s'_N,\pi(s'_N))^T
+    \end{pmatrix},
+    \widetilde{\calR} =
+    \begin{pmatrix}
+        r_1 \\
+        \vdots \\
+        r_N
+    \end{pmatrix}.
+\end{equation}
+Therefore, as the number of samples tends to infinite, $\widetilde\bfA$ and $\widetilde\bfc$ converge to the matrix of least-square fixed point approximation, which is given as follows
+\begin{equation}
+    \lim_{N\rightarrow\infty}\widetilde\bfA = \bfPhi^T\Delta_{\nu_{\calD}}(\bfPhi-\gamma\calP\Pi_{\pi}\bfPhi), \lim_{N\rightarrow\infty}\widetilde\bfc = \bfPhi^T \Delta_{\nu_{\calD}} \calR.
+\end{equation}
+Let $\widetilde\bfA^{(t)}$ and $\widetilde\bfc^{(t)}$ be the current learned estimates of $\bfA$ and $\bfc$ for a policy $\pi$, assuming that initially $\widetilde\bfA^{(t)} = 0$ and $\widetilde\bfc^{(t)} = 0$, A new sample $(s_i,a_i,s'_i,r_i)$ contributes to the approximation according to the following update equations is
+\begin{align}
+    \widetilde\bfA^{(t+1)} &= \widetilde\bfA^{(t)} + \phi(s_i,a_i)(\phi(s_i,a_i)-\gamma\phi(s'_i,\pi(s'_i)))^T,\\
+    \widetilde\bfc^{(t+1)} &= \widetilde\bfc^{(t)} + \phi(s_i,a_i)r_i.
+\end{align}
+We summarize this technique in Algorithm \ref{algo: LSPI}.
+
+\begin{algorithm}[H]
+    \caption{Least Square Policy Iteration (LSPI)}
+    \label{algo: LSPI}
+    \KwIn{training samples $\calD=\left\{\left(s_i,a_i,s'_i,r_i\right)\right\}^N_{i=1}$, where $N$ is the number of samples, $r_i$ is the reward of transition $(s_i,a_i,s_i')$, basis function $\boldsymbol\phi=[\phi_1,\ldots,\phi_k]^T$, discount factor $\gamma$, and stopping criterion $\epsilon$.}
+    \KwOut{learn the weight vector $\bfw^*$}
+    $\bfw^* \leftarrow 0$.\\
+    \Repeat{$\|\bfw-\bfw^*\|<\epsilon$}{
+        $\bfw\leftarrow\bfw^*$, $\bfA\leftarrow 0$, $\bfc\leftarrow 0$\\
+        \For{{\bf each} $\left(s,a,s',r\right)\in \calD$}{
+            $\pi(s') \leftarrow \arg\max_{a'} \bfphi(s',a')^T\bfw$\\
+            $\bfA \leftarrow \bfA + \bfphi(s,a)(\bfphi(s,a)-\gamma\bfphi(s',\pi(s')))^T$\\
+            $\bfc \leftarrow \bfc + \bfphi(s,a)r$
+        }
+        Solve $\bfA\bfw^*=\bfc$ for $\bfw^*$.
+    }
+\end{algorithm}
