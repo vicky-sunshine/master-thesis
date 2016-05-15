@@ -1,29 +1,32 @@
 \chapter{Introduction}
+Massive Online Open Courses (MOOCs) refer to an open educational resources,
+which allows learners worldwide to take well-designed online courses of interest free of charge.
+On MOOCs, learners watch the high-quality instructional videos made by professors from prestigious universities,
+share their ideas and reflections on the discussion forum,
+and use the online exercise system to evaluate their learning outcome.
+Due to the fact that the MOOCs provide with high-quality self-directed learning environment without costing much for online learners,
+MOOCs have been thought of as a contemporary way of 21-century learning.
+
+There are two type of MOOCs, cMOOCs (connectionism MOOCs) and xMOOCs (instructionism MOOCs).
+These two types of MOOCs are base on different philosophical positions underpinning,
+cMOOCs focuses on connections between participants in particular on strong content contributions from the participants themselves \cite{yeager2013cmoocs},
+xMOOCs, by contrast focus on instructor's design of the course.
+Many famous MOOCs platform such as Coursera\cite{coursera}, edX\cite{edx}, and Udacity\cite{udacity} are belong to xMOOCs.
 
 For current xMOOCs, the instructional videos play a significant role in the online learning process \cite{breslow:2013,seaton2014}.
 In essence, the learning focuses in the form of visual and audial presented in the instructional videos.
 Traditionally, video-based learning follows structured instructor-designed sequences for the better results.
 Owing to the technological nature of the online stream video, it is found that many students drag the play bar replaying specific concept in the video for consolidating their understanding.
 Therefore, many studies aim to improve the video-based learning environment by adding additional features in video-watching, such as embedded assessment, caption tool, as so on.
-\\
+
 In view of the rapid development of data sciences,
 more and more studies on educational data mining and learning analytics take the advantages of the learners’ data to optimize learning process.
 For example, \cite{kim2014} develops a step-by-step annotations feature to improve the learning experience of existing how-to videos.
-Study \cite{agrawal2015} constructs a system that recommends students videos best on their forum post, making a self-solved confusion system and meanwhile reducing the teaching load. 
-\\
-Smart grid \cite{liu:2013} utilizes a two-way flow of energy and data to enhance the efficiency and reliability of the conventional power grid, and also to reduce the energy cost of consumers.
-The new infrastructure enables the use of dynamic pricing \cite{king:2001,chen:2013,allcott:2011} as a control signal to balance the supply and demand, and also allows for the integration of renewable energy sources, such as solar and wind.
-In the smart grid market, dynamic pricing has three type of signal which are real-time pricing, day-ahead pricing and cost of dumping energy. Real-time market will determine the real-time pricing to reflect the cost of power generation in the current time. However, consumer can know the day-ahead pricing which is provided by day-ahead market and is a reference for real-time pricing. Consumer can determine energy flow in each time slot by refer the day-ahead pricing and feedback the schedule to market. The energy flow determined by consumer may try to minimize the electricity bill or maximize the consumer comfort. The smart grid market may refer the energy flow and schedule the power generator to minimize the cost of power generator and avoid peak load. The energy dump will occur when consumer over purchase the energy due to the uncertainty of renewable energy or load.
-
-Energy overflow is an issue due to the uncertainty of renewable energy or over purchase. The use of energy storage devices can help to regulate the energy usage over time and cope with the uncertainty of the electricity price and the renewable energy arrival. However, with the dynamic nature of the energy prices and the renewable energy arrivals, it is necessary to develop demand-side energy management systems (EMSs) \cite{smitha:2013,han:2014,lee:2014} that can efficiently process the information at hand and determine the amount of energy to purchase and to store in each time slot.
-
-Demand-side energy management policies have been studied extensively in the past. However, most works in the literature, e.g., \cite{li:2013,jiang:2011,atzeni:2013}, rely on statistical (or even deterministic) knowledge of the load profile, electricity pricing, and renewable energy arrivals, which may be difficult to obtain in practice. In particular, in \cite{li:2013}, real-time pricing at the utility company and demand response at the user side is determined via a two-stage optimization procedure while assuming perfect knowledge of the load demands. In \cite{jiang:2011}, the day-ahead energy procurement and real-time demand response are jointly optimized by maximizing the social welfare given the statistics of the renewable energy arrival. In \cite{atzeni:2013}, the authors considered a smart grid with users that own various kinds of distributed energy generation and storage. The day-ahead energy generation and storage policy at the users is modeled as a game theoretic problem and is solved assuming no fluctuation in real-time.
-
-Even though these works effectively reduce the energy cost of consumers, their reliance on accurate or statistical knowledge of the load profile, electricity pricing, and renewable energy arrivals may render them impractical. Moreover, when energy storage is considered, e.g., in \cite{koutsopoulos:2011,erseghe:2014,maly:1995,ven:2013}. In \cite{koutsopoulos:2011,erseghe:2014}, the authors study an energy storage control policy to minimize average grid operation cost which the cost function is considered a convex function of instantaneous power demand. In \cite{maly:1995}, optimal charge/discharge scheduling of battery energy storage system with dynamic program can minimize the electricity bill and prolong battery life. In \cite{ven:2013}, the optimal battery control policy is shown to have a threshold structure. However, the cost of battery usage is also often neglected, resulting in policies that are overly optimistic and impractical.
-
-The main objective of this work is to develop a reinforcement learning based energy management policy that determines the day-ahead energy purchase based on the current-day load profile, electricity pricing, and renewable energy arrival. The policy is determined by using only past historical data and by considering the tradeoff between the depth-of-discharge (DoD) and the lifetime of batteries. In fact, the DoD during each battery usage cycle has a significant impact on the number of cycles that a battery can be used before it dies out, and should be accurately modeled in order to obtain a practical energy management policy. More specifically, we first define the average battery cost per cycle as a function of DoD and define the battery cost of the current usage as the marginal increase in average battery cost per cycle due to the increase in DoD after the current usage. The battery cost is then incorporated into the total energy cost function and used to perform reinforcement learning based policy iteration. In particular, a least-square policy iteration (LSPI) with linear approximations of the value function is used to determine the energy management policy. Simulations are conducted based on a home-size environment with real pricing, load, and renewable energy arrival data.
-
-The use of learning-based algorithms to determine energy management policies have also been studied recently in \cite{xin:2012} and \cite{hannah:2011}. In \cite{xin:2012}, a genetic based fuzzy Q-learning consumer energy management controller is proposed and, in \cite{hannah:2011}, an approximate dynamic programming scheme is proposed to solve storage problems with continuous, convex decision sets. However, these works also do not consider the DoD-based battery cost that is essential to prolonging battery lifetime.
+Study \cite{agrawal2015} constructs a system that recommends students videos best on their forum post, making a self-solved confusion system and meanwhile reducing the teaching load.
+Therefore, considering the learning needs and the authentic learner data,
+this study develops a data-driven learning interest recommendation system to promote self-paced learning by integrating educational data mining and word segmentation in the Chinese-speaking MOOC environment.
+Videomark combines both the learning seek event counts and the subtitles of each video to automatically generate learning concepts for learners in friendly user interface.
+Through the huge amount of video watching/seeking log data, the Videomark helps learners to quickly identify popular video seek events for consolidating their concept of the learning focus in hope of promoting better self-paced video-based learning environment.
 
 The remainder of this thesis is organized as follows.
 In Section~\ref{cha: Brief Review of Reinforcement Learning and Least-Square Policy Iteration}, we first introduce the Markov decision process and brief review the reinforcement learning algorithm which is called least-square policy iteration.
