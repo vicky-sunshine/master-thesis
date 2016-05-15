@@ -3,46 +3,52 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: template.aux
 The style file: unsrt.bst
 Database file #1: template.bib
-Warning--I didn't find a database entry for "liu:2013"
-You've used 23 entries,
+Warning--I didn't find a database entry for "lagoudakis:2003"
+Warning--I didn't find a database entry for "linden:1865"
+Warning--I didn't find a database entry for "dallinger:2013"
+Warning--I didn't find a database entry for "ramavajjala:2012"
+Warning--I didn't find a database entry for "comed:"
+Warning--I didn't find a database entry for "nrel:"
+Warning--empty journal in agrawal2015
+You've used 8 entries,
             1791 wiz_defined-function locations,
-            576 strings with 7409 characters,
-and the built_in function-call counts, 5950 in all, are:
-= -- 518
-> -- 247
-< -- 8
-+ -- 91
-- -- 68
-* -- 406
-:= -- 891
-add.period$ -- 69
-call.type$ -- 23
-change.case$ -- 20
+            494 strings with 5082 characters,
+and the built_in function-call counts, 1794 in all, are:
+= -- 151
+> -- 102
+< -- 1
++ -- 37
+- -- 29
+* -- 109
+:= -- 292
+add.period$ -- 25
+call.type$ -- 8
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 268
-empty$ -- 603
-format.name$ -- 68
-if$ -- 1379
+cite$ -- 9
+duplicate$ -- 72
+empty$ -- 170
+format.name$ -- 29
+if$ -- 399
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 21
-newline$ -- 117
-num.names$ -- 25
-pop$ -- 77
+int.to.str$ -- 8
+missing$ -- 5
+newline$ -- 43
+num.names$ -- 8
+pop$ -- 32
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 152
+skip$ -- 41
 stack$ -- 0
-substring$ -- 435
-swap$ -- 85
-text.length$ -- 8
+substring$ -- 84
+swap$ -- 19
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 50
-width$ -- 25
-write$ -- 249
-(There was 1 warning)
+warning$ -- 1
+while$ -- 15
+width$ -- 9
+write$ -- 86
+(There were 7 warnings)
