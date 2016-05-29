@@ -3,16 +3,10 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: template.aux
 The style file: unsrt.bst
 Database file #1: template.bib
-Warning--I didn't find a database entry for "linden:1865"
-Warning--I didn't find a database entry for "dallinger:2013"
-Warning--I didn't find a database entry for "lagoudakis:2003"
-Warning--I didn't find a database entry for "ramavajjala:2012"
-Warning--I didn't find a database entry for "comed:"
-Warning--I didn't find a database entry for "nrel:"
 Warning--empty journal in agrawal2015
 You've used 9 entries,
             1791 wiz_defined-function locations,
-            499 strings with 5147 characters,
+            493 strings with 5080 characters,
 and the built_in function-call counts, 1976 in all, are:
 = -- 167
 > -- 106
@@ -51,4 +45,4 @@ warning$ -- 1
 while$ -- 17
 width$ -- 10
 write$ -- 97
-(There were 7 warnings)
+(There was 1 warning)
