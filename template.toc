@@ -1,5 +1,5 @@
 \contentsline {chapter}{Abstract}{i}
-\contentsline {chapter}{Contents}{1}
+\contentsline {chapter}{Contents}{ii}
 \contentsline {chapter}{\numberline {1}Introduction}{2}
 \contentsline {chapter}{\numberline {2}Related Work}{5}
 \contentsline {section}{\numberline {2.1}MOOCs}{5}
@@ -7,7 +7,11 @@
 \contentsline {subsection}{\numberline {2.1.2}cMOOCs v.s. xMOOCs}{5}
 \contentsline {subsection}{\numberline {2.1.3}Coursera}{6}
 \contentsline {subsection}{\numberline {2.1.4}edX}{7}
-\contentsline {section}{\numberline {2.2}Researchs improve MOOCs learning}{8}
-\contentsline {chapter}{\numberline {3}Architecture}{9}
-\contentsline {chapter}{\numberline {4}Implementation}{10}
-\contentsline {chapter}{Bibliography}{11}
+\contentsline {subsection}{\numberline {2.1.5}Open edX}{8}
+\contentsline {section}{\numberline {2.2}Video Indexing Technology}{9}
+\contentsline {subsection}{\numberline {2.2.1}Overview}{9}
+\contentsline {section}{\numberline {2.3}Data-Driven Analysis}{9}
+\contentsline {subsection}{\numberline {2.3.1}Overview}{9}
+\contentsline {chapter}{\numberline {3}Architecture}{10}
+\contentsline {chapter}{\numberline {4}Implementation}{11}
+\contentsline {chapter}{Bibliography}{12}
