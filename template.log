@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 JUN 2016 21:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 JUN 2016 23:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -617,6 +617,10 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 ]
 Chapter 1.
 
@@ -905,26 +909,90 @@ color pop
 color push 0 g 0 G
 color pop
 ]
+Package epstopdf Info: Source file: <logo/nthu.eps>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 277878 bytes
+(epstopdf)             Output file: <logo/nthu-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 108781 bytes
+(epstopdf)             Command: <repstopdf --outfile=logo/nthu-eps-converted-to
+.pdf logo/nthu.eps>
+(epstopdf)             \includegraphics on input line 31.
+Package epstopdf Info: Output file is already uptodate.
+File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo/nthu-eps-converted-to.pdf>
+Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 31.
+(pdftex.def)             Requested size: 100.0pt x 100.54845pt.
+
+[11
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/layer-structure-overview-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/system-architecture-outline.eps>
-(epstopdf)                    date: 2016-06-06 20:43:39
-(epstopdf)                    size: 2416942 bytes
+(epstopdf)                    date: 2016-06-06 22:03:12
+(epstopdf)                    size: 2417703 bytes
 (epstopdf)             Output file: <fig/system-architecture-outline-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2016-06-06 21:03:14
-(epstopdf)                    size: 246337 bytes
+(epstopdf)                    date: 2016-06-06 22:04:15
+(epstopdf)                    size: 246482 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/system-architecture-ou
 tline-eps-converted-to.pdf fig/system-architecture-outline.eps>
-(epstopdf)             \includegraphics on input line 26.
+(epstopdf)             \includegraphics on input line 34.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/system-architecture-outline-eps-converted-to.pdf, id=64, 1193.45876pt x 98
+<fig/system-architecture-outline-eps-converted-to.pdf, id=88, 1193.45876pt x 98
 6.68625pt>
 File: fig/system-architecture-outline-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/system-architecture-outline-eps-converted-to.pdf>
 Package pdftex.def Info: fig/system-architecture-outline-eps-converted-to.pdf u
-sed on input line 26.
+sed on input line 34.
 (pdftex.def)             Requested size: 334.60422pt x 276.63159pt.
+Package epstopdf Info: Source file: <logo/nthu.eps>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 277878 bytes
+(epstopdf)             Output file: <logo/nthu-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 108781 bytes
+(epstopdf)             Command: <repstopdf --outfile=logo/nthu-eps-converted-to
+.pdf logo/nthu.eps>
+(epstopdf)             \includegraphics on input line 38.
+Package epstopdf Info: Output file is already uptodate.
+File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
+
+<use logo/nthu-eps-converted-to.pdf>
+Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 38.
+(pdftex.def)             Requested size: 100.0pt x 100.54845pt.
+ [12
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
+Package epstopdf Info: Source file: <fig/mvc-relation.eps>
+(epstopdf)                    date: 2016-06-06 23:07:11
+(epstopdf)                    size: 278230 bytes
+(epstopdf)             Output file: <fig/mvc-relation-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-06 23:07:22
+(epstopdf)                    size: 115960 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/mvc-relation-eps-conve
+rted-to.pdf fig/mvc-relation.eps>
+(epstopdf)             \includegraphics on input line 50.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/mvc-relation-eps-converted-to.pdf, id=92, 601.24625pt x 484.81125pt>
+File: fig/mvc-relation-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/mvc-relation-eps-converted-to.pdf>
+Package pdftex.def Info: fig/mvc-relation-eps-converted-to.pdf used on input li
+ne 50.
+(pdftex.def)             Requested size: 334.60422pt x 269.81319pt.
 )
 Package epstopdf Info: Source file: <logo/nthu.eps>
 (epstopdf)                    date: 2016-05-15 16:33:55
@@ -941,7 +1009,7 @@ File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
 <use logo/nthu-eps-converted-to.pdf>
 Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 47.
 (pdftex.def)             Requested size: 100.0pt x 100.54845pt.
- [11
+ [13
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -950,8 +1018,8 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/layer-structure-overview-eps-converted-to.pdf>] (./chapter/implementati
-on.tex
+ <./fig/system-architecture-outline-eps-converted-to.pdf>] (./chapter/implement
+ation.tex
 Package epstopdf Info: Source file: <logo/nthu.eps>
 (epstopdf)                    date: 2016-05-15 16:33:55
 (epstopdf)                    size: 277878 bytes
@@ -967,7 +1035,7 @@ File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
 <use logo/nthu-eps-converted-to.pdf>
 Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 1.
 (pdftex.def)             Requested size: 100.0pt x 100.54845pt.
- [12
+ [14
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -976,7 +1044,7 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/system-architecture-outline-eps-converted-to.pdf>]
+ <./fig/mvc-relation-eps-converted-to.pdf>]
 Chapter 4.
 ) (./template.bbl
 Package epstopdf Info: Source file: <logo/nthu.eps>
@@ -993,7 +1061,7 @@ File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
  <use logo/nthu-eps-converted-to.pdf>
 Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 1.
 (pdftex.def)             Requested size: 100.0pt x 100.54845pt.
- [13
+ [15
 color push 0 g 0 G
 color pop
 
@@ -1015,7 +1083,7 @@ File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
 <use logo/nthu-eps-converted-to.pdf>
 Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 47.
 (pdftex.def)             Requested size: 100.0pt x 100.54845pt.
- [14
+ [16
 color push 0 g 0 G
 color pop
 
@@ -1033,7 +1101,13 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-])
+]
+Underfull \hbox (badness 1248) in paragraph at lines 66--71
+[]\OT1/cmr/m/n/12 A. Leff and J. T. Ray-field.  Web-application de-vel-op-ment 
+us-ing the
+ []
+
+)
 Package epstopdf Info: Source file: <logo/nthu.eps>
 (epstopdf)                    date: 2016-05-15 16:33:55
 (epstopdf)                    size: 277878 bytes
@@ -1045,11 +1119,12 @@ Package epstopdf Info: Source file: <logo/nthu.eps>
 (epstopdf)             \includegraphics on input line 67.
 Package epstopdf Info: Output file is already uptodate.
 File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
-
-<use logo/nthu-eps-converted-to.pdf>
+ <use logo/nthu-eps-converted-to.pdf>
 Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 67.
 (pdftex.def)             Requested size: 100.0pt x 100.54845pt.
- [15
+ [17
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1068,23 +1143,23 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7085 strings out of 493089
- 100385 string characters out of 6134842
- 211927 words of memory out of 5000000
- 10385 multiletter control sequences out of 15000+600000
+ 7092 strings out of 493089
+ 100587 string characters out of 6134842
+ 211942 words of memory out of 5000000
+ 10391 multiletter control sequences out of 15000+600000
  14170 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,14n,41p,1205b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,14n,43p,1205b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 /local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/
 local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on template.pdf (18 pages, 3614311 bytes).
+Output written on template.pdf (20 pages, 3733561 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 164 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
