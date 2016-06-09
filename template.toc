@@ -12,10 +12,21 @@
 \contentsline {subsection}{\numberline {2.2.1}Overview}{9}
 \contentsline {section}{\numberline {2.3}Data-Driven Analysis}{9}
 \contentsline {subsection}{\numberline {2.3.1}Overview}{9}
-\contentsline {chapter}{\numberline {3}Architecture}{10}
+\contentsline {chapter}{\numberline {3}System Architecture}{10}
 \contentsline {section}{\numberline {3.1}Layer Structure Overview}{10}
-\contentsline {section}{\numberline {3.2}System Architecture}{12}
-\contentsline {section}{\numberline {3.3}User Data Flow}{13}
-\contentsline {section}{\numberline {3.4}Website MVC Design Pattern}{13}
-\contentsline {chapter}{\numberline {4}Implementation}{15}
-\contentsline {chapter}{Bibliography}{16}
+\contentsline {subsection}{\numberline {3.1.1}Website MVC Design Pattern}{12}
+\contentsline {subsection}{\numberline {3.1.2}Activity Modules}{12}
+\contentsline {section}{\numberline {3.2}System Architecture}{13}
+\contentsline {section}{\numberline {3.3}Course Data Flow}{15}
+\contentsline {chapter}{\numberline {4}System Implementation}{17}
+\contentsline {section}{\numberline {4.1}Overview}{17}
+\contentsline {subsection}{\numberline {4.1.1}Google Cloud Platform}{17}
+\contentsline {subsection}{\numberline {4.1.2}Iron Worker}{17}
+\contentsline {subsection}{\numberline {4.1.3}Non blocking I/O}{17}
+\contentsline {subsection}{\numberline {4.1.4}Express.js}{17}
+\contentsline {subsection}{\numberline {4.1.5}D3 Cloud.js}{17}
+\contentsline {subsection}{\numberline {4.1.6}Jieba}{17}
+\contentsline {section}{\numberline {4.2}Database Design}{17}
+\contentsline {section}{\numberline {4.3}API server}{17}
+\contentsline {section}{\numberline {4.4}Analysis system}{17}
+\contentsline {chapter}{Bibliography}{18}
