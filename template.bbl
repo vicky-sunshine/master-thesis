@@ -69,4 +69,46 @@ A.~Leff and J.~T. Rayfield.
 \newblock In {\em Enterprise Distributed Object Computing Conference, 2001.
   EDOC '01. Proceedings. Fifth IEEE International}, pages 118--127, 2001.
 
+\bibitem{nodejs}
+Ryan Dahl.
+\newblock Node.js.
+\newblock Retrieved June 6, 2016, from the World Wide Web:
+  \url{https://nodejs.org/en/}, 2009.
+
+\bibitem{clang}
+Dennis Ritchie.
+\newblock C.
+\newblock Retrieved June 6, 2016, from the World Wide Web:
+  \url{https://en.wikipedia.org/wiki/C_(programming_language)}, 1972.
+
+\bibitem{cplus}
+Bjarne Stroustrup.
+\newblock C++.
+\newblock Retrieved June 6, 2016, from the World Wide Web:
+  \url{https://isocpp.org/}, 1995.
+
+\bibitem{javascript}
+Brendan Eich.
+\newblock Java script.
+\newblock Retrieved June 6, 2016, from the World Wide Web:
+  \url{https://developer.mozilla.org/zh-TW/docs/Web/JavaScript}, 1995.
+
+\bibitem{mongodb}
+MongoDB Inc.
+\newblock mongodb.
+\newblock Retrieved June 6, 2016, from the World Wide Web:
+  \url{https://www.mongodb.com/}, 2009.
+
+\bibitem{googlecloud}
+Google Inc.
+\newblock Google cloud platform.
+\newblock Retrieved June 6, 2016, from the World Wide Web:
+  \url{https://cloud.google.com/}, 2011.
+
+\bibitem{ironworker}
+Iron.io.
+\newblock Ironworker.
+\newblock Retrieved June 6, 2016, from the World Wide Web:
+  \url{https://www.iron.io/platform/ironworker/}.
+
 \end{thebibliography}
