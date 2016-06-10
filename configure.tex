@@ -5,6 +5,13 @@
 % Math
 \usepackage{amssymb, amsmath, amsthm}
 
+% Content
+\usepackage[titles]{tocloft}
+\newlength\mylength
+\renewcommand\cftchappresnum{\chaptername~}
+\settowidth\mylength{\cftchappresnum\cftchapaftersnum\quad}
+\addtolength\cftchapnumwidth{\mylength}
+
 % Algorithm
 \usepackage[ruled,linesnumbered]{algorithm2e}
 
