@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  10 JUN 2016 02:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  10 JUN 2016 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -105,9 +105,51 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip48
 \dth@everypar=\toks25
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 44.
+\cftparskip=\skip49
+\cftbeforetoctitleskip=\skip50
+\cftaftertoctitleskip=\skip51
+\cftbeforepartskip=\skip52
+\cftpartnumwidth=\skip53
+\cftpartindent=\skip54
+\cftbeforechapskip=\skip55
+\cftchapindent=\skip56
+\cftchapnumwidth=\skip57
+\cftbeforesecskip=\skip58
+\cftsecindent=\skip59
+\cftsecnumwidth=\skip60
+\cftbeforesubsecskip=\skip61
+\cftsubsecindent=\skip62
+\cftsubsecnumwidth=\skip63
+\cftbeforesubsubsecskip=\skip64
+\cftsubsubsecindent=\skip65
+\cftsubsubsecnumwidth=\skip66
+\cftbeforeparaskip=\skip67
+\cftparaindent=\skip68
+\cftparanumwidth=\skip69
+\cftbeforesubparaskip=\skip70
+\cftsubparaindent=\skip71
+\cftsubparanumwidth=\skip72
+\cftbeforeloftitleskip=\skip73
+\cftafterloftitleskip=\skip74
+\cftbeforefigskip=\skip75
+\cftfigindent=\skip76
+\cftfignumwidth=\skip77
+\c@lofdepth=\count100
+\c@lotdepth=\count101
+\cftbeforelottitleskip=\skip78
+\cftafterlottitleskip=\skip79
+\cftbeforetabskip=\skip80
+\cfttabindent=\skip81
+\cfttabnumwidth=\skip82
+)
+\mylength=\skip83
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
-\c@AlgoLine=\count100
+\c@AlgoLine=\count102
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -125,14 +167,14 @@ Package `algorithm2e' Release 5.0 -- january 06 2013 --
 subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 - Author: Christophe Fiorio (cfiorio@um2.fr)
 ********************************************************
-\skiptotal=\skip49
-\skiplinenumber=\skip50
-\skiprule=\skip51
-\skiphlne=\skip52
-\skiptext=\skip53
-\skiplength=\skip54
-\algomargin=\skip55
-\skipalgocfslide=\skip56
+\skiptotal=\skip84
+\skiplinenumber=\skip85
+\skiprule=\skip86
+\skiphlne=\skip87
+\skiptext=\skip88
+\skiplength=\skip89
+\algomargin=\skip90
+\skipalgocfslide=\skip91
 \algowidth=\dimen112
 \inoutsize=\dimen113
 \inoutindent=\dimen114
@@ -141,21 +183,21 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \interspacetitleboxruled=\dimen117
 \algocf@inoutbox=\box28
 \algocf@inputbox=\box29
-\AlCapSkip=\skip57
-\AlCapHSkip=\skip58
-\algoskipindent=\skip59
+\AlCapSkip=\skip92
+\AlCapHSkip=\skip93
+\algoskipindent=\skip94
 \algocf@nlbox=\box30
 \algocf@hangingbox=\box31
 \algocf@untilbox=\box32
-\algocf@skipuntil=\skip60
+\algocf@skipuntil=\skip95
 \algocf@capbox=\box33
-\algoheightruledefault=\skip61
-\algoheightrule=\skip62
-\algotitleheightruledefault=\skip63
-\algotitleheightrule=\skip64
-\c@algocfline=\count101
-\c@algocfproc=\count102
-\c@algocf=\count103
+\algoheightruledefault=\skip96
+\algoheightrule=\skip97
+\algotitleheightruledefault=\skip98
+\algotitleheightrule=\skip99
+\c@algocfline=\count103
+\c@algocfproc=\count104
+\c@algocf=\count105
 \algocf@algoframe=\box34
 \algocf@algobox=\box35
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
@@ -175,7 +217,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count104
+\Gread@gobject=\count106
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -212,12 +254,12 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen125
 \caption@hangindent=\dimen126
 )
-\c@ContinuedFloat=\count105
+\c@ContinuedFloat=\count107
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count106
-\c@subtable=\count107
+\c@subfigure=\count108
+\c@subtable=\count109
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen127
@@ -234,12 +276,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen135
 \cmidrulekern=\dimen136
 \defaultaddspace=\dimen137
-\@cmidla=\count108
-\@cmidlb=\count109
+\@cmidla=\count110
+\@cmidlb=\count111
 \@aboverulesep=\dimen138
 \@belowrulesep=\dimen139
-\@thisruleclass=\count110
-\@lastruleclass=\count111
+\@thisruleclass=\count112
+\@lastruleclass=\count113
 \@thisrulewidth=\dimen140
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/diagbox/diagbox.sty
@@ -268,19 +310,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count112
+\actioncount=\count114
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count113
-\FP@xia=\count114
-\FP@xib=\count115
-\FP@xfa=\count116
-\FP@xfb=\count117
-\FP@rega=\count118
-\FP@regb=\count119
-\FP@regs=\count120
-\FP@times=\count121
+\FP@xs=\count115
+\FP@xia=\count116
+\FP@xib=\count117
+\FP@xfa=\count118
+\FP@xfb=\count119
+\FP@rega=\count120
+\FP@regb=\count121
+\FP@regs=\count122
+\FP@times=\count123
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -299,7 +341,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count122
+\FPseed=\count124
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -339,7 +381,7 @@ Package ifpdf Info: pdfTeX in PDF mode is detected.
 )))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count123
+\c@float@type=\count125
 \float@exts=\toks28
 \float@box=\box39
 \@float@everytoks=\toks29
@@ -362,9 +404,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count124
-\Gm@cntv=\count125
-\c@Gm@tempcnt=\count126
+\Gm@cnth=\count126
+\Gm@cntv=\count127
+\c@Gm@tempcnt=\count128
 \Gm@bindingoffset=\dimen148
 \Gm@wd@mp=\dimen149
 \Gm@odd@mp=\dimen150
@@ -378,31 +420,31 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (./thwdef.tex)) (./cover.tex) (./template.aux)
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count127
+\scratchcounter=\count129
 \scratchdimen=\dimen156
 \scratchbox=\box41
-\nofMPsegments=\count128
-\nofMParguments=\count129
+\nofMPsegments=\count130
+\nofMParguments=\count131
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count130
+\MPscratchCnt=\count132
 \MPscratchDim=\dimen157
-\MPnumerator=\count131
-\makeMPintoPDFobject=\count132
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
 \everyMPtoPDFconversion=\toks32
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -487,11 +529,11 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 16.
+LaTeX Font Info:    Try loading font information for U+msa on input line 17.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 16.
+LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -504,14 +546,14 @@ Package epstopdf Info: Source file: <logo/nthu.eps>
 (epstopdf)                    size: 108781 bytes
 (epstopdf)             Command: <repstopdf --outfile=logo/nthu-eps-converted-to
 .pdf logo/nthu.eps>
-(epstopdf)             \includegraphics on input line 16.
+(epstopdf)             \includegraphics on input line 17.
 Package epstopdf Info: Output file is already uptodate.
 
 <logo/nthu-eps-converted-to.pdf, id=1, 182.6825pt x 183.68625pt>
 File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
 
 <use logo/nthu-eps-converted-to.pdf>
-Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 16.
+Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 17.
 (pdftex.def)             Requested size: 100.0pt x 100.54845pt.
  [1
 color push 0 g 0 G
@@ -532,11 +574,11 @@ Package epstopdf Info: Source file: <logo/nthu.eps>
 (epstopdf)                    size: 108781 bytes
 (epstopdf)             Command: <repstopdf --outfile=logo/nthu-eps-converted-to
 .pdf logo/nthu.eps>
-(epstopdf)             \includegraphics on input line 24.
+(epstopdf)             \includegraphics on input line 25.
 Package epstopdf Info: Output file is already uptodate.
 File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
  <use logo/nthu-eps-converted-to.pdf>
-Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 24.
+Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 25.
 (pdftex.def)             Requested size: 100.0pt x 100.54845pt.
  [1
 color push 0 g 0 G
@@ -568,24 +610,23 @@ color pop
 
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
+]
+Package epstopdf Info: Source file: <logo/nthu.eps>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 277878 bytes
+(epstopdf)             Output file: <logo/nthu-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 108781 bytes
+(epstopdf)             Command: <repstopdf --outfile=logo/nthu-eps-converted-to
+.pdf logo/nthu.eps>
+(epstopdf)             \includegraphics on input line 41.
+Package epstopdf Info: Output file is already uptodate.
+File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
+
+<use logo/nthu-eps-converted-to.pdf>
+Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 41.
+(pdftex.def)             Requested size: 100.0pt x 100.54845pt.
+ [3
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -594,8 +635,7 @@ color pop
 \tf@toc=\write3
 \openout3 = `template.toc'.
 
-
-(./chapter/introduction.tex
+ (./chapter/introduction.tex
 Package epstopdf Info: Source file: <logo/nthu.eps>
 (epstopdf)                    date: 2016-05-15 16:33:55
 (epstopdf)                    size: 277878 bytes
@@ -607,36 +647,11 @@ Package epstopdf Info: Source file: <logo/nthu.eps>
 (epstopdf)             \includegraphics on input line 1.
 Package epstopdf Info: Output file is already uptodate.
 File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
- <use logo/nthu-eps-converted-to.pdf>
+
+<use logo/nthu-eps-converted-to.pdf>
 Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 1.
 (pdftex.def)             Requested size: 100.0pt x 100.54845pt.
  [1
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -764,7 +779,7 @@ rted-to.pdf fig/coursera_pop.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/coursera_pop-eps-converted-to.pdf, id=35, 1463.4675pt x 903.375pt>
+<fig/coursera_pop-eps-converted-to.pdf, id=38, 1463.4675pt x 903.375pt>
 File: fig/coursera_pop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/coursera_pop-eps-converted-to.pdf>
@@ -806,7 +821,7 @@ Package epstopdf Info: Source file: <fig/edx.eps>
 df fig/edx.eps>
 (epstopdf)             \includegraphics on input line 46.
 Package epstopdf Info: Output file is already uptodate.
- <fig/edx-eps-converted-to.pdf, id=44, 1463.4675pt x 903.375pt>
+ <fig/edx-eps-converted-to.pdf, id=47, 1463.4675pt x 903.375pt>
 File: fig/edx-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/edx-eps-converted-to.pdf>
@@ -920,7 +935,7 @@ ew-eps-converted-to.pdf fig/layer-structure-overview.eps>
 (epstopdf)             \includegraphics on input line 16.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/layer-structure-overview-eps-converted-to.pdf, id=63, 442.65375pt x 596.22
+<fig/layer-structure-overview-eps-converted-to.pdf, id=66, 442.65375pt x 596.22
 75pt>
 File: fig/layer-structure-overview-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -964,7 +979,7 @@ rted-to.pdf fig/mvc-relation.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/mvc-relation-eps-converted-to.pdf, id=88, 601.24625pt x 484.81125pt>
+<fig/mvc-relation-eps-converted-to.pdf, id=91, 601.24625pt x 484.81125pt>
 File: fig/mvc-relation-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/mvc-relation-eps-converted-to.pdf>
@@ -982,7 +997,7 @@ nverted-to.pdf fig/activity-module.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/activity-module-eps-converted-to.pdf, id=89, 655.44875pt x 478.78876pt>
+<fig/activity-module-eps-converted-to.pdf, id=92, 655.44875pt x 478.78876pt>
 File: fig/activity-module-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/activity-module-eps-converted-to.pdf>
@@ -1050,7 +1065,7 @@ tline-eps-converted-to.pdf fig/system-architecture-outline.eps>
 (epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/system-architecture-outline-eps-converted-to.pdf, id=110, 1193.45876pt x 9
+<fig/system-architecture-outline-eps-converted-to.pdf, id=113, 1193.45876pt x 9
 86.68625pt>
 File: fig/system-architecture-outline-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1091,7 +1106,7 @@ f>
 (epstopdf)             \includegraphics on input line 73.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/new-class-workflow-eps-converted-to.pdf, id=114, 649.42625pt x 416.55624pt
+<fig/new-class-workflow-eps-converted-to.pdf, id=117, 649.42625pt x 416.55624pt
 >
 File: fig/new-class-workflow-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/new-class-workflow-eps-converted-to.pdf>
@@ -1134,7 +1149,7 @@ nverted-to.pdf fig/old-course-flow.eps>
 (epstopdf)             \includegraphics on input line 82.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/old-course-flow-eps-converted-to.pdf, id=145, 754.82pt x 539.01375pt>
+<fig/old-course-flow-eps-converted-to.pdf, id=149, 754.82pt x 539.01375pt>
 File: fig/old-course-flow-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/old-course-flow-eps-converted-to.pdf>
@@ -1226,7 +1241,7 @@ s-converted-to.pdf fig/asynchonous-process.eps>
 (epstopdf)             \includegraphics on input line 22.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/asynchonous-process-eps-converted-to.pdf, id=189, 464.73625pt x 553.06625p
+<fig/asynchonous-process-eps-converted-to.pdf, id=192, 464.73625pt x 553.06625p
 t>
 File: fig/asynchonous-process-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/asynchonous-process-eps-converted-to.pdf>
@@ -1280,22 +1295,22 @@ color push 0 g 0 G
 color pop
  <./fig/asynchonous-process-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/serversetup.eps>
-(epstopdf)                    date: 2016-06-10 02:20:33
-(epstopdf)                    size: 278817 bytes
+(epstopdf)                    date: 2016-06-10 12:17:55
+(epstopdf)                    size: 309600 bytes
 (epstopdf)             Output file: <fig/serversetup-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-06-10 02:22:09
-(epstopdf)                    size: 90122 bytes
+(epstopdf)                    date: 2016-06-10 12:18:29
+(epstopdf)                    size: 105241 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/serversetup-eps-conver
 ted-to.pdf fig/serversetup.eps>
-(epstopdf)             \includegraphics on input line 46.
+(epstopdf)             \includegraphics on input line 51.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/serversetup-eps-converted-to.pdf, id=205, 669.50125pt x 596.2275pt>
+<fig/serversetup-eps-converted-to.pdf, id=208, 669.50125pt x 596.2275pt>
 File: fig/serversetup-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/serversetup-eps-converted-to.pdf>
 Package pdftex.def Info: fig/serversetup-eps-converted-to.pdf used on input lin
-e 46.
+e 51.
 (pdftex.def)             Requested size: 334.60422pt x 297.99475pt.
 Package epstopdf Info: Source file: <logo/nthu.eps>
 (epstopdf)                    date: 2016-05-15 16:33:55
@@ -1305,19 +1320,31 @@ Package epstopdf Info: Source file: <logo/nthu.eps>
 (epstopdf)                    size: 108781 bytes
 (epstopdf)             Command: <repstopdf --outfile=logo/nthu-eps-converted-to
 .pdf logo/nthu.eps>
-(epstopdf)             \includegraphics on input line 50.
+(epstopdf)             \includegraphics on input line 54.
 Package epstopdf Info: Output file is already uptodate.
 File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
 
 <use logo/nthu-eps-converted-to.pdf>
-Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 50.
+Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 54.
 (pdftex.def)             Requested size: 100.0pt x 100.54845pt.
  [21
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-]) (./template.bbl
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 68.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
+
+Overfull \hbox (61.07608pt too wide) in paragraph at lines 63--72
+ [][] 
+ []
+
 Package epstopdf Info: Source file: <logo/nthu.eps>
 (epstopdf)                    date: 2016-05-15 16:33:55
 (epstopdf)                    size: 277878 bytes
@@ -1326,12 +1353,11 @@ Package epstopdf Info: Source file: <logo/nthu.eps>
 (epstopdf)                    size: 108781 bytes
 (epstopdf)             Command: <repstopdf --outfile=logo/nthu-eps-converted-to
 .pdf logo/nthu.eps>
-(epstopdf)             \includegraphics on input line 1.
+(epstopdf)             \includegraphics on input line 75.
 Package epstopdf Info: Output file is already uptodate.
 File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
-
 <use logo/nthu-eps-converted-to.pdf>
-Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 1.
+Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 75.
 (pdftex.def)             Requested size: 100.0pt x 100.54845pt.
  [22
 color push 0 g 0 G
@@ -1343,6 +1369,259 @@ color pop
 color push 0 g 0 G
 color pop
  <./fig/serversetup-eps-converted-to.pdf>]
+Overfull \vbox (146.269pt too high) has occurred while \output is active []
+
+Package epstopdf Info: Source file: <logo/nthu.eps>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 277878 bytes
+(epstopdf)             Output file: <logo/nthu-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 108781 bytes
+(epstopdf)             Command: <repstopdf --outfile=logo/nthu-eps-converted-to
+.pdf logo/nthu.eps>
+(epstopdf)             \includegraphics on input line 75.
+Package epstopdf Info: Output file is already uptodate.
+File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
+
+<use logo/nthu-eps-converted-to.pdf>
+Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 75.
+(pdftex.def)             Requested size: 100.0pt x 100.54845pt.
+ [23
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+Package epstopdf Info: Source file: <logo/nthu.eps>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 277878 bytes
+(epstopdf)             Output file: <logo/nthu-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 108781 bytes
+(epstopdf)             Command: <repstopdf --outfile=logo/nthu-eps-converted-to
+.pdf logo/nthu.eps>
+(epstopdf)             \includegraphics on input line 86.
+Package epstopdf Info: Output file is already uptodate.
+File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo/nthu-eps-converted-to.pdf>
+Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 86.
+(pdftex.def)             Requested size: 100.0pt x 100.54845pt.
+
+[24
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
+Package epstopdf Info: Source file: <fig/countseek.eps>
+(epstopdf)                    date: 2016-06-10 20:30:31
+(epstopdf)                    size: 68554 bytes
+(epstopdf)             Output file: <fig/countseek-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-10 20:33:20
+(epstopdf)                    size: 24847 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/countseek-eps-converte
+d-to.pdf fig/countseek.eps>
+(epstopdf)             \includegraphics on input line 89.
+Package epstopdf Info: Output file is already uptodate.
+ <fig/countseek-eps-converted-to.pdf, id=249, 609.27625pt x 332.24126pt>
+File: fig/countseek-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/countseek-eps-converted-to.pdf>
+Package pdftex.def Info: fig/countseek-eps-converted-to.pdf used on input line 
+89.
+(pdftex.def)             Requested size: 334.60422pt x 182.46455pt.
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+Package epstopdf Info: Source file: <logo/nthu.eps>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 277878 bytes
+(epstopdf)             Output file: <logo/nthu-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 108781 bytes
+(epstopdf)             Command: <repstopdf --outfile=logo/nthu-eps-converted-to
+.pdf logo/nthu.eps>
+(epstopdf)             \includegraphics on input line 99.
+Package epstopdf Info: Output file is already uptodate.
+File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo/nthu-eps-converted-to.pdf>
+Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 99.
+(pdftex.def)             Requested size: 100.0pt x 100.54845pt.
+
+[25
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/countseek-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/subtitleseg.eps>
+(epstopdf)                    date: 2016-06-10 21:25:26
+(epstopdf)                    size: 464707 bytes
+(epstopdf)             Output file: <fig/subtitleseg-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-10 21:40:14
+(epstopdf)                    size: 70784 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/subtitleseg-eps-conver
+ted-to.pdf fig/subtitleseg.eps>
+(epstopdf)             \includegraphics on input line 102.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/subtitleseg-eps-converted-to.pdf, id=271, 530.98375pt x 683.55376pt>
+File: fig/subtitleseg-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/subtitleseg-eps-converted-to.pdf>
+Package pdftex.def Info: fig/subtitleseg-eps-converted-to.pdf used on input lin
+e 102.
+(pdftex.def)             Requested size: 334.60422pt x 430.75587pt.
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+Package epstopdf Info: Source file: <logo/nthu.eps>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 277878 bytes
+(epstopdf)             Output file: <logo/nthu-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 108781 bytes
+(epstopdf)             Command: <repstopdf --outfile=logo/nthu-eps-converted-to
+.pdf logo/nthu.eps>
+(epstopdf)             \includegraphics on input line 111.
+Package epstopdf Info: Output file is already uptodate.
+File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
+
+<use logo/nthu-eps-converted-to.pdf>
+Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 111.
+
+(pdftex.def)             Requested size: 100.0pt x 100.54845pt.
+ [26
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/subtitleseg-eps-converted-to.pdf>] <fig/wordcloud.png, id=295, 547.0437
+5pt x 299.1175pt>
+File: fig/wordcloud.png Graphic file (type png)
+
+<use fig/wordcloud.png>
+Package pdftex.def Info: fig/wordcloud.png used on input line 114.
+(pdftex.def)             Requested size: 334.60422pt x 182.9589pt.
+)
+Package epstopdf Info: Source file: <logo/nthu.eps>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 277878 bytes
+(epstopdf)             Output file: <logo/nthu-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 108781 bytes
+(epstopdf)             Command: <repstopdf --outfile=logo/nthu-eps-converted-to
+.pdf logo/nthu.eps>
+(epstopdf)             \includegraphics on input line 51.
+Package epstopdf Info: Output file is already uptodate.
+File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo/nthu-eps-converted-to.pdf>
+Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 51.
+(pdftex.def)             Requested size: 100.0pt x 100.54845pt.
+ [27
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/wordcloud.png>] (./chapter/experiment.tex
+Package epstopdf Info: Source file: <logo/nthu.eps>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 277878 bytes
+(epstopdf)             Output file: <logo/nthu-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 108781 bytes
+(epstopdf)             Command: <repstopdf --outfile=logo/nthu-eps-converted-to
+.pdf logo/nthu.eps>
+(epstopdf)             \includegraphics on input line 1.
+Package epstopdf Info: Output file is already uptodate.
+File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo/nthu-eps-converted-to.pdf>
+Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 1.
+(pdftex.def)             Requested size: 100.0pt x 100.54845pt.
+
+[28
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
+Chapter 5.
+) (./chapter/conclusion.tex
+Package epstopdf Info: Source file: <logo/nthu.eps>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 277878 bytes
+(epstopdf)             Output file: <logo/nthu-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 108781 bytes
+(epstopdf)             Command: <repstopdf --outfile=logo/nthu-eps-converted-to
+.pdf logo/nthu.eps>
+(epstopdf)             \includegraphics on input line 1.
+Package epstopdf Info: Output file is already uptodate.
+File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo/nthu-eps-converted-to.pdf>
+Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 1.
+(pdftex.def)             Requested size: 100.0pt x 100.54845pt.
+ [29
+color push 0 g 0 G
+color pop
+
+color push 0 g 0 G
+color pop
+]
+Chapter 6.
+) (./template.bbl
+Package epstopdf Info: Source file: <logo/nthu.eps>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 277878 bytes
+(epstopdf)             Output file: <logo/nthu-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-05-15 16:33:55
+(epstopdf)                    size: 108781 bytes
+(epstopdf)             Command: <repstopdf --outfile=logo/nthu-eps-converted-to
+.pdf logo/nthu.eps>
+(epstopdf)             \includegraphics on input line 1.
+Package epstopdf Info: Output file is already uptodate.
+File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo/nthu-eps-converted-to.pdf>
+Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 1.
+(pdftex.def)             Requested size: 100.0pt x 100.54845pt.
+ [30
+color push 0 g 0 G
+color pop
+
+color push 0 g 0 G
+color pop
+]
 Package epstopdf Info: Source file: <logo/nthu.eps>
 (epstopdf)                    date: 2016-05-15 16:33:55
 (epstopdf)                    size: 277878 bytes
@@ -1354,10 +1633,11 @@ Package epstopdf Info: Source file: <logo/nthu.eps>
 (epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
 File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
- <use logo/nthu-eps-converted-to.pdf>
+
+<use logo/nthu-eps-converted-to.pdf>
 Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 47.
 (pdftex.def)             Requested size: 100.0pt x 100.54845pt.
- [23
+ [31
 color push 0 g 0 G
 color pop
 
@@ -1395,7 +1675,7 @@ File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
 <use logo/nthu-eps-converted-to.pdf>
 Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 95.
 (pdftex.def)             Requested size: 100.0pt x 100.54845pt.
- [24
+ [32
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1425,14 +1705,18 @@ Package epstopdf Info: Source file: <logo/nthu.eps>
 (epstopdf)                    size: 108781 bytes
 (epstopdf)             Command: <repstopdf --outfile=logo/nthu-eps-converted-to
 .pdf logo/nthu.eps>
-(epstopdf)             \includegraphics on input line 67.
+(epstopdf)             \includegraphics on input line 70.
 Package epstopdf Info: Output file is already uptodate.
 File: logo/nthu-eps-converted-to.pdf Graphic file (type pdf)
 
 <use logo/nthu-eps-converted-to.pdf>
-Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 67.
+Package pdftex.def Info: logo/nthu-eps-converted-to.pdf used on input line 70.
 (pdftex.def)             Requested size: 100.0pt x 100.54845pt.
- [25
+ [33
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1451,23 +1735,24 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7130 strings out of 493089
- 101773 string characters out of 6134842
- 212034 words of memory out of 5000000
- 10424 multiletter control sequences out of 15000+600000
+ 7434 strings out of 493089
+ 106649 string characters out of 6134842
+ 218977 words of memory out of 5000000
+ 10711 multiletter control sequences out of 15000+600000
  14170 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,14n,43p,1205b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,15n,41p,1205b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on template.pdf (28 pages, 3918341 bytes).
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on template.pdf (37 pages, 4104274 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
+ 349 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

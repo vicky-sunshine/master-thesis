@@ -111,4 +111,12 @@ Iron.io.
 \newblock Retrieved June 6, 2016, from the World Wide Web:
   \url{https://www.iron.io/platform/ironworker/}.
 
+\bibitem{jieba}
+Retrieved June 6, 2016, from the World Wide Web:
+  \url{https://github.com/fxsjy/jieba}.
+
+\bibitem{d3cloud}
+Retrieved June 6, 2016, from the World Wide Web:
+  \url{https://github.com/jasondavies/d3-cloud}.
+
 \end{thebibliography}
