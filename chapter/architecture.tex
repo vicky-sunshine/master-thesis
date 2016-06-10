@@ -1,4 +1,4 @@
-\chapter{System Architecture}
+\chapter{System Architecture}\label{cha:architecture}
 In this thesis, we design and implement a data-driven learning interest recommendation system and integrate with current MOOC platform.
 In this chapter, we  will introduce the system architecture and course data flow in two different course scenario.
 Moreover, we will also introduce the website MVC design and the user activity modules.
@@ -34,7 +34,7 @@ Model is the only one who can access data base directly, sometimes it represents
 \section{Activity Modules}
 User activity datas play an important role in the proposed system, in order to analyze user's activity pattern when learning on websit we designed four activity module for different scenario (see Figure \ref{fig:act-module}) each activity module composed of multiple action which maps to user's activity.
 First, account module records user's log into and logout from the website.
-Second, page module records user's trail since he/she log in to the website, every record is tagged with ``leav'' or ``access'' to note action that triggered the record so that we can monitor user's web page activity.
+Second, page module records user's trail since he/she log in to the website, every record is tagged with ``leave'' or ``access'' to note action that triggered the record so that we can monitor user's web page activity.
 Third, forum module has three action, ``post'', will records user's forum post, ``reply'' records which user give another postser a reply and ``like'' records user click like button on specific post and reply.
 Finally, video module is the most complecated module among activity modules, ``play'', ``pause'', ``seek'', ``change rate'' are actions that user interacts with player, and ``leave when pause'', ``leave when play'' are actions that user leave the lecture video page.
 \begin{figure}[H]

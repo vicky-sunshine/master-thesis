@@ -37,6 +37,11 @@ According to the website, it provides eight categories of service, including bas
 Ironworker \cite{ironworker} is a service on Iron.io, which make developer setup a worker on website with flexible scheduling setting.
 Once developer setup the worker, Ironworker will monitor the worker, and if any thing go wrong, Ironworker will notify you by email with detail information.
 
+\subsection{Jieba}
+Jieba \cite{jieba} is a open source python chinese text secmentation module which provide friendly API for developers, it is now support python2, python3 and can be installed by pip or other python package management module.
+Jieba segment the text by it's own dictionary on default, however it allow developers to edit or replace the dictionary which Jieba used to segment text.
+In our analysis system, we use this flexible tool to segment out subtitle base on our custom dictionary file.
+
 \section{Server Setup}
 In order to construct out server, we rent a VM instance machine type:n1-standard-4 (4 vCPUs, 15 GB memory), and on top of that we run a mongoDB on the same machine.
 After setting up the environment, we execute the nodejs api server conneted with the mongoDB to save the data to database and to provide other API for query data.
@@ -48,5 +53,70 @@ Among APIs the server provide, there is a API will triggered by the worker we se
     \label{fig:serversetup}
 \end{figure}
 
-\section{API Server}
+\section{Data Service API}
+\subsection{API's Collects User Activity Records}
+We discussed activity models in Chapter \ref{cha:architecture}, in table \ref{table:collectact} shows the APIs that data service server provided for recording activity records belong to different activity models, and the schema column of table pictures out the data structure stored in mongoDB.
+Among the sehema of all model, action field denote the situation user interacted with the platform object.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+method & url            & purpose                              & schema                                                                                                                                                                                                                                                                                                                     \\ \hline
+POST   & /login\_data   & records user's log in/out activity   & \begin{tabular}[c]{@{}l@{}}action: String\\ userId: Number\\ userAccount: String\\ time: ISODate\end{tabular}                                                                                                                                                                                                              \\ \hline
+POST   & /page\_data    & records user's trail on website      & \begin{tabular}[c]{@{}l@{}}action: String\\ userId: Number\\ userAccount: String\\ page: String\\ courseId: Number\\ chapterId: Number\\ time: ISODate\end{tabular}                                                                                                                                                        \\ \hline
+POST   & /article\_data & records user's forum activity        & \begin{tabular}[c]{@{}l@{}}action: String\\ userName: String\\ userId: Number\\ userAccount: String\\ courseId: Number\\ object\_article\_info:\\ \{\\ article\_id:Number\\ article\_author\_id:Number\\ article\_type:String\\ aritcle\_course\_id:Number\\ article\_chapter\_id:Number\\ \}\\ time: ISODate\end{tabular} \\ \hline
+POST   & /post\_data    & records user's exercise activity     & \begin{tabular}[c]{@{}l@{}}exerciseId: Number\\ exerciseType: String\\ correctAns: String\\ execOrder: Number\\ courseId: Number\\ getScore: Boolean\\ execTotalCount: String\\ userId: Number\\ studentAns: Array\\ time: ISODate\end{tabular}                                                                            \\ \hline
+POST   & /video\_data   & records user's video player activity & \begin{tabular}[c]{@{}l@{}}action: String\\ userId: Number\\ userAccount: String\\ videoStartTime: Number\\ videoEndTime: Number\\ videoId: Number\\ videoTotalTime: Number\\ courseId: Number\\ chapterId: Number\\ chapterVideoCount: Number\\ chapterVideoOrder: Number\\ playRate: Number\\ time: ISODate\end{tabular} \\ \hline
+\end{tabular}
+\caption{APIs records user activity}
+\label{table:collectact}
+\end{table}
+
 \section{Analysis System}
+Anaylysis system is a important role of the proposed system, we use users' video watching activity records to observe users' watching patterns and find out video sections that are possibley is the difficult part in lecture video for users, we call these video sections ``hot segment''.
+As long as we find out hot segment, we integrate further these hot segments with video subtitles to map out what concepts were mentioned in the video section, which is ``Videomark'' in this thesis.
+In this section we will explain how we generate Videomark with combination of difficult lecture videos section and semented subtitle.
+
+\subsection{Counting the Video Seek Events}
+The collected video seek event refer to the event that leaners drag the play bar to relocate the start point of the video while watching a video. In other words, two specific time stamps, the start time and the end time, are collected. The end time is the starting point of the specific part that leaners want to watch again.
+Considering the continuation of the timeline, the timeline is split into small segments to improve the accuracy of the concept for further analysis. In this study, based on the experiments, the duration of a segment is designed to have 40 seconds. Thus, the 1st segment is from 1 to 40 seconds, the 2nd segment is from 41 to 80 seconds, and son on.
+Nevertheless, a learner usually didn’t drag the play bar to the correct watching position at the first time. It is found that the average number of seeking events before the learner getting the final position is around 2 to 5. These kinds of seeking events should be ignored as they are just for “looking” the right position. To do this, a seek event is ignored if the time interval between this seek event with its previous seek event is less than two seconds.
+To find out the ``hot learning interests or difficult point'', the``hot segment'' of the video are first identified based on the number of video seeking events and then the ``keywords'' included in the subtitles of these hot segments were processed, see Figure \ref{fig:countseek}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{fig/countseek.eps}
+    \caption{counting seek event find hot sections}
+    \label{fig:countseek}
+\end{figure}
+
+\subsection{Subtitle Segmentation}
+The subtitles of the videos are processing to extract the ``keyword'' of the learning concept. In this thesis, all the subtitles are provided by Chinese. Jieba is used to split subtitles into several meaningful chunks of word in the sentence level.
+To improve the accuracy, two extra processing were used. First of all, since the contents of subtitles are colloquial, some stop-words will be mistakenly seen as keywords, such as ``this'', ``that'', ``because'', and ``so''. Therefore, those stop words are added into the stop-word dictionary to avoid the redundancy. Secondly, the word-frequency dictionary is adjusted for better Jieba results. The keyword-frequency stands for the keyword weight. The higher the weight of a keyword, the more likely the keyword is valued as a meaningful chunk.
+Finally, if some teacher wants to make keyword more precisely we will ask them provide a concept file, this concept file will act as a fileter leave only words in file, Figure \ref{fig:subtitleseg} illustrate the idea of subtitle segmentation.
+The results of processed subtitles (keywords) are combined with the seek event counts (hot segments) to identify the “hot keywords” of the specific topic.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{fig/subtitleseg.eps}
+    \caption{subtitle segmentation}
+    \label{fig:subtitleseg}
+\end{figure}
+
+\subsection{Weighting the Keyword}
+After the preprocessing of the video seek event counts and identified keywords, the third step is to calculate the weight of each of the keywords. In this study, for each video, the top five weighted keywords are collected into the keyword cloud.
+Figure \ref{fig:keywordcloud} depicts the “keywords cloud” of week 1 of the course 2016 spring Network Security on ShareCourse. The larger size of keyword means that more learners are interested or feel difficulty in that keyword (concept). Thus, the video segments introducing this keyword were watched more frequently.
+For example, in Figure \ref{fig:keywordcloud}, the ``SYN'', ``DDoS'' and ``Flooding'' are the biggest (hottest) three keywords in the keywords cloud, meaning that those concepts are most interested in or difficult of the learners.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{fig/wordcloud.png}
+    \caption{keyword cloud example}
+    \label{fig:keywordcloud}
+\end{figure}
+
+\section{User Interface}
+\subsection{Environment}
+\subsubsection{D3-cloud.js}
+d3-cloud \cite{d3cloud} is a JavasCript module which can make texts turn into cloud layout on the web page, we use d3-cloud to present the result of data analysis system to user, providing them a friendlier and fancier data visualization view.
