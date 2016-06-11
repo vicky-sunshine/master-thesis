@@ -58,20 +58,38 @@ Among APIs the server provide, there is a API will triggered by the worker we se
 We discussed activity models in Chapter \ref{cha:architecture}, in table \ref{table:collectact} shows the APIs that data service server provided for recording activity records belong to different activity models, and the schema column of table pictures out the data structure stored in mongoDB.
 Among the sehema of all model, action field denote the situation user interacted with the platform object.
 
+% \begin{table}[H]
+% \centering
+% \resizebox{\columnwidth}{!}{
+% \begin{tabular}{|l|l|l|l|}
+% \hline
+% method & url            & purpose                              & schema                                                                                                                                                                                                                                                                                                                     \\ \hline
+% POST   & /login\_data   & records user's log in/out activity   & \begin{tabular}[c]{@{}l@{}}action: String\\ userId: Number\\ userAccount: String\\ time: ISODate\end{tabular}                                                                                                                                                                                                              \\ \hline
+% POST   & /page\_data    & records user's trail on website      & \begin{tabular}[c]{@{}l@{}}action: String\\ userId: Number\\ userAccount: String\\ page: String\\ courseId: Number\\ chapterId: Number\\ time: ISODate\end{tabular}                                                                                                                                                        \\ \hline
+% POST   & /article\_data & records user's forum activity        & \begin{tabular}[c]{@{}l@{}}action: String\\ userName: String\\ userId: Number\\ userAccount: String\\ courseId: Number\\ object\_article\_info:\\ \{\\ article\_id:Number\\ article\_author\_id:Number\\ article\_type:String\\ aritcle\_course\_id:Number\\ article\_chapter\_id:Number\\ \}\\ time: ISODate\end{tabular} \\ \hline
+% POST   & /post\_data    & records user's exercise activity     & \begin{tabular}[c]{@{}l@{}}exerciseId: Number\\ exerciseType: String\\ correctAns: String\\ execOrder: Number\\ courseId: Number\\ getScore: Boolean\\ execTotalCount: String\\ userId: Number\\ studentAns: Array\\ time: ISODate\end{tabular}                                                                            \\ \hline
+% POST   & /video\_data   & records user's video player activity & \begin{tabular}[c]{@{}l@{}}action: String\\ userId: Number\\ userAccount: String\\ videoStartTime: Number\\ videoEndTime: Number\\ videoId: Number\\ videoTotalTime: Number\\ courseId: Number\\ chapterId: Number\\ chapterVideoCount: Number\\ chapterVideoOrder: Number\\ playRate: Number\\ time: ISODate\end{tabular} \\ \hline
+% \end{tabular}}
+% \caption{APIs records user activity}
+% \label{table:collectact}
+% \end{table}
+
 \begin{table}[H]
 \centering
+\caption{APIs records user activity}
+\label{table:collectact}
+\resizebox{\columnwidth}{!}{
 \begin{tabular}{|l|l|l|l|}
 \hline
 method & url            & purpose                              & schema                                                                                                                                                                                                                                                                                                                     \\ \hline
 POST   & /login\_data   & records user's log in/out activity   & \begin{tabular}[c]{@{}l@{}}action: String\\ userId: Number\\ userAccount: String\\ time: ISODate\end{tabular}                                                                                                                                                                                                              \\ \hline
 POST   & /page\_data    & records user's trail on website      & \begin{tabular}[c]{@{}l@{}}action: String\\ userId: Number\\ userAccount: String\\ page: String\\ courseId: Number\\ chapterId: Number\\ time: ISODate\end{tabular}                                                                                                                                                        \\ \hline
-POST   & /article\_data & records user's forum activity        & \begin{tabular}[c]{@{}l@{}}action: String\\ userName: String\\ userId: Number\\ userAccount: String\\ courseId: Number\\ object\_article\_info:\\ \{\\ article\_id:Number\\ article\_author\_id:Number\\ article\_type:String\\ aritcle\_course\_id:Number\\ article\_chapter\_id:Number\\ \}\\ time: ISODate\end{tabular} \\ \hline
+POST   & /article\_data & records user's forum activity        & \begin{tabular}[c]{@{}l@{}}action: String\\ userName: String\\ userId: Number\\ userAccount: String\\ courseId: Number\\ object\_article\_info:\\ \{article\_Object\}\\ time: ISODate\end{tabular}                                                                                                                         \\ \hline
 POST   & /post\_data    & records user's exercise activity     & \begin{tabular}[c]{@{}l@{}}exerciseId: Number\\ exerciseType: String\\ correctAns: String\\ execOrder: Number\\ courseId: Number\\ getScore: Boolean\\ execTotalCount: String\\ userId: Number\\ studentAns: Array\\ time: ISODate\end{tabular}                                                                            \\ \hline
 POST   & /video\_data   & records user's video player activity & \begin{tabular}[c]{@{}l@{}}action: String\\ userId: Number\\ userAccount: String\\ videoStartTime: Number\\ videoEndTime: Number\\ videoId: Number\\ videoTotalTime: Number\\ courseId: Number\\ chapterId: Number\\ chapterVideoCount: Number\\ chapterVideoOrder: Number\\ playRate: Number\\ time: ISODate\end{tabular} \\ \hline
-\end{tabular}
-\caption{APIs records user activity}
-\label{table:collectact}
+\end{tabular}}
 \end{table}
+
 
 \section{Analysis System}
 Anaylysis system is a important role of the proposed system, we use users' video watching activity records to observe users' watching patterns and find out video sections that are possibley is the difficult part in lecture video for users, we call these video sections ``hot segment''.
