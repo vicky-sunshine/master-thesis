@@ -112,11 +112,31 @@ Iron.io.
   \url{https://www.iron.io/platform/ironworker/}.
 
 \bibitem{jieba}
-Retrieved June 6, 2016, from the World Wide Web:
+Jieba.
+\newblock Retrieved June 6, 2016, from the World Wide Web:
   \url{https://github.com/fxsjy/jieba}.
 
+\bibitem{sharecourse}
+National~Tsinghua University.
+\newblock Sharecourse.
+\newblock Retrieved June 6, 2016, from the World Wide Web:
+  \url{http://www.sharecourse.net/sharecourse/}, 2012.
+
 \bibitem{d3cloud}
-Retrieved June 6, 2016, from the World Wide Web:
+d3-cloud.js.
+\newblock Retrieved June 6, 2016, from the World Wide Web:
   \url{https://github.com/jasondavies/d3-cloud}.
+
+\bibitem{bootstrap}
+Jacob~Thornton Mark~Otto.
+\newblock Bootstrap.
+\newblock Retrieved June 6, 2016, from the World Wide Web:
+  \url{http://getbootstrap.com/}.
+
+\bibitem{jquery}
+John Resig.
+\newblock jquery.
+\newblock Retrieved June 6, 2016, from the World Wide Web:
+  \url{https://jquery.com/}, 2006.
 
 \end{thebibliography}

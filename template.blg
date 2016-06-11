@@ -4,45 +4,45 @@ The top-level auxiliary file: template.aux
 The style file: unsrt.bst
 Database file #1: template.bib
 Warning--empty journal in agrawal2015
-You've used 20 entries,
+You've used 23 entries,
             1791 wiz_defined-function locations,
-            540 strings with 6453 characters,
-and the built_in function-call counts, 3534 in all, are:
-= -- 299
-> -- 148
+            555 strings with 6835 characters,
+and the built_in function-call counts, 3937 in all, are:
+= -- 335
+> -- 160
 < -- 2
-+ -- 60
-- -- 40
-* -- 145
-:= -- 537
-add.period$ -- 57
-call.type$ -- 20
-change.case$ -- 18
++ -- 66
+- -- 43
+* -- 147
+:= -- 602
+add.period$ -- 68
+call.type$ -- 23
+change.case$ -- 23
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 152
-empty$ -- 409
-format.name$ -- 40
-if$ -- 826
+cite$ -- 24
+duplicate$ -- 167
+empty$ -- 463
+format.name$ -- 43
+if$ -- 922
 int.to.chr$ -- 0
-int.to.str$ -- 20
+int.to.str$ -- 23
 missing$ -- 7
-newline$ -- 99
-num.names$ -- 18
-pop$ -- 98
+newline$ -- 116
+num.names$ -- 21
+pop$ -- 115
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 102
+skip$ -- 109
 stack$ -- 0
 substring$ -- 124
-swap$ -- 41
+swap$ -- 44
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 28
-width$ -- 22
-write$ -- 197
+while$ -- 31
+width$ -- 25
+write$ -- 230
 (There was 1 warning)
