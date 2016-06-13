@@ -2,23 +2,25 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Coursera pop-up question in lecture video\relax }}{5}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces edX transcript redirect function: redirect video to specific section by transcript content\relax }}{7}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Screenshot of visMooc\relax }}{9}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces visMooc Seek Graph Analysis\relax }}{9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces layer structure overview\relax }}{10}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Collaboration of MVC elements\relax }}{11}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces User activity modules\relax }}{12}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces system architecture\relax }}{14}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces new course data work flow\relax }}{15}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces old course data work flow\relax }}{16}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces layer structure overview\relax }}{11}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Collaboration of MVC elements\relax }}{12}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces User activity modules\relax }}{13}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces system architecture\relax }}{15}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces new course data work flow\relax }}{16}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces old course data work flow\relax }}{17}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Asynchorous process control model\relax }}{19}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces server setup\relax }}{21}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces counting seek event find hot sections\relax }}{24}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces subtitle segmentation\relax }}{25}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces keyword cloud example\relax }}{26}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Ajax post example\relax }}{28}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces video mark feature open keyword cloud button\relax }}{29}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces keyword cloud shows up\relax }}{30}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces hyperlinks show up on click the keyword in cloud\relax }}{31}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces open new tab playing start from video mark\relax }}{32}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Asynchorous process control model\relax }}{20}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces server setup\relax }}{22}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces counting seek event find hot sections\relax }}{26}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces subtitle segmentation\relax }}{27}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces keyword cloud example\relax }}{28}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Ajax post example\relax }}{30}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Videomark feature open keyword cloud button\relax }}{31}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces keyword cloud shows up\relax }}{32}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces hyperlinks show up on click the keyword in cloud\relax }}{33}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces open new tab playing start from Video ark\relax }}{34}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

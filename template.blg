@@ -4,45 +4,46 @@ The top-level auxiliary file: template.aux
 The style file: unsrt.bst
 Database file #1: template.bib
 Warning--empty journal in agrawal2015
-You've used 23 entries,
+Warning--can't use both author and editor fields in linan2015
+You've used 25 entries,
             1791 wiz_defined-function locations,
-            555 strings with 6835 characters,
-and the built_in function-call counts, 3937 in all, are:
-= -- 335
-> -- 160
-< -- 2
-+ -- 66
-- -- 43
-* -- 147
-:= -- 602
-add.period$ -- 68
-call.type$ -- 23
-change.case$ -- 23
+            569 strings with 7533 characters,
+and the built_in function-call counts, 4700 in all, are:
+= -- 406
+> -- 188
+< -- 4
++ -- 76
+- -- 51
+* -- 195
+:= -- 700
+add.period$ -- 74
+call.type$ -- 25
+change.case$ -- 24
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 167
-empty$ -- 463
-format.name$ -- 43
-if$ -- 922
+cite$ -- 27
+duplicate$ -- 208
+empty$ -- 536
+format.name$ -- 51
+if$ -- 1110
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 7
-newline$ -- 116
-num.names$ -- 21
-pop$ -- 115
+int.to.str$ -- 25
+missing$ -- 10
+newline$ -- 126
+num.names$ -- 23
+pop$ -- 126
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 109
+skip$ -- 140
 stack$ -- 0
-substring$ -- 124
-swap$ -- 44
-text.length$ -- 2
+substring$ -- 184
+swap$ -- 66
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 31
-width$ -- 25
-write$ -- 230
-(There was 1 warning)
+warning$ -- 2
+while$ -- 38
+width$ -- 27
+write$ -- 253
+(There were 2 warnings)

@@ -90,9 +90,26 @@ POST   & /video\_data   & records user's video player activity & \begin{tabular}
 \end{tabular}}
 \end{table}
 
+\subsection{API's Record Usage of Videomark}
+In order to understand whether the feature Videomark improve student's performance on learning, we recorded the usage data of Videomark by another set of APIs.
+Table \ref{table:videomarkAPI} shows the detail of these APIs.
+
+\begin{table}[H]
+\centering
+\caption{Videomark APIs}
+\label{table:videomarkAPI}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{|l|l|l|l|}
+\hline
+method & url               & purpose                                                                                             & schema                                                                                                                                         \\ \hline
+POST   & /cloud/saveLog    & \begin{tabular}[c]{@{}l@{}}record which keyword in keyword\\ cloud been clicked\end{tabular}        & \begin{tabular}[c]{@{}l@{}}userId: Number\\ courseId: Number\\ chapterId: Number\\ videoId: Number\\ word: String\\ time: ISODate\end{tabular} \\ \hline
+POST   & /cloud/saveUrlLog & \begin{tabular}[c]{@{}l@{}}records which hyperlink in\\ hyperlink section been clicked\end{tabular} & \begin{tabular}[c]{@{}l@{}}userId: Number\\ courseId: Number\\ chapterId: Number\\ videoId: Number\\ time: ISODate\end{tabular}                \\ \hline
+POST   & /cloud/openCloud  & \begin{tabular}[c]{@{}l@{}}records action that user open\\ keyword cloud\end{tabular}               & \begin{tabular}[c]{@{}l@{}}userId: Number\\ courseId: Number\\ chapterId: Number\\ videoId: Number\\ word: String\\ time: ISODate\end{tabular} \\ \hline
+\end{tabular}}
+\end{table}
 
 \section{Analysis System}
-Anaylysis system is a important role of the proposed system, we use users' video watching activity records to observe users' watching patterns and find out video sections that are possibley is the difficult part in lecture video for users, we call these video sections ``hot segment''.
+Analysis system is a important role of the proposed system, we use users' video watching activity records to observe users' watching patterns and find out video sections that are possibley is the difficult part in lecture video for users, we call these video sections ``hot segment''.
 As long as we find out hot segment, we integrate further these hot segments with video subtitles to map out what concepts were mentioned in the video section, which is ``Videomark'' in this thesis.
 In this section we will explain how we generate Videomark with combination of difficult lecture videos section and semented subtitle.
 
@@ -137,7 +154,7 @@ For example, in Figure \ref{fig:keywordcloud}, the ``SYN'', ``DDoS'' and ``Flood
 \section{User Interface}
 \subsection{Environment}
 \subsubsection{ShareCourse}
-ShareCourse \cite{sharecourse} is a famous MOOCs platform in Chinesspeaking countries, which provides both Web and mobile service.
+ShareCourse \cite{sharecourse} is a famous MOOCs platform in Chines speaking countries, which provides both Web and mobile service.
 Since 2012, ShareCourse has been providing more than 1,000 courses with over 60 cooperative universities in Taiwan.
 Up to the precent, more than 60000 students have registered on ShareCourse.
 ShareCourse provide a environment with complete functions for MOOCs learners in terms of instructional videos, peer-grading quiz/assignment, discussion forum, weekly exercise, and certificate.
@@ -147,12 +164,12 @@ D3-cloud \cite{d3cloud} is a JavasCript module which can make texts turn into cl
 
 \subsubsection{Boostrap}
 Bootstrap\cite{bootstrap} is a open-source and free front-end web framework for design website and web applications, it contains html, css and javascirpt-based template for typography.
-Useful elements such as buttom, modal, grid system and more are provided which makes developers create beautiful custom website easily.
+Useful elements such as button, modal, grid system and more are provided which makes developers create beautiful custom website easily.
 
 \subsubsection{jQuery}
-jQuery is a \cite{jquery} cross browser javascript library simplify the manipulation of javascript to controll html DOM elements and provides features like event-handle, animation and ajax.
+jQuery is a \cite{jquery} cross browser javascript library simplify the manipulation of javascript to control html DOM elements and provides features like event-handle, animation and ajax.
 Ajax, one of the feature of jQuery, make it possible to perform cross-browser Ajax requests using \code{\$.ajax}, Figure \ref{fig:ajaxpost} sohws an code that ajax post a hash variable \code{data} to url \url{http://API_endpoint/saveData}.
-If the request successd \code{.done()} in line 8 will be triggered; otherwise \code{.fail()} in line 10 will be triggered.
+If the request succeed \code{.done()} in line 8 will be triggered; otherwise \code{.fail()} in line 10 will be triggered.
 This kind of usage in example can be linked with elements in web page to create different user interactive scenarios.
 Ajax also follows the asynchornous mechanism so that any single ajax execution or failure will not cause page crash or been locked.
 
@@ -163,18 +180,18 @@ Ajax also follows the asynchornous mechanism so that any single ajax execution o
     \label{fig:ajaxpost}
 \end{figure}
 
-\subsection{Video Mark Page}
-All the video mark feature are start with the keyword cloud, we add a button at bottom of lecture video page labled with ``keyword cloud'' as shown in Figure \ref{fig:cloudbutton}.
+\subsection{Videomark Page}
+All the Videomark feature are start with the keyword cloud, we add a button at bottom of lecture video page labled with ``keyword cloud'' as shown in Figure \ref{fig:cloudbutton}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width = 0.9\textwidth]{fig/cloudbutton.eps}
-    \caption{video mark feature open keyword cloud button}
+    \caption{Videomark feature open keyword cloud button}
     \label{fig:cloudbutton}
 \end{figure}
 
-Once the button been clicked, the brwoser will use ajax to send a post request to data service server to get weighted keyword datas.
-The return data of ajax request will be a json fomat containing keywords in the chapter that user is now watching at, moreover, each keyword will connect to a bounch of concept-related video information.
+Once the button been clicked, the browser will use ajax to send a post request to data service server to get weighted keyword datas.
+The return data of ajax request will be a json format containing keywords in the chapter that user is now watching at, moreover, each keyword will connect to a bunch of concept-related video information.
 D3-cloud.js will handle the json data afterward and draw out the keyword cloud see Figure \ref{fig:cloudopened}.
 
 \begin{figure}[H]
@@ -200,6 +217,6 @@ In Figure \ref{fig:openvideotab} show the result we click the first hyperlink or
 \begin{figure}[H]
     \centering
     \includegraphics[width = 0.8\textwidth]{fig/openvideotab.eps}
-    \caption{open new tab playing start from video mark}
+    \caption{open new tab playing start from Video ark}
     \label{fig:openvideotab}
 \end{figure}

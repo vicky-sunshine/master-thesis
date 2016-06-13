@@ -51,6 +51,12 @@ Akshay Agrawal, Jagadish Venkatraman, Shane Leonard, and Andreas Paepcke.
   recommending instructional video clips.
 \newblock 2015.
 
+\bibitem{sharecourse}
+National~Tsinghua University.
+\newblock Sharecourse.
+\newblock Retrieved June 6, 2016, from the World Wide Web:
+  \url{http://www.sharecourse.net/sharecourse/}, 2012.
+
 \bibitem{pappano2012}
 Laura Pappano.
 \newblock The year of the mooc.
@@ -61,6 +67,19 @@ Tsinghua University.
 \newblock Xuetangx.
 \newblock Retrieved June 2, 2016, from the World Wide Web:
   \url{http://www.xuetangx.com/}, 2013.
+
+\bibitem{linan2015}
+Nan Li, {\L}ukasz Kidzi{\'{n}}ski, Patrick Jermann, and Pierre Dillenbourg.
+\newblock {\em MOOC Video Interaction Patterns: What Do They Tell Us?}, pages
+  197--210.
+\newblock Springer International Publishing, Cham, 2015.
+
+\bibitem{Conglei2015}
+Conglei Shi, Siwei Fu, Qing Chen, and Huamin Qu.
+\newblock Vismooc: Visualizing video clickstream data from massive open online
+  courses.
+\newblock In {\em 2015 IEEE Pacific Visualization Symposium (PacificVis)},
+  pages 159--166, April 2015.
 
 \bibitem{Leff2001}
 A.~Leff and J.~T. Rayfield.
@@ -115,12 +134,6 @@ Iron.io.
 Jieba.
 \newblock Retrieved June 6, 2016, from the World Wide Web:
   \url{https://github.com/fxsjy/jieba}.
-
-\bibitem{sharecourse}
-National~Tsinghua University.
-\newblock Sharecourse.
-\newblock Retrieved June 6, 2016, from the World Wide Web:
-  \url{http://www.sharecourse.net/sharecourse/}, 2012.
 
 \bibitem{d3cloud}
 d3-cloud.js.
