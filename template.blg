@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
+This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: template.aux
 The style file: IEEEtran.bst
@@ -11,48 +11,46 @@ Database file #1: template.bib
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty journal in agrawal2015
 
 Done.
-You've used 25 entries,
+You've used 24 entries,
             4039 wiz_defined-function locations,
-            935 strings with 11308 characters,
-and the built_in function-call counts, 12776 in all, are:
-= -- 1001
-> -- 262
-< -- 60
-+ -- 140
-- -- 51
-* -- 518
-:= -- 2043
-add.period$ -- 51
-call.type$ -- 25
+            931 strings with 11840 characters,
+and the built_in function-call counts, 15433 in all, are:
+= -- 1169
+> -- 409
+< -- 76
++ -- 207
+- -- 85
+* -- 743
+:= -- 2396
+add.period$ -- 58
+call.type$ -- 24
 change.case$ -- 24
-chr.to.int$ -- 138
-cite$ -- 26
-duplicate$ -- 1009
-empty$ -- 1173
-format.name$ -- 61
-if$ -- 2884
+chr.to.int$ -- 159
+cite$ -- 24
+duplicate$ -- 1220
+empty$ -- 1386
+format.name$ -- 102
+if$ -- 3507
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 204
-newline$ -- 100
-num.names$ -- 23
-pop$ -- 535
+int.to.str$ -- 24
+missing$ -- 256
+newline$ -- 97
+num.names$ -- 24
+pop$ -- 632
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1029
+skip$ -- 1152
 stack$ -- 0
-substring$ -- 354
-swap$ -- 688
-text.length$ -- 14
+substring$ -- 400
+swap$ -- 878
+text.length$ -- 23
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 25
-warning$ -- 1
-while$ -- 46
-width$ -- 27
-write$ -- 231
-(There was 1 warning)
+type$ -- 24
+warning$ -- 0
+while$ -- 57
+width$ -- 26
+write$ -- 243

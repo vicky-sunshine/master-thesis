@@ -1,41 +1,13 @@
 \chapter{Introduction}
-Massive Online Open Courses (MOOCs) refer to an open educational resources,
-which allows learners worldwide to take well-designed online courses of interest free of charge.
-On MOOCs, learners watch the high-quality instructional videos made by professors from prestigious universities,
-share their ideas and reflections on the discussion forum,
-and use the online exercise system to evaluate their learning outcome.
-Due to the fact that the MOOCs provide with high-quality self-directed learning environment without costing much for online learners,
-MOOCs have been thought of as a contemporary way of 21-century learning.
+In recent times, researchers have shown an increasing interest in evolving network infrastructures. Software-defined networking (SDN) and network functions virtualization (NFV) are key roles for this evolution. SDN \cite{sdn-mckeown-2009-talk, sdn-newnorm, sdn-road, sdn-compre-survey} has been widely studied for almost a decade since the first OpenFlow \cite{openflow-mckeown-2008, openflow-spec} article had be presented in 2008. The main concept of SDN is separating data plane and control plane to enable smart control on switch and give a brand-new viewpoint on network research, and makes innovation on industries.
 
-There are two type of MOOCs, cMOOCs (connectionism MOOCs) and xMOOCs (instructionism MOOCs).
-These two types of MOOCs are base on different philosophical positions underpinning,
-cMOOCs focuses on connections between participants in particular on strong content contributions from the participants themselves \cite{yeager2013cmoocs},
-xMOOCs, by contrast focus on instructor's design of the course.
-Many famous MOOCs platform such as Coursera\cite{coursera}, edX\cite{edx}, and Udacity\cite{udacity} are belong to xMOOCs.
+As SDN was developed, NFV \cite{nfv-wp, nfv-archi, nfv-survey} has been introduced by telco operators at the same time. The network services offered by operators previously performed by specific hardware appliances and it is difficult to decrease the OPEX and CAPEX on service deployment and management. In this context, NFV is proposed to innovate in the service delivery arena. The concept of NFV is to reduce the coupling between network functions (NFs) and hardware devices. Virtual Customer Premise Equipment (vCPE) \cite{vcpe-enhance}, in particular virtual residential gateway (vRGW) \cite{nfv-home}, is one of the network services which benefited from NFV \cite{nfv-usecase}.
 
-For current xMOOCs, the instructional videos play a significant role in the online learning process \cite{breslow:2013,seaton2014}.
-In essence, the learning focuses in the form of visual and audial presented in the instructional videos.
-Traditionally, video-based learning follows structured instructor-designed sequences for the better results.
-Owing to the technological nature of the online stream video, it is found that many students drag the play bar replaying specific concept in the video for consolidating their understanding.
-Therefore, many studies aim to improve the video-based learning environment by adding additional features in video-watching, such as embedded assessment, caption tool, as so on.
+In the progress of vCPE development, the SDN is not involved at first. Most of previous researches focused on other technology to virtualize and deploy the CPE node \cite{virtual-rg, security-vgw, design-vrgw, nfv-hgw-surrogate, linux-cpe, nfv-resoure-contrain-cpe}. Cloud4NFV \cite{cloud4nfv, cloud4nfv-telco}, proposed by Portugal Telecom, started to use SDN technology on designing virtual CPE management and organization (MANO) platform for telco cloud. Italy Telecom also proposed NetFATE \cite{netfate}, which is a network function deploy-to-edge model in which the NFs are designed by SDN and perform by SDN switch. Inspired from these two frameworks, our laboratory, High Speed Network Labtory (HSNL), also proposed a vCPE framework and a few network functions, attempting to replace hardware-based CPE \cite{che-wei-master, che-wei-umedia}.
 
-In view of the rapid development of data sciences,
-more and more studies on educational data mining and learning analytics take the advantages of the learners’ data to optimize learning process.
-For example, \cite{kim2014} develops a step-by-step annotations feature to improve the learning experience of existing how-to videos.
-Study \cite{agrawal2015} constructs a system that recommends students videos best on their forum post, making a self-solved confusion system and meanwhile reducing the teaching load.
-Therefore, considering the learning needs and the authentic learner data,
-this study develops a data-driven learning interest recommendation system to promote self-paced learning by integrating educational data mining and word segmentation in the Chinese-speaking MOOC environment.
-Videomark combines both the learning seek event counts and the subtitles of each video to automatically generate learning concepts for learners in friendly user interface.
-Through the huge amount of video watching/seeking log data, the Videomark helps learners to quickly identify popular video seek events for consolidating their concept of the learning focus in hope of promoting better self-paced video-based learning environment.
+However, these SDN-involved vCPE research most focused on how SDN benefits the design of NFV MANO platform or traffic steering between CPE nodes, not the CPE network function itself. When the NFV is deployed at network edge and performed by SDN switch, there will be restriction on the OpenFlow Table \cite{multiple-flow-table}. In this paper, we proposed a multiple OpenFlow table mechanism to implement network functions and explain how to use it to resolve the table restriction. We also evaluate the new VNF implemented by the proposed mechanism, and compare with the single-table mechanism and hardware CPE. This new VNF can also be deployed to the network edge by the previous HSNL vCPE framework.
 
-This thesis proposes a learning interest recommendation system on xMOOCs which is Videomark, the system generate keywords related to lecture video content base on students' video watch activity records and lecture video transcripts.
-Moreover, each keyword collects video segment about the specific keyword.
-We hope this system will help students sketch the course when they first come to the class,
-and review the whole course after the course.
-
-The remainder of this thesis is organized as follows.
-In Section~\ref{cha:Related}, we first introduce two kinds of MOOCs and the data driven analysis researches on MOOCs
-In Section~\ref{cha:Architecture}, the architecture of the proposed system. This system is composed of two system ShareCourse \cite{sharecourse} and our data service server.
-In Section~\ref{cha:Implementation}, the detail of data service server and the interface we designed.
-In Section~\ref{cha:Experiment}, the result experiments we did on two course.
-In Section~\ref{cha:Conclusion}, the conclusion and the drawback needed to be conquer.
+This paper is structured as follows.
+Chapter \ref{ch:related_work} briefly introduces SDN technology, NFV architecture, the OpenFlow protocol, related studied of vCPE framework and the previous HSNL vCPE framwork.
+In Chapter \ref{ch:implementation}, we will review the NF design from the concept of SDN-enabled architecture, and then move on describing our proposed multiple flow table management mechanism, which achieved vRGW functions.
+Chapter \ref{ch:evaluation} turns to analyze the performance of vCPE network function what we proposed and compare to single table NF and traditional network devices, followed by Conclusion and proposed future works in the last chapter.

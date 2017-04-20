@@ -2,28 +2,29 @@
 \input{./configure}
 
 % Cover
+\begin{document}
+\begin{CJK}{UTF8}{bkai}
 \input{./cover}
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
-\begin{document}
 
 % Add watermark
-\AddToShipoutPicture{\WatermarkPicture}
+% \AddToShipoutPicture{\WatermarkPicture}
 
 \baselineskip 24pt
-
 \pagenumbering{roman}
 
-\maketitle
-
-\addcontentsline{toc}{chapter}{Abstract}
-
-\newcommand{\ThankOne}{This work was supported in part by the MOST R.O.C. Project on ``Demand-Side Management in Universities and Enterprise Campuses''.}
-
 % Abstract
+\addcontentsline{toc}{chapter}{Abstract}
 \input{./chapter/abstract}
 \newpage
 
+% Abstract chinese
+\addcontentsline{toc}{chapter}{中文摘要}
+\input{./chapter/abstract_zh}
+\newpage
+
+% Acknowledgement
 \addcontentsline{toc}{chapter}{Acknowledgement}
 \input{./chapter/acknowledgement}
 \newpage
@@ -32,10 +33,10 @@
 
 \listoffigures
 \newpage
-%
+
 \listoftables
 \newpage
-%
+
 % \listofalgorithmes
 % \newpage
 
@@ -47,29 +48,18 @@
 % Rlated work
 \input{./chapter/relatedwork}
 
-% Architecture
-\input{./chapter/architecture.tex}
-
 % Implementation
 \input{./chapter/implementation.tex}
 
-% System
-% \input{./chapter/system}
-%
-% Learning
-% \input{./chapter/learning}
-%
-% Simulation
-% \input{./chapter/simulation}
-%
 % Experiment
-\input{./chapter/experiment.tex}
+\input{./chapter/evaluation.tex}
+
 % Conclusion
 \input{./chapter/conclusion}
 
 % reference
 \bibliographystyle{IEEEtran}
-% \bibliographystyle{unsrt}
 \bibliography{template}
 
+\end{CJK}
 \end{document}
