@@ -3,5 +3,9 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of network functions.\relax }}{5}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Flow table order of vCPE service.\relax }}{6}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of modification of IP address and port number by NAT service.\relax }}{11}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Illustration of rate limiting for a certain host\relax }}{14}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Architecture of our application identification system in classification phase.\relax }}{16}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Illustration of rate limiting for a certain application.\relax }}{17}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

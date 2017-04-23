@@ -14,6 +14,13 @@
 \contentsline {section}{\numberline {3.3}Service Control}{7}
 \contentsline {section}{\numberline {3.4}Network functions}{8}
 \contentsline {subsection}{\numberline {3.4.1}Firewall}{8}
-\contentsline {chapter}{\numberline {4}Evaluation}{10}
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{11}
-\contentsline {chapter}{Bibliography}{12}
+\contentsline {subsection}{\numberline {3.4.2}NAT}{9}
+\contentsline {subsection}{\numberline {3.4.3}DHCP}{11}
+\contentsline {subsection}{\numberline {3.4.4}Forwarding}{12}
+\contentsline {subsection}{\numberline {3.4.5}QoS}{13}
+\contentsline {subsubsection}{\numberline {3.4.5.1}Rate Limitation of Hosts}{13}
+\contentsline {subsubsection}{\numberline {3.4.5.2}Rate Limitation of Applications}{13}
+\contentsline {subsubsection}{\numberline {3.4.5.3}The Flow Table Order of Forwarding and QoS Service}{15}
+\contentsline {chapter}{\numberline {4}Evaluation}{18}
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{19}
+\contentsline {chapter}{Bibliography}{20}
