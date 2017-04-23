@@ -26,37 +26,37 @@ N.~McKeown, ``Software-defined networking,'' \emph{INFOCOM keynote talk},
   vol.~17, no.~2, pp. 30--32, 2009.
 
 \bibitem{sdn-newnorm}
-\BIBentryALTinterwordspacing
 O.~N. Fundation, ``Software-defined networking: The new norm for networks,''
-  \emph{ONF White Paper}, vol.~2, pp. 2--6, 2012. [Online]. Available:
-  \url{https://www.opennetworking.org/images/stories/downloads/sdn-resources/white-papers/wp-sdn-newnorm.pdf}
-\BIBentrySTDinterwordspacing
+  \emph{ONF White Paper}, vol.~2, pp. 2--6, 2012.
 
 \bibitem{sdn-road}
 N.~Feamster, J.~Rexford, and E.~Zegura, ``The road to {SDN},'' \emph{{ACM}
-  {SIGCOMM} Computer Communication Review}, vol.~44, no.~2, pp. 87--98, apr
+  {SIGCOMM} Computer Communication Review}, vol.~44, no.~2, pp. 87--98, Apr.
   2014.
 
 \bibitem{sdn-compre-survey}
 D.~Kreutz, F.~M.~V. Ramos, P.~E. Verissimo, C.~E. Rothenberg, S.~Azodolmolky,
   and S.~Uhlig, ``Software-defined networking: A comprehensive survey,''
-  \emph{Proceedings of the {IEEE}}, vol. 103, no.~1, pp. 14--76, jan 2015.
+  \emph{Proceedings of the {IEEE}}, vol. 103, no.~1, pp. 14--76, Jan. 2015.
 
 \bibitem{openflow-mckeown-2008}
 N.~McKeown, T.~Anderson, H.~Balakrishnan, G.~Parulkar, L.~Peterson, J.~Rexford,
   S.~Shenker, and J.~Turner, ``{OpenFlow},'' \emph{{ACM} {SIGCOMM} Computer
-  Communication Review}, vol.~38, no.~2, p.~69, mar 2008.
+  Communication Review}, vol.~38, no.~2, p.~69, Mar. 2008.
 
 \bibitem{openflow-spec}
 B.~Pfaff, B.~Lantz, B.~Heller \emph{et~al.}, ``Openflow switch specification,
   version 1.3. 0,'' \emph{Open Networking Foundation}, 2012.
 
 \bibitem{nfv-wp}
-N.~ETSI, ``Network functions virtualization, white paper,'' 2012.
+M.~Chiosi, D.~Clarke, P.~Willis, A.~Reid, J.~Feger, M.~Bugenhagen, W.~Khan,
+  M.~Fargano, C.~Cui, H.~Deng \emph{et~al.}, ``Network functions
+  virtualisation: An introduction, benefits, enablers, challenges and call for
+  action,'' in \emph{SDN and OpenFlow World Congress}, 2012, pp. 22--24.
 
-\bibitem{nfv-archi}
-N.~ISG, ``Network functions virtualisation (nfv)-virtual network functions
-  architecture,'' ETSI, Tech. Rep, Tech. Rep., 2013.
+\bibitem{etsi-nfv-archi}
+{NFV ISG}, ``{GS NFV-SWA 001 V1.1.1 - Network Functions Virtualisation (NFV);
+  Virtual Network Functions Architecture},'' ETSI, Tech. Rep., Dec. 2014.
 
 \bibitem{nfv-survey}
 R.~Mijumbi, J.~Serrat, J.-L. Gorricho, N.~Bouten, F.~D. Turck, and R.~Boutaba,
@@ -68,22 +68,22 @@ R.~Mijumbi, J.~Serrat, J.-L. Gorricho, N.~Bouten, F.~D. Turck, and R.~Boutaba,
 P.~Minoves, O.~Frendved, B.~Peng, A.~Mackarel, and D.~Wilson, ``Virtual {CPE}:
   Enhancing {CPE}\'s deployment and operations through virtualization,'' in
   \emph{4th {IEEE} International Conference on Cloud Computing Technology and
-  Science Proceedings}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, dec
+  Science Proceedings}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, Dec.
   2012.
 
 \bibitem{nfv-home}
 Z.~Bronstein and E.~Shraga, ``{NFV} virtualisation of the home environment,''
   in \emph{2014 {IEEE} 11th Consumer Communications and Networking Conference
-  ({CCNC})}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, jan 2014.
+  ({CCNC})}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, Jan. 2014.
 
-\bibitem{nfv-usecase}
-G.~ETSI, ``Network functions virtualisation (nfv); use cases,'' \emph{V1},
-  vol.~1, pp. 2013--10, 2013.
+\bibitem{etsi-nfv-usecase}
+{NFV ISG}, ``{GS NFV 001 V1.1.1 - Network functions virtualisation (NFV); use
+  cases},'' ETSI, Tech. Rep., Oct. 2013.
 
 \bibitem{virtual-rg}
 M.~Ibanez, N.~M. Madrid, and R.~Seepold, ``Virtualization of residential
   gateways,'' in \emph{2007 Fifth Workshop on Intelligent Solutions in Embedded
-  Systems}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, jun 2007.
+  Systems}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, Jun. 2007.
 
 \bibitem{security-vgw}
 M.~Ibanez, N.~M. \'{\i}~nez Madrid, and R.~Seepold, ``Security management with
@@ -95,44 +95,44 @@ M.~Ibanez, N.~M. \'{\i}~nez Madrid, and R.~Seepold, ``Security management with
 B.~Zamaere, L.~Da, and E.~Kullberg, ``On the design and implementation of a
   virtualized residential gateway,'' in \emph{2012 2nd International Conference
   on Consumer Electronics, Communications and Networks ({CECNet})}.\hskip 1em
-  plus 0.5em minus 0.4em\relax {IEEE}, apr 2012.
+  plus 0.5em minus 0.4em\relax {IEEE}, Apr. 2012.
 
 \bibitem{nfv-hgw-surrogate}
 N.~Herbaut, D.~Negru, G.~Xilouris, and Y.~Chen, ``Migrating to a {NFV}-based
   home gateway: Introducing a surrogate {vNF} approach,'' in \emph{2015 6th
   International Conference on the Network of the Future ({NOF})}.\hskip 1em
-  plus 0.5em minus 0.4em\relax {IEEE}, sep 2015.
+  plus 0.5em minus 0.4em\relax {IEEE}, Sep. 2015.
 
 \bibitem{linux-cpe}
 F.~Sanchez and D.~Brazewell, ``Tethered linux {CPE} for {IP} service
   delivery,'' in \emph{Proceedings of the 2015 1st {IEEE} Conference on Network
   Softwarization ({NetSoft})}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE},
-  apr 2015.
+  Apr. 2015.
 
 \bibitem{nfv-resoure-contrain-cpe}
 R.~Bonafiglia, S.~Miano, S.~Nuccio, F.~Risso, and A.~Sapio, ``Enabling {NFV}
   services on resource-constrained {CPEs},'' in \emph{2016 5th {IEEE}
   International Conference on Cloud Networking (Cloudnet)}.\hskip 1em plus
-  0.5em minus 0.4em\relax {IEEE}, oct 2016.
+  0.5em minus 0.4em\relax {IEEE}, Oct. 2016.
 
 \bibitem{cloud4nfv}
 J.~Soares, M.~Dias, J.~Carapinha, B.~Parreira, and S.~Sargento, ``Cloud4nfv: A
   platform for virtual network functions,'' in \emph{2014 {IEEE} 3rd
   International Conference on Cloud Networking ({CloudNet})}.\hskip 1em plus
-  0.5em minus 0.4em\relax {IEEE}, oct 2014.
+  0.5em minus 0.4em\relax {IEEE}, Oct. 2014.
 
 \bibitem{cloud4nfv-telco}
 J.~Soares, C.~Goncalves, B.~Parreira, P.~Tavares, J.~Carapinha, J.~P. Barraca,
   R.~L. Aguiar, and S.~Sargento, ``Toward a telco cloud environment for service
   functions,'' \emph{{IEEE} Communications Magazine}, vol.~53, no.~2, pp.
-  98--106, feb 2015.
+  98--106, Feb. 2015.
 
 \bibitem{netfate}
 A.~Lombardo, A.~Manzalini, G.~Schembra, G.~Faraci, C.~Rametta, and
   V.~Riccobene, ``An open framework to enable {NetFATE} (network functions at
   the edge),'' in \emph{Proceedings of the 2015 1st {IEEE} Conference on
   Network Softwarization ({NetSoft})}.\hskip 1em plus 0.5em minus 0.4em\relax
-  {IEEE}, apr 2015.
+  {IEEE}, Apr. 2015.
 
 \bibitem{che-wei-master}
 C.-W. Lin, ``{A Novel Virtual CPE Architecture and Service for Enterprises with
@@ -145,8 +145,36 @@ N.-F. Huang, C.-W. Lin, S.-J. Wu, C.-H. Li, and I.-J. Liao, ``A novel virtual
   in \emph{PROCEEDINGS OF THE 9TH IEEE INTERNATIONAL CONFERENCE ON UBI-MEDIA
   COMPUTING" UMEDIA-2016"}, 2016, pp. 104--109.
 
+\bibitem{etsi-nfv-mano}
+{NFV ISG}, ``{GS NFV-MAN 001 V1.1.1 - Network Functions Virtualisation (NFV);
+  Management and Orchestration},'' ETSI, Tech. Rep., Dec. 2014.
+
+\bibitem{etsi-nfv-mano-sdn}
+------, ``{GS NFV-EVE 005 V1.1.1 - Network Functions Virtualisation (NFV);
+  Ecosystem; Report on SDN Usage in NFV Architectural Framework},'' ETSI, Tech.
+  Rep., Dec. 2015.
+
 \bibitem{multiple-flow-table}
-O.~N. Fundation, ``The benefits of multiple flow tables and ttps,'' ONF
-  Technical Report, Tech. Rep., 2015.
+{Open Networking Fundation}, ``The benefits of multiple flow tables and ttps,''
+  {ONF}, Tech. Rep., 2015.
+
+\bibitem{sdn-enabled}
+J.~Matias, J.~Garay, N.~Toledo, J.~Unzilla, and E.~Jacob, ``Toward an
+  {SDN}-enabled {NFV} architecture,'' \emph{{IEEE} Communications Magazine},
+  vol.~53, no.~4, pp. 187--193, Apr. 2015.
+
+\bibitem{etsi-nfv-terminology}
+{NFV ISG}, ``{GS NFV 003 V1.2.1 - Network Functions Virtualisation (NFV);
+  Terminology for Main Concepts in NFV},'' ETSI, Tech. Rep., Dec. 2014.
+
+\bibitem{etsi-nfv-infra}
+------, ``{GS NFV-INF 004 V1.1.1 - Network Functions Virtualisation (NFV);
+  Infrastructure; Hypervisor Domain},'' ETSI, Tech. Rep., Jan. 2015.
+
+\bibitem{sdn-ft}
+M.~Kuźniar, P.~Pereš{\' i}ni, and D.~Kostić, ``What you need to know about
+  sdn flow tables,'' in \emph{Passive and Active Measurement}.\hskip 1em plus
+  0.5em minus 0.4em\relax Springer Science + Business Media, 2015, pp.
+  347--359.
 
 \end{thebibliography}

@@ -1,6 +1,56 @@
 % Google Scholar is good at creating the BibTeX-formatted bibliography.
 % Or open this with some tools like BibDesk
 
+%%%% ETSI
+@techreport{etsi-nfv-archi,
+  title= {{GS NFV-SWA 001 V1.1.1 - Network Functions Virtualisation (NFV); Virtual Network Functions Architecture}},
+  author= {{NFV ISG}},
+  year= {2014},
+  month= dec,
+  institution= {ETSI}
+}
+
+@techreport{etsi-nfv-terminology,
+  title = {{GS NFV 003 V1.2.1 - Network Functions Virtualisation (NFV); Terminology for Main Concepts in NFV}},
+  author= {{NFV ISG}},
+  year = {2014},
+  month = dec,
+  institution={ETSI}
+}
+
+@techreport{etsi-nfv-mano,
+  title = {{GS NFV-MAN 001 V1.1.1 - Network Functions Virtualisation (NFV); Management and Orchestration}},
+  author = {{NFV ISG}},
+  year = {2014},
+  month = dec,
+  institution={ETSI}
+}
+
+@techreport{etsi-nfv-infra,
+  title = {{GS NFV-INF 004 V1.1.1 - Network Functions Virtualisation (NFV); Infrastructure; Hypervisor Domain}},
+  author = {{NFV ISG}},
+  year = {2015},
+  month = jan,
+  institution={ETSI}
+}
+
+@techreport{etsi-nfv-mano-sdn,
+  title = {{GS NFV-EVE 005 V1.1.1 - Network Functions Virtualisation (NFV); Ecosystem; Report on SDN Usage in NFV Architectural Framework}},
+  author = {{NFV ISG}},
+  year = {2015},
+  month = dec,
+  institution={ETSI}
+}
+
+@techreport{etsi-nfv-usecase,
+  title={{GS NFV 001 V1.1.1 - Network functions virtualisation (NFV); use cases}},
+  author={{NFV ISG}},
+  year={2013},
+  month=oct,
+  institution={ETSI}
+}
+
+%%%% Introduction
 % SDN
 @article{sdn-mckeown-2009-talk,
   title={Software-defined networking},
@@ -19,13 +69,12 @@
   volume={2},
   pages={2--6},
   year={2012},
-  url={https://www.opennetworking.org/images/stories/downloads/sdn-resources/white-papers/wp-sdn-newnorm.pdf}
 }
 
 @article{sdn-road,
   doi = {10.1145/2602204.2602219},
   year  = {2014},
-  month = {apr},
+  month = apr,
   publisher = {Association for Computing Machinery ({ACM})},
   volume = {44},
   number = {2},
@@ -38,7 +87,7 @@
 @article{sdn-compre-survey,
   doi = {10.1109/jproc.2014.2371999},
   year  = {2015},
-  month = {jan},
+  month = jan,
   publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
   volume = {103},
   number = {1},
@@ -59,7 +108,7 @@
 @article{openflow-mckeown-2008,
   doi = {10.1145/1355734.1355746},
   year  = {2008},
-  month = {mar},
+  month = mar,
   publisher = {Association for Computing Machinery ({ACM})},
   volume = {38},
   number = {2},
@@ -71,18 +120,12 @@
 
 
 % NFV
-@misc{nfv-wp,
-  title={Network functions virtualization, white paper},
-  author={ETSI, NFVISG},
-  journal={2012-10-20)[2015-02-14]. http://www. esti. org/technologies cluster/technologies/nfv},
+@inproceedings{nfv-wp,
+  title={Network functions virtualisation: An introduction, benefits, enablers, challenges and call for action},
+  author={Chiosi, Margaret and Clarke, Don and Willis, Peter and Reid, Andy and Feger, James and Bugenhagen, Michael and Khan, Waqar and Fargano, Michael and Cui, Chunfeng and Deng, Hui and others},
+  booktitle={SDN and OpenFlow World Congress},
+  pages={22--24},
   year={2012}
-}
-
-@techreport{nfv-archi,
-  title={Network Functions Virtualisation (NFV)-Virtual Network Functions Architecture},
-  author={ISG, NFV},
-  year={2013},
-  institution={ETSI, Tech. Rep}
 }
 
 @article{nfv-survey,
@@ -101,7 +144,7 @@
 @inproceedings{vcpe-enhance,
   doi = {10.1109/cloudcom.2012.6427560},
   year  = {2012},
-  month = {dec},
+  month = dec,
   publisher = {{IEEE}},
   author = {Pau Minoves and Ole Frendved and Bo Peng and Andrew Mackarel and Dave Wilson},
   title = {Virtual {CPE}: Enhancing {CPE}\'s deployment and operations through virtualization},
@@ -111,28 +154,18 @@
 @inproceedings{nfv-home,
   doi = {10.1109/ccnc.2014.6940493},
   year  = {2014},
-  month = {jan},
+  month = jan,
   publisher = {{IEEE}},
   author = {Zvika Bronstein and Eyal Shraga},
   title = {{NFV} virtualisation of the home environment},
   booktitle = {2014 {IEEE} 11th Consumer Communications and Networking Conference ({CCNC})}
 }
 
-% binifit from nfv
-@article{nfv-usecase,
-  title={Network functions virtualisation (NFV); use cases},
-  author={ETSI, GSNFV},
-  journal={V1},
-  volume={1},
-  pages={2013--10},
-  year={2013}
-}
-
 % vCPE no SDN
 @inproceedings{virtual-rg,
   doi = {10.1109/wises.2007.4408509},
   year  = {2007},
-  month = {jun},
+  month = jun,
   publisher = {{IEEE}},
   author = {Mario Ibanez and Natividad Martinez Madrid and Ralf Seepold},
   title = {Virtualization of Residential Gateways},
@@ -151,7 +184,7 @@
 @inproceedings{design-vrgw,
   doi = {10.1109/cecnet.2012.6201791},
   year  = {2012},
-  month = {apr},
+  month = apr,
   publisher = {{IEEE}},
   author = {Bruce Zamaere and Lu Da and Elis Kullberg},
   title = {On the design and implementation of a virtualized residential gateway},
@@ -161,7 +194,7 @@
 @inproceedings{nfv-hgw-surrogate,
   doi = {10.1109/nof.2015.7333284},
   year  = {2015},
-  month = {sep},
+  month = sep,
   publisher = {{IEEE}},
   author = {Nicolas Herbaut and Daniel Negru and George Xilouris and Yiping Chen},
   title = {Migrating to a {NFV}-based Home Gateway: Introducing a Surrogate {vNF} approach},
@@ -171,7 +204,7 @@
 @inproceedings{linux-cpe,
   doi = {10.1109/netsoft.2015.7116166},
   year  = {2015},
-  month = {apr},
+  month = apr,
   publisher = {{IEEE}},
   author = {Fernando Sanchez and David Brazewell},
   title = {Tethered Linux {CPE} for {IP} service delivery},
@@ -182,7 +215,7 @@
 @inproceedings{nfv-resoure-contrain-cpe,
   doi = {10.1109/cloudnet.2016.24},
   year  = {2016},
-  month = {oct},
+  month = oct,
   publisher = {{IEEE}},
   author = {Roberto Bonafiglia and Sebastiano Miano and Sergio Nuccio and Fulvio Risso and Amedeo Sapio},
   title = {Enabling {NFV} Services on Resource-Constrained {CPEs}},
@@ -193,7 +226,7 @@
 @inproceedings{cloud4nfv,
   doi = {10.1109/cloudnet.2014.6969010},
   year  = {2014},
-  month = {oct},
+  month = oct,
   publisher = {{IEEE}},
   author = {Joao Soares and Miguel Dias and Jorge Carapinha and Bruno Parreira and Susana Sargento},
   title = {Cloud4NFV: A platform for Virtual Network Functions},
@@ -203,7 +236,7 @@
 @article{cloud4nfv-telco,
   doi = {10.1109/mcom.2015.7045397},
   year  = {2015},
-  month = {feb},
+  month = feb,
   publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
   volume = {53},
   number = {2},
@@ -216,7 +249,7 @@
 @inproceedings{netfate,
   doi = {10.1109/netsoft.2015.7116179},
   year  = {2015},
-  month = {apr},
+  month = apr,
   publisher = {{IEEE}},
   author = {A. Lombardo and A. Manzalini and G. Schembra and G. Faraci and C. Rametta and V. Riccobene},
   title = {An open framework to enable {NetFATE} (Network Functions at the edge)},
@@ -244,7 +277,7 @@
 @inproceedings{nfv-bw-qoe-video,
   doi = {10.1109/emtc.2014.6996646},
   year  = {2014},
-  month = {nov},
+  month = nov,
   publisher = {{IEEE}},
   author = {George Agapiou and Ioanna Papafili and Stelios Agapiou},
   title = {The role of {SDN} and {NFV} for dynamic bandwidth allocation and {QoE} adaptation of video applications in home networks},
@@ -254,7 +287,7 @@
 @article{vhgw-computer,
   doi = {10.1109/mc.2014.338},
   year  = {2014},
-  month = {nov},
+  month = nov,
   publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
   volume = {47},
   number = {11},
@@ -266,12 +299,37 @@
 
 @techreport{multiple-flow-table,
   title={The Benefits of Multiple Flow Tables and TTPs},
-  author={Open Networking Fundation},
+  author={{Open Networking Fundation}},
   year={2015},
-  institution={ONF Technical Report}
+  institution={{ONF}}
+}
+
+@article{sdn-enabled,
+	doi = {10.1109/mcom.2015.7081093},
+	year = 2015,
+	month = apr,
+	publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+	volume = {53},
+	number = {4},
+	pages = {187--193},
+	author = {Jon Matias and Jokin Garay and Nerea Toledo and Juanjo Unzilla and Eduardo Jacob},
+	title = {Toward an {SDN}-enabled {NFV} architecture},
+	journal = {{IEEE} Communications Magazine}
 }
 
 
+
+
+%%%% implementation
+@incollection{sdn-ft,
+  author = "Maciej Kuźniar and Peter Pereš{\' i}ni and Dejan Kostić",
+  booktitle = "Passive and Active Measurement",
+  doi = "10.1007/978-3-319-15509-8\_26",
+  pages = "347-359",
+  publisher = "Springer Science + Business Media",
+  title = "What you need to know about SDN flow tables",
+  year = "2015"
+}
 
 
 
@@ -279,7 +337,7 @@
 @article{green-cpe,
   doi = {10.1109/tnsm.2015.2454293},
   year  = {2015},
-  month = {sep},
+  month = sep,
   publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
   volume = {12},
   number = {3},

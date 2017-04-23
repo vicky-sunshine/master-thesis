@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.9)  19 APR 2017 17:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.9)  21 APR 2017 15:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -590,13 +590,20 @@ Package microtype Info: Loading configuration file microtype.cfg.
 File: microtype.cfg 2016/05/14 v2.6a microtype main configuration file (RS)
 )) (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip85
+\enit@outerparindent=\dimen113
+\enit@toks=\toks30
+\enit@inbox=\box29
+\enitdp@description=\count104
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
-\c@AlgoLine=\count104
+\c@AlgoLine=\count105
  (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\algocf@hangindent=\skip85
+\algocf@hangindent=\skip86
  (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/relsize/relsize.sty
@@ -609,40 +616,40 @@ Package `algorithm2e' Release 5.1 -- october 19 2015 --
 subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 - Author: Christophe Fiorio (christophe.fiorio@umontpellier.fr)
 ********************************************************
-\skiptotal=\skip86
-\skiplinenumber=\skip87
-\skiprule=\skip88
-\skiphlne=\skip89
-\skiptext=\skip90
-\skiplength=\skip91
-\algomargin=\skip92
-\skipalgocfslide=\skip93
-\algowidth=\dimen113
-\inoutsize=\dimen114
-\inoutindent=\dimen115
-\interspacetitleruled=\dimen116
-\interspacealgoruled=\dimen117
-\interspacetitleboxruled=\dimen118
-\algocf@ruledwidth=\skip94
-\algocf@inoutbox=\box29
-\algocf@inputbox=\box30
-\AlCapSkip=\skip95
-\AlCapHSkip=\skip96
-\algoskipindent=\skip97
-\algocf@nlbox=\box31
-\algocf@hangingbox=\box32
-\algocf@untilbox=\box33
-\algocf@skipuntil=\skip98
-\algocf@capbox=\box34
-\algoheightruledefault=\skip99
-\algoheightrule=\skip100
-\algotitleheightruledefault=\skip101
-\algotitleheightrule=\skip102
-\c@algocfline=\count105
-\c@algocfproc=\count106
-\c@algocf=\count107
-\algocf@algoframe=\box35
-\algocf@algobox=\box36
+\skiptotal=\skip87
+\skiplinenumber=\skip88
+\skiprule=\skip89
+\skiphlne=\skip90
+\skiptext=\skip91
+\skiplength=\skip92
+\algomargin=\skip93
+\skipalgocfslide=\skip94
+\algowidth=\dimen114
+\inoutsize=\dimen115
+\inoutindent=\dimen116
+\interspacetitleruled=\dimen117
+\interspacealgoruled=\dimen118
+\interspacetitleboxruled=\dimen119
+\algocf@ruledwidth=\skip95
+\algocf@inoutbox=\box30
+\algocf@inputbox=\box31
+\AlCapSkip=\skip96
+\AlCapHSkip=\skip97
+\algoskipindent=\skip98
+\algocf@nlbox=\box32
+\algocf@hangingbox=\box33
+\algocf@untilbox=\box34
+\algocf@skipuntil=\skip99
+\algocf@capbox=\box35
+\algoheightruledefault=\skip100
+\algoheightrule=\skip101
+\algotitleheightruledefault=\skip102
+\algotitleheightrule=\skip103
+\c@algocfline=\count106
+\c@algocfproc=\count107
+\c@algocf=\count108
+\algocf@algoframe=\box36
+\algocf@algobox=\box37
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/05/09 v1.1c Standard LaTeX Color (DPC)
  (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -656,7 +663,7 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count108
+\Gread@gobject=\count109
 )) (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
  (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
@@ -668,47 +675,47 @@ File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 96.
 )
-\Gin@req@height=\dimen119
-\Gin@req@width=\dimen120
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
  (/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen121
-\captionmargin@=\dimen122
-\captionwidth=\dimen123
-\caption@tempdima=\dimen124
-\caption@indent=\dimen125
-\caption@parindent=\dimen126
-\caption@hangindent=\dimen127
+\captionmargin=\dimen122
+\captionmargin@=\dimen123
+\captionwidth=\dimen124
+\caption@tempdima=\dimen125
+\caption@indent=\dimen126
+\caption@parindent=\dimen127
+\caption@hangindent=\dimen128
 )
-\c@ContinuedFloat=\count109
+\c@ContinuedFloat=\count110
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
-\c@subfigure=\count110
-\c@subtable=\count111
+\c@subfigure=\count111
+\c@subtable=\count112
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen128
+\bigstrutjot=\dimen129
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen129
-\lightrulewidth=\dimen130
-\cmidrulewidth=\dimen131
-\belowrulesep=\dimen132
-\belowbottomsep=\dimen133
-\aboverulesep=\dimen134
-\abovetopsep=\dimen135
-\cmidrulesep=\dimen136
-\cmidrulekern=\dimen137
-\defaultaddspace=\dimen138
-\@cmidla=\count112
-\@cmidlb=\count113
-\@aboverulesep=\dimen139
-\@belowrulesep=\dimen140
-\@thisruleclass=\count114
-\@lastruleclass=\count115
-\@thisrulewidth=\dimen141
+\heavyrulewidth=\dimen130
+\lightrulewidth=\dimen131
+\cmidrulewidth=\dimen132
+\belowrulesep=\dimen133
+\belowbottomsep=\dimen134
+\aboverulesep=\dimen135
+\abovetopsep=\dimen136
+\cmidrulesep=\dimen137
+\cmidrulekern=\dimen138
+\defaultaddspace=\dimen139
+\@cmidla=\count113
+\@cmidlb=\count114
+\@aboverulesep=\dimen140
+\@belowrulesep=\dimen141
+\@thisruleclass=\count115
+\@lastruleclass=\count116
+\@thisrulewidth=\dimen142
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/diagbox/diagbox.sty
 Package: diagbox 2016/02/24 v2.1 Making table heads with diagonal lines
@@ -722,26 +729,26 @@ Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
 File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 )
-\pIIe@GRAPH=\toks30
-\@arclen=\dimen142
-\@arcrad=\dimen143
-\@tempdimd=\dimen144
+\pIIe@GRAPH=\toks31
+\@arclen=\dimen143
+\@arcrad=\dimen144
+\@tempdimd=\dimen145
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/fp/fp.sty
 Package: fp 1995/04/02
  `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (/usr/local/texlive/2016/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count116
+\actioncount=\count117
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count117
-\FP@xia=\count118
-\FP@xib=\count119
-\FP@xfa=\count120
-\FP@xfb=\count121
-\FP@rega=\count122
-\FP@regb=\count123
-\FP@regs=\count124
-\FP@times=\count125
+\FP@xs=\count118
+\FP@xia=\count119
+\FP@xib=\count120
+\FP@xfa=\count121
+\FP@xfb=\count122
+\FP@rega=\count123
+\FP@regb=\count124
+\FP@regs=\count125
+\FP@times=\count126
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/fp/fp-snap.sty
@@ -754,7 +761,7 @@ Package: fp-trigo 1995/04/14
 Package: fp-pas 1994/08/29
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count126
+\FPseed=\count127
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
 )
@@ -764,21 +771,24 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )) (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen145
-\extrarowheight=\dimen146
-\NC@list=\toks31
-\extratabsurround=\skip103
-\backup@length=\skip104
+\col@sep=\dimen146
+\extrarowheight=\dimen147
+\NC@list=\toks32
+\extratabsurround=\skip104
+\backup@length=\skip105
 )
-\diagbox@boxa=\box37
-\diagbox@boxb=\box38
-\diagbox@boxm=\box39
-\diagbox@wd=\dimen147
-\diagbox@ht=\dimen148
-\diagbox@insepl=\dimen149
-\diagbox@insepr=\dimen150
-\diagbox@outsepl=\dimen151
-\diagbox@outsepr=\dimen152
+\diagbox@boxa=\box38
+\diagbox@boxb=\box39
+\diagbox@boxm=\box40
+\diagbox@wd=\dimen148
+\diagbox@ht=\dimen149
+\diagbox@insepl=\dimen150
+\diagbox@insepr=\dimen151
+\diagbox@outsepl=\dimen152
+\diagbox@outsepr=\dimen153
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box41
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
@@ -792,11 +802,11 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)
 )) (/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count127
-\float@exts=\toks32
-\float@box=\box40
-\@float@everytoks=\toks33
-\@floatcapt=\box41
+\c@float@type=\count128
+\float@exts=\toks33
+\float@box=\box42
+\@float@everytoks=\toks34
+\@floatcapt=\box43
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
@@ -812,18 +822,18 @@ Package ifvtex Info: VTeX not detected.
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count128
-\Gm@cntv=\count129
-\c@Gm@tempcnt=\count130
-\Gm@bindingoffset=\dimen153
-\Gm@wd@mp=\dimen154
-\Gm@odd@mp=\dimen155
-\Gm@even@mp=\dimen156
-\Gm@layoutwidth=\dimen157
-\Gm@layoutheight=\dimen158
-\Gm@layouthoffset=\dimen159
-\Gm@layoutvoffset=\dimen160
-\Gm@dimlist=\toks34
+\Gm@cnth=\count129
+\Gm@cntv=\count130
+\c@Gm@tempcnt=\count131
+\Gm@bindingoffset=\dimen154
+\Gm@wd@mp=\dimen155
+\Gm@odd@mp=\dimen156
+\Gm@even@mp=\dimen157
+\Gm@layoutwidth=\dimen158
+\Gm@layoutheight=\dimen159
+\Gm@layouthoffset=\dimen160
+\Gm@layoutvoffset=\dimen161
+\Gm@dimlist=\toks35
 ) (./thwdef.tex)) (./template.aux)
 \openout1 = `template.aux'.
 
@@ -921,17 +931,17 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 ) (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count131
-\scratchdimen=\dimen161
-\scratchbox=\box42
-\nofMPsegments=\count132
-\nofMParguments=\count133
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count134
-\MPscratchDim=\dimen162
-\MPnumerator=\count135
-\makeMPintoPDFobject=\count136
-\everyMPtoPDFconversion=\toks36
+\scratchcounter=\count132
+\scratchdimen=\dimen162
+\scratchbox=\box44
+\nofMPsegments=\count133
+\nofMParguments=\count134
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count135
+\MPscratchDim=\dimen163
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
+\everyMPtoPDFconversion=\toks37
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO)
  (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
@@ -967,8 +977,9 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
+Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box43
+\AtBeginShipoutBox=\box45
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1084,22 +1095,26 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-)
-\tf@toc=\write3
-\openout3 = `template.toc'.
-
  [5
 color push 0 g 0 G
 color pop
 
 color push 0 g 0 G
 color pop
+])
+\tf@toc=\write3
+\openout3 = `template.toc'.
+
+ [6
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 ] (./template.lof)
 \tf@lof=\write4
 \openout4 = `template.lof'.
 
-
-[6
+ [7
 color push 0 g 0 G
 color pop
 
@@ -1109,7 +1124,7 @@ color pop
 \tf@lot=\write5
 \openout5 = `template.lot'.
 
- [7
+ [8
 color push 0 g 0 G
 color pop
 
@@ -1138,49 +1153,43 @@ color push 0 g 0 G
 color pop
 ]
 Chapter 3.
-) (./chapter/evaluation.tex [4
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+[4
 color push 0 g 0 G
 color pop
 
 color push 0 g 0 G
 color pop
-]
-Chapter 4.
-) (./chapter/conclusion.tex [5
-color push 0 g 0 G
-color pop
-
-color push 0 g 0 G
-color pop
-]
-Chapter 5.
-) (./template.bbl [6
-color push 0 g 0 G
-color pop
-
-color push 0 g 0 G
-color pop
-]
-Underfull \hbox (badness 1688) in paragraph at lines 58--60
-[]\OT1/ptm/m/n/12 (+20) N. ISG, ``Net-work func-tions vir-tu-al-i-sa-tion (nfv)-virtual net-work func-tions
- []
-
-[7
-color push 0 g 0 G
-color pop
-
+] <./fig/desc_nfv_overview.pdf, id=122, 352.54602pt x 243.41309pt>
+File: ./fig/desc_nfv_overview.pdf Graphic file (type pdf)
+ <use ./fig/desc_nfv_overview.pdf>
+Package pdftex.def Info: ./fig/desc_nfv_overview.pdf used on input line 16.
+(pdftex.def)             Requested size: 418.25368pt x 288.7886pt.
+ <./fig/mft_table_overview.pdf, id=123, 1346.02875pt x 434.62375pt>
+File: ./fig/mft_table_overview.pdf Graphic file (type pdf)
+ <use ./fig/mft_table_overview.pdf>
+Package pdftex.def Info: ./fig/mft_table_overview.pdf used on input line 23.
+(pdftex.def)             Requested size: 418.25368pt x 135.0503pt.
+ [5
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
+color push 0 g 0 G
+color pop
 color pop
 color push 0 g 0 G
 color pop
+ <./fig/desc_nfv_overview.pdf>] [6
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
+color push 0 g 0 G
+color pop
 color pop
 color push 0 g 0 G
 color pop
+ <./fig/mft_table_overview.pdf>] [7
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1196,6 +1205,37 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+]) (./chapter/evaluation.tex [9
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+]
+Chapter 4.
+) (./chapter/conclusion.tex [10
+color push 0 g 0 G
+color pop
+
+color push 0 g 0 G
+color pop
+]
+Chapter 5.
+) (./template.bbl [11
+color push 0 g 0 G
+color pop
+
+color push 0 g 0 G
+color pop
+] [12
+color push 0 g 0 G
+color pop
+
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1204,7 +1244,15 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [9
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [13
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1223,11 +1271,47 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-]) [10
+] [14
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [15
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]) [16
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1240,21 +1324,21 @@ color pop
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10850 strings out of 493014
- 157431 string characters out of 6133351
- 284882 words of memory out of 5000000
- 13844 multiletter control sequences out of 15000+600000
- 59136 words of font info for 220 fonts, out of 8000000 for 9000
+ 11271 strings out of 493014
+ 164262 string characters out of 6133351
+ 292304 words of memory out of 5000000
+ 14204 multiletter control sequences out of 15000+600000
+ 64444 words of font info for 256 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,38p,922b,5902s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,39p,811b,6000s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu4e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu51.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu52.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu53.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu54.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu57.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu58.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu59.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5b.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5d.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5e.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/arphic/bkaiu/bkaiu62.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu63.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu64.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu65.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu67.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu6c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu6e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu74.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu78.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7b.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7d.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7f.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu80.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu82.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu83.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu84.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu86.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu88.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu89.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8d.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu9a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu9e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiuff.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (17 pages, 186331 bytes).
+Output written on template.pdf (24 pages, 363955 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
+ 320 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 30881 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 31915 words of extra memory for PDF output out of 35830 (max. 10000000)
 
