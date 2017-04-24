@@ -55,14 +55,20 @@ M.~Chiosi, D.~Clarke, P.~Willis, A.~Reid, J.~Feger, M.~Bugenhagen, W.~Khan,
   action,'' in \emph{SDN and OpenFlow World Congress}, 2012, pp. 22--24.
 
 \bibitem{etsi-nfv-archi}
-{NFV ISG}, ``{GS NFV-SWA 001 V1.1.1 - Network Functions Virtualisation (NFV);
-  Virtual Network Functions Architecture},'' ETSI, Tech. Rep., Dec. 2014.
+{NFV ISG}, ``{Network Functions Virtualisation (NFV); Virtual Network Functions
+  Architecture},'' ETSI, Tech. Rep. GS NFV-SWA 001 V1.1.1, Dec. 2014.
 
 \bibitem{nfv-survey}
 R.~Mijumbi, J.~Serrat, J.-L. Gorricho, N.~Bouten, F.~D. Turck, and R.~Boutaba,
   ``Network function virtualization: State-of-the-art and research
   challenges,'' \emph{{IEEE} Communications Surveys {\&} Tutorials}, vol.~18,
   no.~1, pp. 236--262, 2016.
+
+\bibitem{nec-vcpe}
+\BIBentryALTinterwordspacing
+{NEC/Netcracker}, ``Nec's vcpe solution.'' [Online]. Available:
+  \url{http://www.nec.com/en/global/solutions/tcs/vcpe/}
+\BIBentrySTDinterwordspacing
 
 \bibitem{vcpe-enhance}
 P.~Minoves, O.~Frendved, B.~Peng, A.~Mackarel, and D.~Wilson, ``Virtual {CPE}:
@@ -77,8 +83,8 @@ Z.~Bronstein and E.~Shraga, ``{NFV} virtualisation of the home environment,''
   ({CCNC})}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, Jan. 2014.
 
 \bibitem{etsi-nfv-usecase}
-{NFV ISG}, ``{GS NFV 001 V1.1.1 - Network functions virtualisation (NFV); use
-  cases},'' ETSI, Tech. Rep., Oct. 2013.
+{NFV ISG}, ``{Network functions virtualisation (NFV); use cases},'' ETSI, Tech.
+  Rep. GS NFV 001 V1.1.1, Oct. 2013.
 
 \bibitem{virtual-rg}
 M.~Ibanez, N.~M. Madrid, and R.~Seepold, ``Virtualization of residential
@@ -146,13 +152,13 @@ N.-F. Huang, C.-W. Lin, S.-J. Wu, C.-H. Li, and I.-J. Liao, ``A novel virtual
   COMPUTING" UMEDIA-2016"}, 2016, pp. 104--109.
 
 \bibitem{etsi-nfv-mano}
-{NFV ISG}, ``{GS NFV-MAN 001 V1.1.1 - Network Functions Virtualisation (NFV);
-  Management and Orchestration},'' ETSI, Tech. Rep., Dec. 2014.
+{NFV ISG}, ``{Network Functions Virtualisation (NFV); Management and
+  Orchestration},'' ETSI, Tech. Rep. GS NFV-MAN 001 V1.1.1, Dec. 2014.
 
 \bibitem{etsi-nfv-mano-sdn}
-------, ``{GS NFV-EVE 005 V1.1.1 - Network Functions Virtualisation (NFV);
-  Ecosystem; Report on SDN Usage in NFV Architectural Framework},'' ETSI, Tech.
-  Rep., Dec. 2015.
+------, ``{Network Functions Virtualisation (NFV); Ecosystem; Report on SDN
+  Usage in NFV Architectural Framework},'' ETSI, Tech. Rep. GS NFV-EVE 005
+  V1.1.1, Dec. 2015.
 
 \bibitem{multiple-flow-table}
 {Open Networking Fundation}, ``The benefits of multiple flow tables and ttps,''
@@ -164,12 +170,12 @@ J.~Matias, J.~Garay, N.~Toledo, J.~Unzilla, and E.~Jacob, ``Toward an
   vol.~53, no.~4, pp. 187--193, Apr. 2015.
 
 \bibitem{etsi-nfv-terminology}
-{NFV ISG}, ``{GS NFV 003 V1.2.1 - Network Functions Virtualisation (NFV);
-  Terminology for Main Concepts in NFV},'' ETSI, Tech. Rep., Dec. 2014.
+{NFV ISG}, ``{Network Functions Virtualisation (NFV); Terminology for Main
+  Concepts in NFV},'' ETSI, Tech. Rep. GS NFV 003 V1.2.1, Dec. 2014.
 
 \bibitem{etsi-nfv-infra}
-------, ``{GS NFV-INF 004 V1.1.1 - Network Functions Virtualisation (NFV);
-  Infrastructure; Hypervisor Domain},'' ETSI, Tech. Rep., Jan. 2015.
+------, ``{Network Functions Virtualisation (NFV); Infrastructure; Hypervisor
+  Domain},'' ETSI, Tech. Rep. GS NFV-INF 004 V1.1.1, Jan. 2015.
 
 \bibitem{sdn-ft}
 M.~Kuźniar, P.~Pereš{\' i}ni, and D.~Kostić, ``What you need to know about

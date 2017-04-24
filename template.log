@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.9)  24 APR 2017 08:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.9)  24 APR 2017 12:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1247,12 +1247,12 @@ color pop
 
 color push 0 g 0 G
 color pop
-] <./fig/desc_nfv_overview.pdf, id=332, 352.54602pt x 243.41309pt>
+] <./fig/desc_nfv_overview.pdf, id=334, 352.54602pt x 243.41309pt>
 File: ./fig/desc_nfv_overview.pdf Graphic file (type pdf)
  <use ./fig/desc_nfv_overview.pdf>
 Package pdftex.def Info: ./fig/desc_nfv_overview.pdf used on input line 21.
 (pdftex.def)             Requested size: 418.25368pt x 288.7886pt.
- <./fig/mft_table_overview.pdf, id=333, 1346.02875pt x 434.62375pt>
+ <./fig/mft_table_overview.pdf, id=335, 1346.02875pt x 434.62375pt>
 File: ./fig/mft_table_overview.pdf Graphic file (type pdf)
  <use ./fig/mft_table_overview.pdf>
 Package pdftex.def Info: ./fig/mft_table_overview.pdf used on input line 28.
@@ -1302,7 +1302,7 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
-] <./fig/mft_nat.pdf, id=391, 573.14125pt x 318.18875pt>
+] <./fig/mft_nat.pdf, id=393, 573.14125pt x 318.18875pt>
 File: ./fig/mft_nat.pdf Graphic file (type pdf)
  <use ./fig/mft_nat.pdf>
 Package pdftex.def Info: ./fig/mft_nat.pdf used on input line 103.
@@ -1341,7 +1341,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] <./fig/mft_qos_rate_host.png, id=416, 774.895pt x 534.99875pt>
+] <./fig/mft_qos_rate_host.png, id=418, 774.895pt x 534.99875pt>
 File: ./fig/mft_qos_rate_host.png Graphic file (type png)
  <use ./fig/mft_qos_rate_host.png>
 Package pdftex.def Info: ./fig/mft_qos_rate_host.png used on input line 151.
@@ -1360,12 +1360,12 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/mft_qos_rate_host.png>] <./fig/classification_classifying.pdf, id=430, 549.05125pt x 499.8675pt>
+ <./fig/mft_qos_rate_host.png>] <./fig/classification_classifying.pdf, id=432, 549.05125pt x 499.8675pt>
 File: ./fig/classification_classifying.pdf Graphic file (type pdf)
  <use ./fig/classification_classifying.pdf>
 Package pdftex.def Info: ./fig/classification_classifying.pdf used on input line 167.
 (pdftex.def)             Requested size: 418.25368pt x 380.79564pt.
- <./fig/mft_qos_rate_app.png, id=431, 961.5925pt x 706.64pt>
+ <./fig/mft_qos_rate_app.png, id=433, 961.5925pt x 706.64pt>
 File: ./fig/mft_qos_rate_app.png Graphic file (type png)
  <use ./fig/mft_qos_rate_app.png>
 Package pdftex.def Info: ./fig/mft_qos_rate_app.png used on input line 174.
@@ -1467,9 +1467,12 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [23
-color push 0 g 0 G
-color pop
+]
+Underfull \hbox (badness 4108) in paragraph at lines 155--157
+[]\OT1/ptm/m/n/12 (+20) NFV ISG, ``Net-work Func-tions Vir-tu-al-i-sa-tion (NFV); Man-age-ment and
+ []
+
+[23
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1497,6 +1500,10 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
  (./template.aux)
@@ -1511,10 +1518,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 14661 strings out of 493014
- 215804 string characters out of 6133351
- 370981 words of memory out of 5000000
- 17457 multiletter control sequences out of 15000+600000
+ 14663 strings out of 493014
+ 215827 string characters out of 6133351
+ 371012 words of memory out of 5000000
+ 17458 multiletter control sequences out of 15000+600000
  65791 words of font info for 269 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,15n,39p,1139b,9162s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1522,10 +1529,10 @@ Here is how much of TeX's memory you used:
 pe1/arphic/bkaiu/bkaiu62.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu63.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu64.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu65.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu67.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu6c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu6e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu74.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu78.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7b.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7d.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7f.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu80.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu82.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu83.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu84.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu86.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu88.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu89.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8d.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu9a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu9e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiuff.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (32 pages, 550195 bytes).
+Output written on template.pdf (32 pages, 550614 bytes).
 PDF statistics:
- 659 PDF objects out of 1000 (max. 8388607)
- 520 compressed objects within 6 object streams
- 104 named destinations out of 1000 (max. 500000)
+ 663 PDF objects out of 1000 (max. 8388607)
+ 524 compressed objects within 6 object streams
+ 105 named destinations out of 1000 (max. 500000)
  32143 words of extra memory for PDF output out of 35830 (max. 10000000)
 
