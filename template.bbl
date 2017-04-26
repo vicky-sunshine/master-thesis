@@ -72,7 +72,7 @@ R.~Mijumbi, J.~Serrat, J.-L. Gorricho, N.~Bouten, F.~D. Turck, and R.~Boutaba,
 
 \bibitem{vcpe-enhance}
 P.~Minoves, O.~Frendved, B.~Peng, A.~Mackarel, and D.~Wilson, ``Virtual {CPE}:
-  Enhancing {CPE}\'s deployment and operations through virtualization,'' in
+  Enhancing {CPE}'s deployment and operations through virtualization,'' in
   \emph{4th {IEEE} International Conference on Cloud Computing Technology and
   Science Proceedings}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, Dec.
   2012.
@@ -92,10 +92,9 @@ M.~Ibanez, N.~M. Madrid, and R.~Seepold, ``Virtualization of residential
   Systems}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, Jun. 2007.
 
 \bibitem{security-vgw}
-M.~Ibanez, N.~M. \'{\i}~nez Madrid, and R.~Seepold, ``Security management with
-  virtual gateway platforms,'' in \emph{2009 Third International Conference on
-  Emerging Security Information, Systems and Technologies}.\hskip 1em plus
-  0.5em minus 0.4em\relax {IEEE}, 2009.
+------, ``Security management with virtual gateway platforms,'' in \emph{2009
+  Third International Conference on Emerging Security Information, Systems and
+  Technologies}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, 2009.
 
 \bibitem{design-vrgw}
 B.~Zamaere, L.~Da, and E.~Kullberg, ``On the design and implementation of a
@@ -168,19 +167,5 @@ N.-F. Huang, C.-W. Lin, S.-J. Wu, C.-H. Li, and I.-J. Liao, ``A novel virtual
 J.~Matias, J.~Garay, N.~Toledo, J.~Unzilla, and E.~Jacob, ``Toward an
   {SDN}-enabled {NFV} architecture,'' \emph{{IEEE} Communications Magazine},
   vol.~53, no.~4, pp. 187--193, Apr. 2015.
-
-\bibitem{etsi-nfv-terminology}
-{NFV ISG}, ``{Network Functions Virtualisation (NFV); Terminology for Main
-  Concepts in NFV},'' ETSI, Tech. Rep. GS NFV 003 V1.2.1, Dec. 2014.
-
-\bibitem{etsi-nfv-infra}
-------, ``{Network Functions Virtualisation (NFV); Infrastructure; Hypervisor
-  Domain},'' ETSI, Tech. Rep. GS NFV-INF 004 V1.1.1, Jan. 2015.
-
-\bibitem{sdn-ft}
-M.~Kuźniar, P.~Pereš{\' i}ni, and D.~Kostić, ``What you need to know about
-  sdn flow tables,'' in \emph{Passive and Active Measurement}.\hskip 1em plus
-  0.5em minus 0.4em\relax Springer Science + Business Media, 2015, pp.
-  347--359.
 
 \end{thebibliography}
