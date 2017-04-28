@@ -1,5 +1,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Service deployment model.\relax }}{4}{figure.caption.7}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces ETSI MANO Architecture.\relax }}{5}{figure.caption.8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces HSNL vCPE MANO Architecture.\relax }}{6}{figure.caption.9}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces HSNL vCPE framework overview.\relax }}{7}{figure.caption.10}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of network functions.\relax }}{11}{figure.caption.11}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Flow table order of vCPE service.\relax }}{12}{figure.caption.12}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of modification of IP address and port number by NAT service.\relax }}{17}{figure.caption.15}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Illustration of rate limiting for a certain host\relax }}{20}{figure.caption.17}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Architecture of our application identification system in classification phase.\relax }}{22}{figure.caption.18}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Illustration of rate limiting for a certain application.\relax }}{23}{figure.caption.19}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

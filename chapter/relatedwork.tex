@@ -1,4 +1,4 @@
-\chapter{Related Work}\label{ch:related_work}
+\chapter{Related Work} \label{ch:related_work}
 \section{SDN}
 
 
@@ -31,28 +31,48 @@ Unlike a related study that explored the virtualization of network function in P
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=\textwidth]{./fig/desc_service_deployment}
+\includegraphics[width=\textwidth]{./fig/hsnl_service_deployment}
 \caption{Service deployment model.}
-\label{fig:desc_service_deployment}
+\label{fig:hsnl_service_deployment}
 \end{figure}
 
-Fig. \ref{fig:desc_service_deployment} illustrates the service deployment model. Each green area is a local network domain of the customer. An SDN switch is presented at the gateway of this domain. The customer can subscribe to our vCPE service through our dashboard. After subscription, the vCPE system creates a new Docker container in which an SDN controller is run. The customer only needs to set up the gateway SDN switch to connect the SDN controller through the OpenFlow protocol; thereafter, the switch executes the service.
+Fig. \ref{fig:hsnl_service_deployment} illustrates the service deployment model. Each green area is a local network domain of the customer. An SDN switch is presented at the gateway of this domain. The customer can subscribe to our vCPE service through our dashboard. After subscription, the vCPE system creates a new Docker container in which an SDN controller is run. The customer only needs to set up the gateway SDN switch to connect the SDN controller through the OpenFlow protocol; thereafter, the switch executes the service.
 
 
 \subsection{Architecture of the Main System}
 \subsubsection{Reference Architecture - ETSI NFV MANO Model}
 
+\begin{figure}[!t]
+\centering
+\includegraphics[width=0.8\textwidth]{./fig/etsi_nfv_architecture}
+\caption{ETSI MANO Architecture.}
+\label{fig:etsi_nfv_architecture}
+\end{figure}
+
+HSNL virtual CPE platform \cite{che-wei-master, che-wei-umedia} is inspired by ETSI NFV MANO model and designed under the concept of the ETSI NFV reference architectural framework \cite{etsi-nfv-archi}.
+
+Shown in Fig. \ref{fig:etsi_nfv_architecture}, the right side of the ETSI-NFV architecture are: NFV Orchestrator (NFVO), VNF Manager (VNFM), and Virtualized Infrastructure Manager (VIM). NFVO is responsible for the orchestration and management of NFVI resources and to implement network services on the NFVI. VNFM is responsible for the lifecycle management of VNF instances (instantiation, configuration, update, scale up/down, termination, etc). VIM is responsible for controlling/managing the NFVI resources.
+
 \subsubsection{vCPE Platform NFV Architecture}
-
-
-\subsection{System Implementation}
-Turning now to the implementation of HSNL Virtual CPE platform.  The system overview (Fig. \ref{fig:desc_vcpe_framework}) includes an infrastructure controller, an infrastructure orchestrator, a cloud database, VNF controllers and a VNF Orchestrator. Each component is introduced in the following subsubsection.
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=\textwidth]{./fig/desc_vcpe_framework}
+\includegraphics[width=0.8\textwidth]{./fig/hsnl_vcpe_architecture}
+\caption{HSNL vCPE MANO Architecture.}
+\label{fig:hsnl_vcpe_architecture}
+\end{figure}
+
+The HSNL virtual CPE architecture (Fig. \ref{fig:hsnl_vcpe_architecture}) expands the scope of ETSI NFV MANO model and we will go more detail in \ref{ssec:hsnl_system_imple}.
+
+
+\subsection{System Implementation} \label{ssec:hsnl_system_imple}
+Turning now to the implementation of HSNL Virtual CPE platform.  The system overview (Fig. \ref{fig:hsnl_vcpe_framework}) includes an infrastructure controller, an infrastructure orchestrator, a cloud database, VNF controllers and a VNF Orchestrator. Each component is introduced in the following subsubsection.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\textwidth]{./fig/hsnl_vcpe_framework}
 \caption{HSNL vCPE framework overview.}
-\label{fig:desc_vcpe_framework}
+\label{fig:hsnl_vcpe_framework}
 \end{figure}
 
 \subsubsection{Infrastructure Controller}

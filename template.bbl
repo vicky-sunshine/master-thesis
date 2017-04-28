@@ -168,4 +168,21 @@ J.~Matias, J.~Garay, N.~Toledo, J.~Unzilla, and E.~Jacob, ``Toward an
   {SDN}-enabled {NFV} architecture,'' \emph{{IEEE} Communications Magazine},
   vol.~53, no.~4, pp. 187--193, Apr. 2015.
 
+\bibitem{ryu}
+``Ryu {SDN} framework,'' \url{http://osrg.github.io/ryu/}.
+
+\bibitem{etsi-nfv-terminology}
+{NFV ISG}, ``{Network Functions Virtualisation (NFV); Terminology for Main
+  Concepts in NFV},'' ETSI, Tech. Rep. GS NFV 003 V1.2.1, Dec. 2014.
+
+\bibitem{etsi-nfv-infra}
+------, ``{Network Functions Virtualisation (NFV); Infrastructure; Hypervisor
+  Domain},'' ETSI, Tech. Rep. GS NFV-INF 004 V1.1.1, Jan. 2015.
+
+\bibitem{sdn-ft}
+M.~Kuźniar, P.~Pereš{\' i}ni, and D.~Kostić, ``What you need to know about
+  sdn flow tables,'' in \emph{Passive and Active Measurement}.\hskip 1em plus
+  0.5em minus 0.4em\relax Springer Science + Business Media, 2015, pp.
+  347--359.
+
 \end{thebibliography}
