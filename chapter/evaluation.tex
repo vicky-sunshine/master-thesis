@@ -1,6 +1,9 @@
 \chapter{Performance Evaluation} \label{ch:evaluation}
 
-To evaluate the efficiency and flexibility of multiple flow table mechanism, the vCPE service with the proposed mechanism was deployed by the HSNL vCPE framework and two kinds of experiments are organized as follow: multiple table performance evaluation and integration evaluation. The performance measurement focused on measuring the NAT anf forwarding performance on Virtual CPE. The integration evaluation was designed for proving the functionality of all network functions of our vCPE, and thus demonstrating the flexibility of our proposed multiple flow table mechanism to integrate with another services.
+To evaluate the efficiency and flexibility of multiple flow table mechanism, the vCPE service with the proposed mechanism was deployed by the HSNL vCPE framework and two kinds of experiments are organized as follow: multiple table performance evaluation and integration evaluation.
+The performance measurement focused on measuring the NAT anf forwarding performance on Virtual CPE.
+The integration evaluation was designed for proving the functionality of all network functions of our vCPE, and thus demonstrating the flexibility of our proposed multiple flow table mechanism to integrate with another services.
+
 \section{Multiple Table Performance}
 
 \begin{figure}[!t]
@@ -10,10 +13,13 @@ To evaluate the efficiency and flexibility of multiple flow table mechanism, the
 \label{fig:throughput_measurement_scenario}
 \end{figure}
 
-Implementing a single flow table framework is easier than implementing a multiple flow table framework; however, multiple flow table frameworks are more flexible. To verify the efficiency of the multiple flow table vCPE framework, we conducted an experiment by using the NAT and forwarding service to compare the throughput between single flow table vCPE and multiple flow table vCPE.
+Implementing a single flow table framework is easier than implementing a multiple flow table framework; however, multiple flow table frameworks are more flexible.
+To verify the efficiency of the multiple flow table vCPE framework, we conducted an experiment by using the NAT and forwarding service to compare the throughput between single flow table vCPE and multiple flow table vCPE.
 
-An overview of the experimental environment is presented in Fig. \ref{fig:throughput_measurement_scenario}. The NFV controller was run on the Dell PowerEdge R630 rack server, and the EdgeCore AS5712-54X \cite{edge-core-switch} was used as the SDN switch.
-We used iPerf \cite{iperf} to generate network traffic. The iPerf server connected the public IP address with 140.114.71.176, and then the iPerf client connected to the SDN switch and was controlled by the NFV controller.
+An overview of the experimental environment is presented in Fig. \ref{fig:throughput_measurement_scenario}.
+The NFV controller was run on the Dell PowerEdge R630 rack server, and the EdgeCore AS5712-54X \cite{edge-core-switch} was used as the SDN switch.
+We used iPerf \cite{iperf} to generate network traffic.
+The iPerf server connected the public IP address with 140.114.71.176, and then the iPerf client connected to the SDN switch and was controlled by the NFV controller.
 The NFV controller ran the NAT service, but used different frameworks, a single flow table and multiple flow table.
 
 \begin{figure}[!t]
@@ -53,8 +59,10 @@ We used a desktop computer as the experimental host to record the bandwidth ever
 
 As shown in Fig. \ref{fig:integration_host}, we started downloading the file without rate limiting and the rate was between 40,000 and 70,000 Kbps.
 At the \nth{8} second, we limited the host 1 to 2048 Kbps and host 2 to 1024 Kbps by adding the rule of their MAC address.
-Then the bandwidth from host 1 and host 2 is decreasing. Host 1 and host 2 were limited to approximately 2048 Kbps and 1024 Kbps, respectively.
-At the \nth{42} second, we change the bandwidth to host 2. That is, we set the bandwidth to host 2 from 1024 Kbps to 5120 Kbps.
+Then the bandwidth from host 1 and host 2 is decreasing.
+Host 1 and host 2 were limited to approximately 2048 Kbps and 1024 Kbps, respectively.
+At the \nth{42} second, we change the bandwidth to host 2.
+That is, we set the bandwidth to host 2 from 1024 Kbps to 5120 Kbps.
 We observed that the bandwidth of the host 2 rapidly increased to 5120 Kbps.
 
 
@@ -69,13 +77,15 @@ We observed that the bandwidth of the host 2 rapidly increased to 5120 Kbps.
 \end{figure}
 
 
-Our experimental environment is presented in Fig. \ref{fig:integration_evaluation}. In our experimental environment, we mirror all traffic from the SDN switch to application classification system and identify those flows belong to which application.
+Our experimental environment is presented in Fig. \ref{fig:integration_evaluation}.
+In our experimental environment, we mirror all traffic from the SDN switch to application classification system and identify those flows belong to which application.
 Then the application classification system uploaded the classification results to the database.
 Subsequently, the controller received the results from the database and updated the flow information of the applications.
 Therefore, we could use the flow information (5-tuple and classification results) to limit the application bandwidth.
 
 We selected FileZilla to verify our function for limiting applications and there are two hosts (host 1 and host 2) in the same network domain.
-Then we limited the bandwidth of FileZilla in this network domain. That is, the sum of bandwidths from host 1 and host 2.
+Then we limited the bandwidth of FileZilla in this network domain.
+That is, the sum of bandwidths from host 1 and host 2.
 
 \begin{figure}[!t]
 \centering
