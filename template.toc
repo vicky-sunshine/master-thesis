@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {2.4.2}NetFate}{3}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Ericsson CPE}{3}{subsection.2.4.3}
 \contentsline {section}{\numberline {2.5}HSNL vCPE framework}{3}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Deploymeny Model}{4}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.1}Deployment Model}{4}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Architecture of the Main System}{5}{subsection.2.5.2}
 \contentsline {subsubsection}{\numberline {2.5.2.1}Reference Architecture - ETSI NFV MANO Model}{5}{subsubsection.2.5.2.1}
 \contentsline {subsubsection}{\numberline {2.5.2.2}vCPE Platform NFV Architecture}{6}{subsubsection.2.5.2.2}
@@ -30,15 +30,20 @@
 \contentsline {subsection}{\numberline {3.1.2}Stateless Processing Component}{11}{subsection.3.1.2}
 \contentsline {section}{\numberline {3.2}Multiple Flow Table Strategy}{12}{section.3.2}
 \contentsline {section}{\numberline {3.3}Service Control}{13}{section.3.3}
-\contentsline {section}{\numberline {3.4}Network functions}{14}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Firewall}{14}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}NAT}{15}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}DHCP}{17}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Forwarding}{18}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}QoS}{19}{subsection.3.4.5}
-\contentsline {subsubsection}{\numberline {3.4.5.1}Rate Limitation of Hosts}{19}{subsubsection.3.4.5.1}
-\contentsline {subsubsection}{\numberline {3.4.5.2}Rate Limitation of Applications}{19}{subsubsection.3.4.5.2}
-\contentsline {subsubsection}{\numberline {3.4.5.3}The Flow Table Order of Forwarding and QoS Service}{22}{subsubsection.3.4.5.3}
-\contentsline {chapter}{\numberline {4}Evaluation}{24}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{25}{chapter.5}
-\contentsline {chapter}{Bibliography}{26}{chapter*.20}
+\contentsline {section}{\numberline {3.4}Network functions}{15}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Firewall}{15}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}NAT}{16}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}DHCP}{18}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Forwarding}{19}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Traffic Mirroring}{20}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.6}QoS}{20}{subsection.3.4.6}
+\contentsline {subsubsection}{\numberline {3.4.6.1}Rate Limitation of Hosts}{20}{subsubsection.3.4.6.1}
+\contentsline {subsubsection}{\numberline {3.4.6.2}Rate Limitation of Applications}{21}{subsubsection.3.4.6.2}
+\contentsline {subsubsection}{\numberline {3.4.6.3}The Flow Table Order of Forwarding and QoS Service}{22}{subsubsection.3.4.6.3}
+\contentsline {chapter}{\numberline {4}Performance Evaluation}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}Multiple Table Performance}{25}{section.4.1}
+\contentsline {section}{\numberline {4.2}Integration Evaluation}{28}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Evaluation of QoS When Host Bandwidth Is Limited}{28}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Evaluation of QoS When Application Bandwidth Is Limited}{29}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{32}{chapter.5}
+\contentsline {chapter}{Bibliography}{33}{chapter*.26}

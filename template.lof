@@ -7,9 +7,14 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of network functions.\relax }}{11}{figure.caption.11}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Flow table order of vCPE service.\relax }}{12}{figure.caption.12}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of modification of IP address and port number by NAT service.\relax }}{17}{figure.caption.15}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Illustration of rate limiting for a certain host\relax }}{20}{figure.caption.17}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Architecture of our application identification system in classification phase.\relax }}{21}{figure.caption.18}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Illustration of rate limiting for a certain application.\relax }}{22}{figure.caption.19}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Example of modification of IP address and port number by NAT service.\relax }}{18}{figure.caption.16}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Illustration of rate limiting for a certain host\relax }}{21}{figure.caption.18}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Architecture of our application identification system in classification phase.\relax }}{23}{figure.caption.19}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Illustration of rate limiting for a certain application.\relax }}{24}{figure.caption.20}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Multiple Table Performance Evaluation Scenario.\relax }}{26}{figure.caption.21}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Results of Multiple Table Performance Evaluation.\relax }}{27}{figure.caption.22}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Limit the rate of a certain host.\relax }}{28}{figure.caption.23}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Scenario of integration evaluation.\relax }}{29}{figure.caption.24}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Limit the rate of Filezilla.\relax }}{30}{figure.caption.25}
 \addvspace {10\p@ }

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.9)  28 APR 2017 13:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.9)  12 JUN 2017 18:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -597,6 +597,8 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@toks=\toks30
 \enit@inbox=\box29
 \enitdp@description=\count104
+) (/usr/local/texlive/2016/texmf-dist/tex/generic/genmisc/nth.sty
+Package: nth 2002/02/27
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
 \c@AlgoLine=\count105
@@ -1157,7 +1159,7 @@ color pop
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 ) [2
 color push 0 g 0 G
 color pop
@@ -1245,7 +1247,7 @@ color pop
 
 color push 0 g 0 G
 color pop
-] <./fig/hsnl_service_deployment.pdf, id=415, 554.07pt x 556.0775pt>
+] <./fig/hsnl_service_deployment.pdf, id=451, 554.07pt x 556.0775pt>
 File: ./fig/hsnl_service_deployment.pdf Graphic file (type pdf)
  <use ./fig/hsnl_service_deployment.pdf>
 Package pdftex.def Info: ./fig/hsnl_service_deployment.pdf used on input line 34.
@@ -1259,7 +1261,7 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/hsnl_service_deployment.pdf>] <./fig/etsi_nfv_architecture.png, id=429, 857.2025pt x 791.95876pt>
+ <./fig/hsnl_service_deployment.pdf>] <./fig/etsi_nfv_architecture.png, id=466, 857.2025pt x 791.95876pt>
 File: ./fig/etsi_nfv_architecture.png Graphic file (type png)
  <use ./fig/etsi_nfv_architecture.png>
 Package pdftex.def Info: ./fig/etsi_nfv_architecture.png used on input line 47.
@@ -1273,7 +1275,7 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/etsi_nfv_architecture.png>] <./fig/hsnl_vcpe_architecture.png, id=439, 902.37125pt x 842.14626pt>
+ <./fig/etsi_nfv_architecture.png>] <./fig/hsnl_vcpe_architecture.png, id=476, 902.37125pt x 842.14626pt>
 File: ./fig/hsnl_vcpe_architecture.png Graphic file (type png)
  <use ./fig/hsnl_vcpe_architecture.png>
 Package pdftex.def Info: ./fig/hsnl_vcpe_architecture.png used on input line 60.
@@ -1287,7 +1289,7 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/hsnl_vcpe_architecture.png>] <./fig/hsnl_vcpe_framework.pdf, id=447, 537.00626pt x 372.39125pt>
+ <./fig/hsnl_vcpe_architecture.png>] <./fig/hsnl_vcpe_framework.pdf, id=484, 537.00626pt x 372.39125pt>
 File: ./fig/hsnl_vcpe_framework.pdf Graphic file (type pdf)
  <use ./fig/hsnl_vcpe_framework.pdf>
 Package pdftex.def Info: ./fig/hsnl_vcpe_framework.pdf used on input line 73.
@@ -1319,16 +1321,16 @@ color pop
 
 color push 0 g 0 G
 color pop
-] <./fig/nfv_overview.pdf, id=477, 352.54602pt x 243.41309pt>
+] <./fig/nfv_overview.pdf, id=515, 352.54602pt x 243.41309pt>
 File: ./fig/nfv_overview.pdf Graphic file (type pdf)
  <use ./fig/nfv_overview.pdf>
-Package pdftex.def Info: ./fig/nfv_overview.pdf used on input line 18.
-(pdftex.def)             Requested size: 334.60422pt x 231.03311pt.
- <./fig/mft_table_overview.pdf, id=478, 1346.02875pt x 434.62375pt>
-File: ./fig/mft_table_overview.pdf Graphic file (type pdf)
- <use ./fig/mft_table_overview.pdf>
-Package pdftex.def Info: ./fig/mft_table_overview.pdf used on input line 25.
-(pdftex.def)             Requested size: 418.25368pt x 135.0503pt.
+Package pdftex.def Info: ./fig/nfv_overview.pdf used on input line 24.
+(pdftex.def)             Requested size: 418.25368pt x 288.7886pt.
+ <./fig/mft_table_overview.png, id=516, 4251.885pt x 1330.9725pt>
+File: ./fig/mft_table_overview.png Graphic file (type png)
+ <use ./fig/mft_table_overview.png>
+Package pdftex.def Info: ./fig/mft_table_overview.png used on input line 31.
+(pdftex.def)             Requested size: 418.25368pt x 130.91167pt.
  [11
 color push 0 g 0 G
 color pop
@@ -1347,7 +1349,37 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/mft_table_overview.pdf>] [13
+ <./fig/mft_table_overview.png>] <./fig/service_control1.pdf, id=552, 1085.0693pt x 275.22481pt>
+File: ./fig/service_control1.pdf Graphic file (type pdf)
+ <use ./fig/service_control1.pdf>
+Package pdftex.def Info: ./fig/service_control1.pdf used on input line 74.
+(pdftex.def)             Requested size: 460.08159pt x 116.6981pt.
+ <./fig/service_control2.pdf, id=553, 1087.63419pt x 306.96205pt>
+File: ./fig/service_control2.pdf Graphic file (type pdf)
+ <use ./fig/service_control2.pdf>
+Package pdftex.def Info: ./fig/service_control2.pdf used on input line 80.
+(pdftex.def)             Requested size: 460.08159pt x 129.84589pt.
+ <./fig/service_control3.pdf, id=554, 1087.15964pt x 308.97829pt>
+File: ./fig/service_control3.pdf Graphic file (type pdf)
+ <use ./fig/service_control3.pdf>
+Package pdftex.def Info: ./fig/service_control3.pdf used on input line 86.
+(pdftex.def)             Requested size: 460.08159pt x 130.75534pt.
+
+Overfull \hbox (41.82791pt too wide) in paragraph at lines 73--90
+[][]
+ []
+
+
+Overfull \hbox (41.82791pt too wide) in paragraph at lines 73--90
+[]
+ []
+
+
+Overfull \hbox (41.82791pt too wide) in paragraph at lines 73--90
+[] 
+ []
+
+[13
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1356,17 +1388,8 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
-color pop
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [15
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1374,51 +1397,63 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
-] <./fig/mft_nat.pdf, id=535, 573.14125pt x 318.18875pt>
+ <./fig/service_control1.pdf> <./fig/service_control2.pdf> <./fig/service_control3.pdf>] [15
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [16
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+] <./fig/mft_nat.pdf, id=644, 573.14125pt x 318.18875pt>
 File: ./fig/mft_nat.pdf Graphic file (type pdf)
  <use ./fig/mft_nat.pdf>
-Package pdftex.def Info: ./fig/mft_nat.pdf used on input line 100.
+Package pdftex.def Info: ./fig/mft_nat.pdf used on input line 154.
 (pdftex.def)             Requested size: 334.60422pt x 185.76338pt.
 
-Overfull \hbox (51.20341pt too wide) in paragraph at lines 110--116
+Overfull \hbox (51.20341pt too wide) in paragraph at lines 164--170
  [][] 
  []
 
-[16
+[17
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [17
+] [18
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
 color pop
 color push 0 g 0 G
 color push 0 g 0 G
 color pop
 color pop
 color push 0 g 0 G
-color pop
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
 color pop
- <./fig/mft_nat.pdf>] [18
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] <./fig/mft_qos_rate_host.png, id=560, 774.895pt x 534.99875pt>
-File: ./fig/mft_qos_rate_host.png Graphic file (type png)
- <use ./fig/mft_qos_rate_host.png>
-Package pdftex.def Info: ./fig/mft_qos_rate_host.png used on input line 148.
-(pdftex.def)             Requested size: 334.60422pt x 231.01642pt.
- [19
+ <./fig/mft_nat.pdf>] [19
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1427,21 +1462,12 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
-color push 0 g 0 G
 color pop
-color pop
-color push 0 g 0 G
-color pop
- <./fig/mft_qos_rate_host.png>] <./fig/classification_classifying.pdf, id=574, 549.05125pt x 499.8675pt>
-File: ./fig/classification_classifying.pdf Graphic file (type pdf)
- <use ./fig/classification_classifying.pdf>
-Package pdftex.def Info: ./fig/classification_classifying.pdf used on input line 164.
-(pdftex.def)             Requested size: 334.60422pt x 304.6365pt.
- <./fig/mft_qos_rate_app.png, id=575, 961.5925pt x 706.64pt>
-File: ./fig/mft_qos_rate_app.png Graphic file (type png)
- <use ./fig/mft_qos_rate_app.png>
-Package pdftex.def Info: ./fig/mft_qos_rate_app.png used on input line 171.
-(pdftex.def)             Requested size: 334.60422pt x 245.89363pt.
+] <./fig/mft_qos_rate_host.png, id=672, 774.895pt x 534.99875pt>
+File: ./fig/mft_qos_rate_host.png Graphic file (type png)
+ <use ./fig/mft_qos_rate_host.png>
+Package pdftex.def Info: ./fig/mft_qos_rate_host.png used on input line 209.
+(pdftex.def)             Requested size: 334.60422pt x 231.01642pt.
  [21
 color push 0 g 0 G
 color pop
@@ -1451,7 +1477,22 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/classification_classifying.pdf>] [22
+ <./fig/mft_qos_rate_host.png>] <./fig/classification_classifying.png, id=681, 1559.8275pt x 1279.78125pt>
+File: ./fig/classification_classifying.png Graphic file (type png)
+ <use ./fig/classification_classifying.png>
+Package pdftex.def Info: ./fig/classification_classifying.png used on input line 225.
+(pdftex.def)             Requested size: 334.60422pt x 274.52272pt.
+ <./fig/mft_qos_rate_app.png, id=682, 961.5925pt x 706.64pt>
+File: ./fig/mft_qos_rate_app.png Graphic file (type png)
+ <use ./fig/mft_qos_rate_app.png>
+Package pdftex.def Info: ./fig/mft_qos_rate_app.png used on input line 232.
+(pdftex.def)             Requested size: 334.60422pt x 245.89363pt.
+ [22
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]) (./chapter/evaluation.tex [23
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1460,28 +1501,117 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/mft_qos_rate_app.png>]) (./chapter/evaluation.tex [23
+ <./fig/classification_classifying.png>] [24
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
+color push 0 g 0 G
 color pop
-]
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/mft_qos_rate_app.png>]
 Chapter 4.
-) (./chapter/conclusion.tex [24
+<./fig/throughput_measurement_scenario.png, id=698, 1508.63625pt x 1279.78125pt>
+File: ./fig/throughput_measurement_scenario.png Graphic file (type png)
+ <use ./fig/throughput_measurement_scenario.png>
+Package pdftex.def Info: ./fig/throughput_measurement_scenario.png used on input line 11.
+(pdftex.def)             Requested size: 418.25368pt x 354.80176pt.
+
+Overfull \hbox (8.78587pt too wide) in paragraph at lines 19--24
+\OT1/ptm/m/n/12 (-20) con-troller was run on the Dell Pow-erEdge R630 rack server, and the EdgeCore AS5712-54X
+ []
+
+[25
 color push 0 g 0 G
 color pop
 
+color push 0 g 0 G
+color pop
+] <./fig/throughput_measurement.png, id=706, 630.1944pt x 410.4936pt>
+File: ./fig/throughput_measurement.png Graphic file (type png)
+ <use ./fig/throughput_measurement.png>
+Package pdftex.def Info: ./fig/throughput_measurement.png used on input line 27.
+(pdftex.def)             Requested size: 418.25368pt x 272.44241pt.
+ [26
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/throughput_measurement_scenario.png>] <./fig/integration_host.png, id=715, 1228.59pt x 698.61pt>
+File: ./fig/integration_host.png Graphic file (type png)
+ <use ./fig/integration_host.png>
+Package pdftex.def Info: ./fig/integration_host.png used on input line 48.
+(pdftex.def)             Requested size: 418.25368pt x 237.83339pt.
+ [27
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/throughput_measurement.png>] [28
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/integration_host.png>] <./fig/integration_evaluation.png, id=729, 1460.45625pt x 1538.74875pt>
+File: ./fig/integration_evaluation.png Graphic file (type png)
+ <use ./fig/integration_evaluation.png>
+Package pdftex.def Info: ./fig/integration_evaluation.png used on input line 74.
+(pdftex.def)             Requested size: 334.60422pt x 352.54297pt.
+
+Overfull \hbox (10.74396pt too wide) in paragraph at lines 80--85
+[]\OT1/ptm/m/n/12 (-20) Our ex-per-i-men-tal en-vi-ron-ment is pre-sented in Fig. []4.4[]. In our ex-per-i-men-tal en-vi-ron-ment,
+ []
+
+[29
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/integration_evaluation.png>] <./fig/integration_app_filezilla.png, id=736, 1392.20125pt x 816.04875pt>
+File: ./fig/integration_app_filezilla.png Graphic file (type png)
+ <use ./fig/integration_app_filezilla.png>
+Package pdftex.def Info: ./fig/integration_app_filezilla.png used on input line 92.
+(pdftex.def)             Requested size: 418.25368pt x 245.15271pt.
+ [30
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/integration_app_filezilla.png>]) (./chapter/conclusion.tex [31
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 ]
 Chapter 5.
-) (./template.bbl [25
+) (./template.bbl [32
 color push 0 g 0 G
 color pop
 
 color push 0 g 0 G
 color pop
-] [26
+] [33
 color push 0 g 0 G
 color pop
 
@@ -1506,7 +1636,7 @@ Underfull \hbox (badness 1496) in paragraph at lines 95--98
 \OT1/ptm/m/it/12 (+20) In-ter-na-tional Con-fer-ence on Emerg-ing Se-cu-rity In-for-ma-tion, Sys-tems and
  []
 
-[27
+[34
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1525,7 +1655,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [28
+] [35
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1549,9 +1679,7 @@ Underfull \hbox (badness 4108) in paragraph at lines 154--156
 []\OT1/ptm/m/n/12 (+20) NFV ISG, ``Net-work Func-tions Vir-tu-al-i-sa-tion (NFV); Man-age-ment and
  []
 
-[29
-color push 0 g 0 G
-color pop
+[36
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1572,7 +1700,15 @@ color push 0 g 0 G
 color pop
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
- [30
+ [37
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1589,7 +1725,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 1C5808BE4CE83FA981BB59B26C01F8D4;2983.
+(rerunfilecheck)             Checksum: 1583DF0F815797904DECA4140EAAB842;3419.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  )
 (\end occurred inside a group at level 1)
@@ -1597,20 +1733,20 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 14636 strings out of 493014
- 215703 string characters out of 6133351
- 372357 words of memory out of 5000000
- 17424 multiletter control sequences out of 15000+600000
- 61342 words of font info for 251 fonts, out of 8000000 for 9000
+ 14757 strings out of 493014
+ 218347 string characters out of 6133351
+ 373733 words of memory out of 5000000
+ 17495 multiletter control sequences out of 15000+600000
+ 64629 words of font info for 263 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,15n,39p,1139b,9160s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,15n,39p,1139b,9182s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu4e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu51.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu52.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu53.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu54.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu57.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu58.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu59.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5b.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5d.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5e.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/arphic/bkaiu/bkaiu62.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu63.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu64.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu65.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu67.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu6a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu6c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu6e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu78.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7d.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu80.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu83.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu84.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu86.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu89.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu98.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu9e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiuff.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (39 pages, 783009 bytes).
+Output written on template.pdf (46 pages, 1401223 bytes).
 PDF statistics:
- 792 PDF objects out of 1000 (max. 8388607)
- 653 compressed objects within 7 object streams
- 135 named destinations out of 1000 (max. 500000)
- 32279 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 939 PDF objects out of 1000 (max. 8388607)
+ 766 compressed objects within 8 object streams
+ 156 named destinations out of 1000 (max. 500000)
+ 36455 words of extra memory for PDF output out of 42996 (max. 10000000)
 

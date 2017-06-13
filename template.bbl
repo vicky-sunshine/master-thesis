@@ -168,6 +168,15 @@ J.~Matias, J.~Garay, N.~Toledo, J.~Unzilla, and E.~Jacob, ``Toward an
   {SDN}-enabled {NFV} architecture,'' \emph{{IEEE} Communications Magazine},
   vol.~53, no.~4, pp. 187--193, Apr. 2015.
 
+\bibitem{ericcson-vcpe}
+\BIBentryALTinterwordspacing
+P.~Cota and J.~Sabec, ``{CPE} virtualization by unifying {NFV}, {SDN} and cloud
+  technologies,'' in \emph{2016 39th International Convention on Information
+  and Communication Technology, Electronics and Microelectronics
+  ({MIPRO})}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, May 2016.
+  [Online]. Available: \url{https://doi.org/10.1109/mipro.2016.7522204}
+\BIBentrySTDinterwordspacing
+
 \bibitem{ryu}
 ``Ryu {SDN} framework,'' \url{http://osrg.github.io/ryu/}.
 
@@ -184,5 +193,12 @@ M.~Kuźniar, P.~Pereš{\' i}ni, and D.~Kostić, ``What you need to know about
   sdn flow tables,'' in \emph{Passive and Active Measurement}.\hskip 1em plus
   0.5em minus 0.4em\relax Springer Science + Business Media, 2015, pp.
   347--359.
+
+\bibitem{edge-core-switch}
+``{Edge Core switches},''
+  \url{http://www.edge-core.com/productsKind.php?cls=1}.
+
+\bibitem{iperf}
+``{iPerf},'' \url{https://iperf.fr/iperf-doc.php}.
 
 \end{thebibliography}

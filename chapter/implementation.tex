@@ -1,21 +1,27 @@
 \chapter{System Implementation} \label{ch:implementation}
 \section{Overview of Network Functions} \label{sec:desc_nfv_overview}
 
-While \cite{che-wei-master} focused on the design of vCPE platform, this paper focused on the design of VNF itself. Our network functions (Fig. \ref{fig:nfv_overview}) are designed with SDN-enabled NFV architecture concept \cite{sdn-enabled}, using the synergies between computer infrastructures (NFVs) and network infrastructures (NFVIs) \cite{etsi-nfv-terminology, etsi-nfv-infra}. An NFV is a VNF controller, mainly used for addressing stateful processing and NFVI is an SDN switch used for stateless processing.
+While \cite{che-wei-master} focused on the design of vCPE platform, this paper focused on the design of VNF itself.
+Our network functions (Fig. \ref{fig:nfv_overview}) are designed with SDN-enabled NFV architecture concept \cite{sdn-enabled}, using the synergies between computer infrastructures (NFVs) and network infrastructures (NFVIs) \cite{etsi-nfv-terminology, etsi-nfv-infra}.
+An NFV is mainly used for addressing stateful processing and NFVI is used for stateless processing.
+In our architecture, we use an SDN controller as NFV and an SDN switch as NFVI.
 
 
 \subsection{Stateful Processing Component}
-This component is used to control the workflow, maintain the state associated with the VNF, and provide an interface for service providers or customers to configure and update the behavior of the stateless datapath processing component. We used an SDN controller to implement the VNF controller; and notably, we use southbound APIs of the SDN controller framework to manage the interface between the stateful and stateless components with the OpenFlow protocol, which was originally designed for this purpose.
+This component is used to control the workflow, maintain the state associated with the VNF, and provide an interface for service providers or customers to configure and update the behavior of the stateless datapath processing component.
+We used an SDN controller to implement the VNF controller; and notably, we use southbound APIs of the SDN controller framework to manage the interface between the stateful and stateless components with the OpenFlow protocol, which was originally designed for this purpose.
 
 
 \subsection{Stateless Processing Component}
-Stateless processing component is implemented by SDN datapath resources and is optimized for data plane traffic processing. Because an SDN switch can be decoupled with control plane and data plane, the switch can accept the control messages from the stateful processing component.
+Stateless processing component is implemented by SDN datapath resources and is optimized for data plane traffic processing.
+Because an SDN switch can be decoupled with control plane and data plane, the switch can accept the control messages from the stateful processing component.
 
-By using the advantages of this architecture, we can assign stateless or light-weight state work to the SDN switch (e.g., packet filtering and packet counting) to reduce the load on the computing resources. If we want to update our service, we are required to update only the stateful component, because the stateless component merely follows the commands from the stateful component.
+By using the advantages of this architecture, we can assign stateless or light-weight state work to the SDN switch (e.g., packet filtering and packet counting) to reduce the load on the computing resources.
+If we want to update our service, we are required to update only the stateful component, because the stateless component merely follows the commands from the stateful component.
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=0.8\textwidth]{./fig/nfv_overview.pdf}
+\includegraphics[width=\textwidth]{./fig/nfv_overview}
 \caption{Overview of network functions.}
 \label{fig:nfv_overview}
 \end{figure}
@@ -30,23 +36,71 @@ By using the advantages of this architecture, we can assign stateless or light-w
 
 
 \section{Multiple Flow Table Strategy} \label{sec:multi_flow_table_strategy}
-In section \ref{sec:desc_nfv_overview}, we introduce the vCPE service design architecture. The network functions are managed through cooperation between the SDN controller on the cloud and SDN switch at the local network gateway. The controller transforms the network functions into a series of OpenFlow rule requests and sends it to the SDN switch. Following the orders from the controller, the SDN switch inserts the rules into its flow tables, examines the incoming packets against the flow entry match fields, and executes the actions in matching rules. The flow table \cite{sdn-ft} defines all matching and corresponding processing, thus playing an important role in the executive network function.
+In section \ref{sec:desc_nfv_overview}, we introduce the vCPE service design architecture.
+The network functions are achieved by the cooperation between the SDN controller on the cloud and SDN switch at the local network gateway.
+The controller transforms the network functions into a series of OpenFlow rule requests and sends them to the SDN switch.
+Following the orders from the controller, the SDN switch inserts the rules into its flow tables, examines the incoming packets against the flow entry match fields, and executes the actions in matching rules.
+The flow table \cite{sdn-ft} defines all matching and corresponding processing, thus playing an important role in the executive network function.
 
-We found that a single flow table restricts the implementation of our network functions. In \cite{multiple-flow-table}, two conditions under which a single flow table is too restrictive were reported. The first is a condition where a single packet must perform independent actions based on matching with different fields. The second is a condition where the packet requires two-stage processing. To satisfy both conditions, we implemented the network functions by using a multiple flow table strategy.
+We found that a single flow table restricts the implementation of our network functions.
+In \cite{multiple-flow-table}, two conditions under which a single flow table is too restrictive were reported.
+The first is a condition where a single packet must perform independent actions based on matching with different fields.
+The second is a condition where the packet requires two-stage processing.
+To resolve both restrictions, we implemented the network functions by using a multiple flow table strategy.
 
-Before we discuss about the multiple flow table strategy, we introduce the pipeline of OpenFlow flow table first \cite{openflow-spec}. The processing of each packet always starts at the first flow table. When being processed by a flow table, the packet is matched the flow entries of the flow table and adds corresponding action to the instruction set. The packet can executes the instrcution set immediately, or execute after finishing the journey in switch. A flow entry can direct a packet to next table by go-to action. In our multiple flow table management model, we set the ``go to next table'' action as the table-miss action. Therefore, the packet is processed table-by-table in a certain sequence.
+Before we discuss about the multiple flow table strategy, we introduce the pipeline of OpenFlow flow table first \cite{openflow-spec}.
+The processing of each packet always starts at the first flow table.
+When being processed by a flow table, the packet is matched the flow entries in the flow table and adds corresponding action to the instruction set.
+The packet can execute the instruction set immediately, or execute after finishing the journey in switch.
+A flow entry can direct a packet to next table by go-to action.
+In our multiple flow table management mechanism, we set the ``go to next table'' action as the table-miss action. Therefore, the packet is processed table-by-table in a certain sequence.
 
-In a multiple flow table strategy, it is most important to determine which flow table the rules should be inserted into. We used the network function as a demarcation, that is, SDN applications responsible for specific network functions inserted rules into one specific flow table to enable us to focus on the design of the network function itself. However, the order of the flow table and the sequence of the network functions become crucial. This can be addressed by considering the type of match and action in the rules generated by the network function.
+In a multiple flow table strategy, it is most important to determine which flow table the rules should be inserted into.
+We used the type of network function as a demarcation, that is, SDN applications responsible for specific network functions inserted rules into one specific flow table to enable us to focus on the design of the network function itself.
+However, the order of the flow table and the sequence of the network functions become crucial.
+This can be addressed by considering the type of match and action in the rules generated by the network function.
 
-The network functions of vCPE services are the firewall service, NAT, DHCP, forwarding, and QoS. The order of each function was determined as shown in Fig. \ref{fig:mft_table_overview} (note that the flow tables are counted from zero). Each packet In the following sections, we introduce the method of implementing these network functions, the type of rules to be inserted into the SDN switch, and the effect of these rules on deciding the order of the flow tables.
+The network functions of vCPE services are the firewall, NAT, DHCP, forwarding, traffic mirroring and QoS.
+The order of each function was determined as shown in Fig. \ref{fig:mft_table_overview} (note that the flow tables are counted from zero).
+In the following sections, we introduce the method of implementing these network functions, the type of rules to be inserted into the SDN switch, and the effect of these rules on deciding the order of the flow tables.
 
 
 
 \section{Service Control} \label{sec:service_control}
-Service control is used to enable or disable services. To enable a service, the table-miss rule should be modified. A packet-in rule is always placed in the flow table of the last active service as a table miss in case there is no corresponding rule. To enable the service chain, the rules of each service except the last service contain an additional action, ``go to next flow table'', which enables the packets to continue to pass through all active services.
 
-To disable a service, we must not only modify the table-miss rule but also add an enforce rule. Each enforce rule has maximum priority with the action, ``go to next flow table''. It indicates that packets still pass through the disabled service’s table, but ignore other rules and proceed to the next flow table.
+\begin{figure}[!tp]
+  % \centering
+  \begin{subfigure}[b]{1.1\textwidth}
+    \includegraphics[width=\textwidth]{./fig/service_control1.pdf}
+    \caption{All Services are enabled.}
+    \label{fig:service_control_all_enable}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{1.1\textwidth}
+    \includegraphics[width=\textwidth]{./fig/service_control2.pdf}
+    \caption{When service 2 is disabled, the force-ignoring rule is added into the table 1.}
+    \label{fig:service_control_disable2}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{1.1\textwidth}
+    \includegraphics[width=\textwidth]{./fig/service_control3.pdf}
+    \caption{When last service (service N) is disabled, the force-ignoring rule is added into the table N-1 and the packet-in rules is added in to table N-2.}
+    \label{fig:service_control_last}
+  \end{subfigure}
+  \caption{Service control in multiple flow table mechanism.}
+\end{figure}
 
+
+Service control is used to enable or disable services.
+As shown in Fig. \ref{fig:service_control_all_enable}, a packet-in rule is always placed in the flow table of the last active service as a table miss in case there is no corresponding rule.
+To enable the service chain, the rules of each service except the last service contain an additional action, ``go to next flow table'', which enables the packets to continue to pass through all active services.
+
+To disable a service, a force-ignoring rule is added into the table of the service. (Fig. \ref{fig:service_control_disable2})
+The force-ignoring rule has maximum priority with the action, ``go to next flow table''.
+To enable a service, we just remove the force-ignoring rule.
+
+If the service we want to disabled is located at last teble, we must not only modify the force-ignoring rule but also modify ``packet-in'' rules.
+The change is shown in Fig. \ref{fig:service_control_last}.
 
 
 \section{Network functions} \label{sec:setwork_functions}
@@ -63,7 +117,7 @@ For different policies, the controller applies corresponding rules to the SDN sw
 
 As shown in Table \ref{table:fw}, all the actions of flow entries are dropped. The first rule illustrates that SSH connection with the source IP address 192.168.2.1 is blocked. The second rule indicates that the flow entry blocks the Telnet protocol.
 
-In our multiple flow table model, the firewall service is located in flow table 1 because once packets are detected by the blocking rules, they do not need to be applied to any other services. The packets that satisfy the blocking rules are immediately dropped, and their journey in the flow table ends. The other unblocked packets pass all blocking rules and finally satisfy the table-miss rule, which allows the packets to proceed to the next flow table. The action of the firewall is different from those of other services, because in other services, irrespective of the actions taken with the packets, the packets must proceed to the next flow table.
+In our multiple flow table mechanism, the firewall service is located in flow table 1 because once packets are detected by the blocking rules, they do not need to be applied to any other services. The packets that satisfy the blocking rules are immediately dropped, and their journey in the flow table ends. The other unblocked packets pass all blocking rules and finally satisfy the table-miss rule, which allows the packets to proceed to the next flow table. The action of the firewall is different from those of other services, because in other services, irrespective of the actions taken with the packets, the packets must proceed to the next flow table.
 
 % firewall example table
 \begin{table*}[!t]
@@ -85,9 +139,7 @@ TCP      & *           & *            & *        & 23       & drop   \\ \hline
 
 
 \subsection{NAT}
-The NAT service allows numerous hosts to use one public IP address for connecting to the network. To achieve this, the SDN controller must set the packet header field. Because the SDN switch sets the field, the first packet must proceed to the controller. When the controller adds the flow to the SDN switch, the packet does not proceed to the controller. This can reduce the burden on the controller.
-
-Following is an example that illustrates the modification of the IP address and port number by using the NAT service. For an outgoing packet, the SDN switch does not have any flow entry in the flow table, and hence, a packet-in event is triggered initially. The packet that is sent by a private network host is sent to the SDN controller, and the packet header fields are modified using the set-field action. The source IP address and source port number of the outgoing packet are modified to a public IP address and a new port number is remapped for NAT. For the incoming packet, the destination IP address and destination port number are modified to fit the private IP address and port number. Subsequently, the SDN controller adds these flow entries to the SDN switch; all packets must be sent to the controller
+The NAT service allows numerous hosts to use one public IP address for connecting to the network. Following is an example that illustrates the modification of the IP address and port number by using the NAT service. For an outgoing packet, the SDN switch does not have any flow entry in the flow table, and hence, a packet-in event is triggered initially. The packet that is sent by a private network host is sent to the SDN controller, and the packet header fields are modified using the set-field action. The source IP address and source port number of the outgoing packet are modified to a public IP address and a new port number is remapped for NAT. For the incoming packet, the destination IP address and destination port number are modified to fit the private IP address and port number. Subsequently, the SDN controller adds these flow entries to the SDN switch; all packets must be sent to the controller
 
 In Fig. \ref{fig:mft_nat}, the public IP address of NAT is 140.114.71.178, and the host private IP address is 192.168.8.254 with the port number 7878. The client sent the packet to a server with the IP address 140.114.71.177 and port number 9898.
 
@@ -133,6 +185,13 @@ Our system supports multiple flow tables; however, a specific flow table for the
 In the forwarding service, when the first packet in a new connection is incoming, a packet-in event occurs because no corresponding rule is present. When the controller receives the packet, it records the IP-layer information, including the source IP address, destination IP address, input port number, source MAC address, and destination MAC address. By using the recorded information, the controller can install a 5-tuple forwarding rule with out-port action for this connection, and the subsequent packets do not need to undergo the packet-in event. The 5-tuple comprises the source IP address, destination IP address, network layer protocol, source layer 4 port, and destination layer 4 port.
 
 To gather per-session statistical information, 5-tuple rules are required. Therefore, rules based on the MAC address are not added. The controller installs a pair of dummy rules for every connection, and then requests the switch to obtain current flow statistics every second. Thus, the real-time bandwidth statistics of each connection can be obtained by merely subtracting the byte count from the byte count of the last second.
+
+
+\subsection{Traffic Mirroring} \label{ssec:mirror}
+The traffic mirroring service could make the manager to specify the output port to mirror the packet flow.
+It could make the network manager monitor the network situation easily.
+In our multiple flow table architecture, we use this service to mirror the packet flow to classifier which could identify the application.
+The QoS service could use the classified result to limit the application.
 
 
 \subsection{QoS}
