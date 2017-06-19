@@ -21,6 +21,25 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{openflow-spec}
+B.~Pfaff, B.~Lantz, B.~Heller \emph{et~al.}, ``Openflow switch specification,
+  version 1.3. 0,'' \emph{Open Networking Foundation}, 2012.
+
+\bibitem{nfv-wp}
+M.~Chiosi, D.~Clarke, P.~Willis, A.~Reid, J.~Feger, M.~Bugenhagen, W.~Khan,
+  M.~Fargano, C.~Cui, H.~Deng \emph{et~al.}, ``Network functions
+  virtualisation: An introduction, benefits, enablers, challenges and call for
+  action,'' in \emph{SDN and OpenFlow World Congress}, 2012, pp. 22--24.
+
+\bibitem{etsi-nfv-archi}
+{NFV ISG}, ``{Network Functions Virtualisation (NFV); Virtual Network Functions
+  Architecture},'' ETSI, Tech. Rep. GS NFV-SWA 001 V1.1.1, Dec. 2014.
+
+\bibitem{che-wei-master}
+C.-W. Lin, ``{A Novel Virtual CPE Architecture and Service for Enterprises with
+  SDN Network Technologies},'' Master's thesis, National Tsing Hua University,
+  No.101, Sec. 2, Guangfu Rd., East Dist., Hsinchu City 300, Taiwan, 2016.
+
 \bibitem{sdn-mckeown-2009-talk}
 N.~McKeown, ``Software-defined networking,'' \emph{INFOCOM keynote talk},
   vol.~17, no.~2, pp. 30--32, 2009.
@@ -43,20 +62,6 @@ D.~Kreutz, F.~M.~V. Ramos, P.~E. Verissimo, C.~E. Rothenberg, S.~Azodolmolky,
 N.~McKeown, T.~Anderson, H.~Balakrishnan, G.~Parulkar, L.~Peterson, J.~Rexford,
   S.~Shenker, and J.~Turner, ``{OpenFlow},'' \emph{{ACM} {SIGCOMM} Computer
   Communication Review}, vol.~38, no.~2, p.~69, Mar. 2008.
-
-\bibitem{openflow-spec}
-B.~Pfaff, B.~Lantz, B.~Heller \emph{et~al.}, ``Openflow switch specification,
-  version 1.3. 0,'' \emph{Open Networking Foundation}, 2012.
-
-\bibitem{nfv-wp}
-M.~Chiosi, D.~Clarke, P.~Willis, A.~Reid, J.~Feger, M.~Bugenhagen, W.~Khan,
-  M.~Fargano, C.~Cui, H.~Deng \emph{et~al.}, ``Network functions
-  virtualisation: An introduction, benefits, enablers, challenges and call for
-  action,'' in \emph{SDN and OpenFlow World Congress}, 2012, pp. 22--24.
-
-\bibitem{etsi-nfv-archi}
-{NFV ISG}, ``{Network Functions Virtualisation (NFV); Virtual Network Functions
-  Architecture},'' ETSI, Tech. Rep. GS NFV-SWA 001 V1.1.1, Dec. 2014.
 
 \bibitem{nfv-survey}
 R.~Mijumbi, J.~Serrat, J.-L. Gorricho, N.~Bouten, F.~D. Turck, and R.~Boutaba,
@@ -139,11 +144,6 @@ A.~Lombardo, A.~Manzalini, G.~Schembra, G.~Faraci, C.~Rametta, and
   Network Softwarization ({NetSoft})}.\hskip 1em plus 0.5em minus 0.4em\relax
   {IEEE}, Apr. 2015.
 
-\bibitem{che-wei-master}
-C.-W. Lin, ``{A Novel Virtual CPE Architecture and Service for Enterprises with
-  SDN Network Technologies},'' Master's thesis, National Tsing Hua University,
-  No.101, Sec. 2, Guangfu Rd., East Dist., Hsinchu City 300, Taiwan, 2016.
-
 \bibitem{che-wei-umedia}
 N.-F. Huang, C.-W. Lin, S.-J. Wu, C.-H. Li, and I.-J. Liao, ``A novel virtual
   cpe architecture and service for enterprises with sdn network technologies,''
@@ -167,6 +167,13 @@ N.-F. Huang, C.-W. Lin, S.-J. Wu, C.-H. Li, and I.-J. Liao, ``A novel virtual
 J.~Matias, J.~Garay, N.~Toledo, J.~Unzilla, and E.~Jacob, ``Toward an
   {SDN}-enabled {NFV} architecture,'' \emph{{IEEE} Communications Magazine},
   vol.~53, no.~4, pp. 187--193, Apr. 2015.
+
+\bibitem{sdn-define}
+``Software-defined networking (sdn) definition,''
+  \url{https://www.opennetworking.org/sdn-resources/sdn-definition}.
+
+\bibitem{onf}
+``Open network fundation,'' \url{https://www.opennetworking.org/}.
 
 \bibitem{ericcson-vcpe}
 \BIBentryALTinterwordspacing

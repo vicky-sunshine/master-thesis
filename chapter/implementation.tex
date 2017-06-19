@@ -18,24 +18,23 @@ Because an SDN switch can be decoupled with control plane and data plane, the sw
 
 By using the advantages of this architecture, we can assign stateless or light-weight state work to the SDN switch (e.g., packet filtering and packet counting) to reduce the load on the computing resources.
 If we want to update our service, we are required to update only the stateful component, because the stateless component merely follows the commands from the stateful component.
-
 \begin{figure}[!t]
 \centering
-\includegraphics[width=\textwidth]{./fig/nfv_overview}
+\includegraphics[width=0.7\textwidth]{./fig/nfv_overview}
 \caption{Overview of network functions.}
 \label{fig:nfv_overview}
 \end{figure}
 
-\begin{figure*}[!t]
-\centering
-\includegraphics[width=\textwidth]{./fig/mft_table_overview}
-\caption{Flow table order of vCPE service.}
-\label{fig:mft_table_overview}
-\end{figure*}
-
-
 
 \section{Multiple Flow Table Strategy} \label{sec:multi_flow_table_strategy}
+
+\begin{sidewaysfigure*}
+\centering
+\includegraphics[width=1.1\textwidth]{./fig/mft_table_overview}
+\caption{Flow table order of vCPE service.}
+\label{fig:mft_table_overview}
+\end{sidewaysfigure*}
+
 In section \ref{sec:desc_nfv_overview}, we introduce the vCPE service design architecture.
 The network functions are achieved by the cooperation between the SDN controller on the cloud and SDN switch at the local network gateway.
 The controller transforms the network functions into a series of OpenFlow rule requests and sends them to the SDN switch.
@@ -70,19 +69,19 @@ In the following sections, we introduce the method of implementing these network
 
 \begin{figure}[!tp]
   % \centering
-  \begin{subfigure}[b]{1.1\textwidth}
+  \begin{subfigure}[b]{\textwidth}
     \includegraphics[width=\textwidth]{./fig/service_control1.pdf}
     \caption{All Services are enabled.}
     \label{fig:service_control_all_enable}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[b]{1.1\textwidth}
+  \begin{subfigure}[b]{\textwidth}
     \includegraphics[width=\textwidth]{./fig/service_control2.pdf}
     \caption{When service 2 is disabled, the force-ignoring rule is added into the table 1.}
     \label{fig:service_control_disable2}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[b]{1.1\textwidth}
+  \begin{subfigure}[b]{\textwidth}
     \includegraphics[width=\textwidth]{./fig/service_control3.pdf}
     \caption{When last service (service N) is disabled, the force-ignoring rule is added into the table N-1 and the packet-in rules is added in to table N-2.}
     \label{fig:service_control_last}
@@ -204,7 +203,7 @@ This method is illustrated in \ref{fig:mft_qos_rate_host}. In T0, host 1 and hos
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=0.8\textwidth]{./fig/mft_qos_rate_host}
+\includegraphics[width=0.9\textwidth]{./fig/mft_qos_rate_host}
 \caption{Illustration of rate limiting for a certain host}
 \label{fig:mft_qos_rate_host}
 \end{figure}
@@ -220,14 +219,14 @@ It is worth noting that we did not change any rules in flow table; we merely cha
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=0.8\textwidth]{./fig/classification_classifying}
+\includegraphics[width=0.9\textwidth]{./fig/classification_classifying}
 \caption{Architecture of our application identification system in classification phase.}
 \label{fig:class_classifying}
 \end{figure}
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=0.8\textwidth]{./fig/mft_qos_rate_app}
+\includegraphics[width=0.9\textwidth]{./fig/mft_qos_rate_app}
 \caption{Illustration of rate limiting for a certain application.}
 \label{fig:mft_qos_rate_app}
 \end{figure}
