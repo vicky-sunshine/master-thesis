@@ -133,14 +133,95 @@ NFV virtualizes network services via software and it decouples the network funct
 The benefits of network functions virtualization are: (1) reducing CapEx and OpEX, (2) encouraging more innovation and investment to bring new services quickly at much lower risk., (3) significant reduction in calls to customer support and (4) greater flexibility to scale up, scale down or evolve services
 
 
+
+
+
 \section{Related vCPE framework} \label{sec:related_vcpe}
-\subsection{Cloud4NFV}
 \subsection{NetFate}
-\subsection{OpenNaaS}
+
+
+
 \subsection{Ericsson CPE}
+Ericsson proposed a vCPE framework which achieved by unifying NFV, SDN and Cloud technologies in Internet providers’ networks and data centers \cite{ericsson-vcpe}.
+On the fig. \ref{fig:ericsson_archi}, it can be seen that Ericsson vCPE solution is built from several different components: access network, cloud data center, management and orchestration, applications (Virtual Network Functions) and self-care portal.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.9\textwidth]{./fig/ericsson_archi.png}
+\caption{Ericsson vCPE architecture.\cite{ericsson-vcpe}}
+\label{fig:ericsson_archi}
+\end{figure}
+
+The access network is installed on the customer location and used to identify individual end-user device.
+There are 2 modes in access network: L2 tunneling mode and 2 bridge mode.
+These L2 mode configurations are both used to provide CPE solution to customer.
+
+All services functions (SFs) can be hosted as virtualized instances in an SDN enabled datacenter.
+Ericsson IaaS solution is called Cloud Execution Environment (CEE), modified from OpenStack.
+There are three roles in the cloud domain:
+Cloud SDN switch (CSS) accepts the configuration of OpenFlow command from the SDN controllers;
+Cloud SDN controller (CSC) centrally controls a network of CSS;
+Broadband Service controller (BBSC) configures an SDN network through CSC and handles traffic steering along the predefined service chain.
+
+Ericsson Cloud Manager (ECM) is used for management and orchestration, which handles business logic and subscription services.
+It enables provisioning new service function instances, scaling and instantiating as requested on command.
+ECM also communicate with controllers in data center to send notifications about the deployed service functions and the provisioned service chains.
+
+Self-care portal provides the main GUI to the enterprise or home administrators for executing different service request.
+Operator portal is provided towards Cloud Manager to transfer information to CEE and enterprise portal enables enterprise/home user to monitor and act on the services available.
+
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=0.9\textwidth]{./fig/ericsson_sf.png}
+\caption{Overview of Service Functions.\cite{ericsson-vcpe}}
+\label{fig:ericsson_sf}
+\end{figure}
+
+Then we move on to describing the SFs. There are two kinds of SFs: Addressable dedicated SF and Transparent dedicated SF, shown in Fig. \ref{fig:ericsson_sf}.
+Addressable dedicated SF directly addresses end users with their MAC address.
+The traffic from end-used devices will be handle by SF and forward back immediately to the end-users without the processing of service chain.
+Transparent SFs use packet header to classify packet and to identify data flow.
+The traffic from customers will be forward along the selected service chain.
+
+% The advantages of Ericsson vCPE solution is easy-to-deploy by using tunneling from customer to datacenter.
+% However, the performance of the network functions may be a concern, since all traffic is needed to forward to data center.
+
+
+
 \subsection{Juniper Cloud CPE}
-\subsection{Huawei AR1000V virtual router}
-\subsection{AT\&T flexware}
+\begin{figure}[!htp]
+  \centering
+  \begin{subfigure}[b]{\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{./fig/juniper_central.png}
+    \caption{Centralized deployment model.}
+    \label{fig:juniper_central}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{./fig/juniper_distributed.png}
+    \caption{Distributed deployment model.}
+    \label{fig:juniper_distributed}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{./fig/juniper_hybrid.png}
+    \caption{Hybrid deployment model.}
+    \label{fig:juniper_hybrid}
+  \end{subfigure}
+  \caption{Juniper Cloud CPE deployment model. \cite{juniper-cpe}}
+  \label{fig:juniper-cpe}
+\end{figure}
+
+Juniper proposed a Cloud CPE solution \cite{juniper-cpe}. There are two kinds of deployment model: centralized cloud CPE deployment model and distributed cloud CPE deployment model.
+
+In centralized cloud CPE deployment model, services can ordered through a customer portal or trigger by existing business support system (BSS). BSS automatically instantiates VNFs and service chaining. The vCPE functions are achieved by these service chain.
+In distributed cloud CPE deployment model, they distributed Juniper NFX250 service platform to customer location, which provides similar functionality to the physical CPE. A single NFX 250 device can support multiple VNFs.
+
+Juniper’s Cloud CPE simultaneously can support these Cloud CPE, called hybrid cloud CPE deployment model.
 
 
 
@@ -149,7 +230,7 @@ The following part of this paper moves on to describe in greater detail the HSNL
 
 
 \subsection{Deployment Model}
-Unlike a related study that explored the virtualization of network function in PE devices \cite{vcpe-enhance} or used service-chains in data center to achieve vCPE services \cite{ericcson-vcpe}, HSNL introduced a network function service deployment model based on the NetFATE (Network Function at the Edge) approach \cite{netfate}.
+Unlike a related study that explored the virtualization of network function in PE devices \cite{vcpe-enhance} or used service-chains in data center to achieve vCPE services \cite{ericsson-vcpe}, HSNL introduced a network function service deployment model based on the NetFATE (Network Function at the Edge) approach \cite{netfate}.
 
 \begin{figure}[!t]
 \centering

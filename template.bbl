@@ -31,6 +31,19 @@ M.~Chiosi, D.~Clarke, P.~Willis, A.~Reid, J.~Feger, M.~Bugenhagen, W.~Khan,
   virtualisation: An introduction, benefits, enablers, challenges and call for
   action,'' in \emph{SDN and OpenFlow World Congress}, 2012, pp. 22--24.
 
+\bibitem{ericsson-vcpe}
+\BIBentryALTinterwordspacing
+P.~Cota and J.~Sabec, ``{CPE} virtualization by unifying {NFV}, {SDN} and cloud
+  technologies,'' in \emph{2016 39th International Convention on Information
+  and Communication Technology, Electronics and Microelectronics
+  ({MIPRO})}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, May 2016.
+  [Online]. Available: \url{https://doi.org/10.1109/mipro.2016.7522204}
+\BIBentrySTDinterwordspacing
+
+\bibitem{juniper-cpe}
+``Juniper networks cloud cpe solution,''
+  \url{https://www.juniper.net/assets/kr/kr/local/pdf/solutionbriefs/3510561-en.pdf}.
+
 \bibitem{etsi-nfv-archi}
 {NFV ISG}, ``{Network Functions Virtualisation (NFV); Virtual Network Functions
   Architecture},'' ETSI, Tech. Rep. GS NFV-SWA 001 V1.1.1, Dec. 2014.
@@ -174,15 +187,6 @@ J.~Matias, J.~Garay, N.~Toledo, J.~Unzilla, and E.~Jacob, ``Toward an
 
 \bibitem{onf}
 ``Open network fundation,'' \url{https://www.opennetworking.org/}.
-
-\bibitem{ericcson-vcpe}
-\BIBentryALTinterwordspacing
-P.~Cota and J.~Sabec, ``{CPE} virtualization by unifying {NFV}, {SDN} and cloud
-  technologies,'' in \emph{2016 39th International Convention on Information
-  and Communication Technology, Electronics and Microelectronics
-  ({MIPRO})}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, May 2016.
-  [Online]. Available: \url{https://doi.org/10.1109/mipro.2016.7522204}
-\BIBentrySTDinterwordspacing
 
 \bibitem{ryu}
 ``Ryu {SDN} framework,'' \url{http://osrg.github.io/ryu/}.

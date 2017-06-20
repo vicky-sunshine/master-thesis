@@ -17,16 +17,21 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \@writefile{toc}{\contentsline {chapter}{Abstract}{i}{Doc-Start}}
-\@writefile{toc}{\contentsline {chapter}{Contents}{iii}{chapter*.2}}
+\@writefile{toc}{\contentsline {chapter}{中文摘要}{iii}{chapter*.1}}
+\@writefile{toc}{\contentsline {chapter}{Acknowledgement}{iv}{chapter*.2}}
+\@writefile{toc}{\contentsline {chapter}{Contents}{v}{chapter*.4}}
 \citation{openflow-spec}
 \citation{openflow-spec}
 \citation{openflow-spec}
 \citation{openflow-spec}
 \citation{nfv-wp}
+\citation{ericsson-vcpe}
+\citation{ericsson-vcpe}
+\citation{juniper-cpe}
 \citation{etsi-nfv-archi}
 \citation{che-wei-master}
-\@writefile{toc}{\contentsline {chapter}{List of Figures}{vi}{chapter*.3}}
-\@writefile{toc}{\contentsline {chapter}{List of Tables}{viii}{chapter*.4}}
+\@writefile{toc}{\contentsline {chapter}{List of Figures}{viii}{chapter*.5}}
+\@writefile{toc}{\contentsline {chapter}{List of Tables}{x}{chapter*.6}}
 \citation{sdn-mckeown-2009-talk,sdn-newnorm,sdn-road,sdn-compre-survey}
 \citation{openflow-mckeown-2008,openflow-spec}
 \citation{nfv-wp,etsi-nfv-archi,nfv-survey}
@@ -37,6 +42,8 @@
 \citation{cloud4nfv,cloud4nfv-telco}
 \citation{netfate}
 \citation{che-wei-master,che-wei-umedia}
+\citation{ericsson-vcpe}
+\citation{juniper-cpe}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -45,209 +52,226 @@
 \citation{multiple-flow-table}
 \citation{sdn-enabled}
 \citation{sdn-define}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Related Work}{3}{chapter.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Related Work}{4}{chapter.2}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{ch:related_work}{{2}{3}{Related Work}{chapter.2}{}}
+\newlabel{ch:related_work}{{2}{4}{Related Work}{chapter.2}{}}
 \citation{openflow-spec}
 \citation{onf}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces SDN logical architecture.\relax }}{4}{figure.caption.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces SDN logical architecture.\relax }}{5}{figure.caption.7}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:sdn_archi}{{2.1}{4}{SDN logical architecture.\relax }{figure.caption.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}SDN}{4}{section.2.1}}
-\newlabel{sec:sdn}{{2.1}{4}{SDN}{section.2.1}{}}
+\newlabel{fig:sdn_archi}{{2.1}{5}{SDN logical architecture.\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}SDN}{5}{section.2.1}}
+\newlabel{sec:sdn}{{2.1}{5}{SDN}{section.2.1}{}}
 \citation{openflow-spec}
 \citation{openflow-spec}
 \citation{openflow-spec}
 \citation{openflow-spec}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}OpenFlow Protocol}{5}{section.2.2}}
-\newlabel{sec:openflow}{{2.2}{5}{OpenFlow Protocol}{section.2.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}OpenFlow Switch Components}{5}{subsection.2.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Main components of an OpenFlow switch. \cite  {openflow-spec}\relax }}{5}{figure.caption.6}}
-\newlabel{fig:openflow_switch_component}{{2.2}{5}{Main components of an OpenFlow switch. \cite {openflow-spec}\relax }{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}OpenFlow Protocol}{6}{section.2.2}}
+\newlabel{sec:openflow}{{2.2}{6}{OpenFlow Protocol}{section.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}OpenFlow Switch Components}{6}{subsection.2.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Main components of an OpenFlow switch. \cite  {openflow-spec}\relax }}{6}{figure.caption.8}}
+\newlabel{fig:openflow_switch_component}{{2.2}{6}{Main components of an OpenFlow switch. \cite {openflow-spec}\relax }{figure.caption.8}{}}
 \citation{openflow-spec}
 \citation{openflow-spec}
 \citation{openflow-spec}
 \citation{openflow-spec}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Main components of a flow entry in a flow table. \cite  {openflow-spec}\relax }}{6}{figure.caption.7}}
-\newlabel{fig:flow_entry}{{2.3}{6}{Main components of a flow entry in a flow table. \cite {openflow-spec}\relax }{figure.caption.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Flow Table Pipeline, Matching and Table-miss}{6}{subsection.2.2.2}}
-\newlabel{fig:openflow_pipeline2}{{2.4a}{6}{Packets are matched against multiple tables in the pipeline.\relax }{figure.caption.8}{}}
-\newlabel{sub@fig:openflow_pipeline2}{{a}{6}{Packets are matched against multiple tables in the pipeline.\relax }{figure.caption.8}{}}
-\newlabel{fig:openflow_pipeline3}{{2.4b}{6}{Per-table packet processing.\relax }{figure.caption.8}{}}
-\newlabel{sub@fig:openflow_pipeline3}{{b}{6}{Per-table packet processing.\relax }{figure.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Packet flow through the processing pipeline. \cite  {openflow-spec}\relax }}{6}{figure.caption.8}}
-\newlabel{fig:openflow_pipeline}{{2.4}{6}{Packet flow through the processing pipeline. \cite {openflow-spec}\relax }{figure.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces The workflow of packet handling through an OpenFlow switch. \cite  {openflow-spec}\relax }}{7}{figure.caption.9}}
-\newlabel{fig:openflow_matching}{{2.5}{7}{The workflow of packet handling through an OpenFlow switch. \cite {openflow-spec}\relax }{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Main components of a flow entry in a flow table. \cite  {openflow-spec}\relax }}{7}{figure.caption.9}}
+\newlabel{fig:flow_entry}{{2.3}{7}{Main components of a flow entry in a flow table. \cite {openflow-spec}\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Flow Table Pipeline, Matching and Table-miss}{7}{subsection.2.2.2}}
+\newlabel{fig:openflow_pipeline2}{{2.4a}{7}{Packets are matched against multiple tables in the pipeline.\relax }{figure.caption.10}{}}
+\newlabel{sub@fig:openflow_pipeline2}{{a}{7}{Packets are matched against multiple tables in the pipeline.\relax }{figure.caption.10}{}}
+\newlabel{fig:openflow_pipeline3}{{2.4b}{7}{Per-table packet processing.\relax }{figure.caption.10}{}}
+\newlabel{sub@fig:openflow_pipeline3}{{b}{7}{Per-table packet processing.\relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Packet flow through the processing pipeline. \cite  {openflow-spec}\relax }}{7}{figure.caption.10}}
+\newlabel{fig:openflow_pipeline}{{2.4}{7}{Packet flow through the processing pipeline. \cite {openflow-spec}\relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces The workflow of packet handling through an OpenFlow switch. \cite  {openflow-spec}\relax }}{8}{figure.caption.11}}
+\newlabel{fig:openflow_matching}{{2.5}{8}{The workflow of packet handling through an OpenFlow switch. \cite {openflow-spec}\relax }{figure.caption.11}{}}
 \citation{nfv-wp}
 \citation{nfv-wp}
 \citation{nfv-wp}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}NFV}{8}{section.2.3}}
-\newlabel{sec:nfv}{{2.3}{8}{NFV}{section.2.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Network Functions Virtualization Relationship with SDN. \cite  {nfv-wp}\relax }}{8}{figure.caption.10}}
-\newlabel{fig:nfv_and_sdn}{{2.6}{8}{Network Functions Virtualization Relationship with SDN. \cite {nfv-wp}\relax }{figure.caption.10}{}}
-\citation{vcpe-enhance}
-\citation{ericcson-vcpe}
-\citation{netfate}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}NFV}{9}{section.2.3}}
+\newlabel{sec:nfv}{{2.3}{9}{NFV}{section.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Network Functions Virtualization Relationship with SDN. \cite  {nfv-wp}\relax }}{9}{figure.caption.12}}
+\newlabel{fig:nfv_and_sdn}{{2.6}{9}{Network Functions Virtualization Relationship with SDN. \cite {nfv-wp}\relax }{figure.caption.12}{}}
+\citation{ericsson-vcpe}
+\citation{ericsson-vcpe}
+\citation{ericsson-vcpe}
 \@writefile{toc}{\contentsline {section}{\numberline {2.4}Related vCPE framework}{10}{section.2.4}}
 \newlabel{sec:related_vcpe}{{2.4}{10}{Related vCPE framework}{section.2.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Cloud4NFV}{10}{subsection.2.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}NetFate}{10}{subsection.2.4.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}OpenNaaS}{10}{subsection.2.4.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.4}Ericsson CPE}{10}{subsection.2.4.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.5}Juniper Cloud CPE}{10}{subsection.2.4.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.6}Huawei AR1000V virtual router}{10}{subsection.2.4.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.7}AT\&T flexware}{10}{subsection.2.4.7}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}HSNL vCPE framework}{10}{section.2.5}}
-\newlabel{sec:hsnl_vcpe}{{2.5}{10}{HSNL vCPE framework}{section.2.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Deployment Model}{10}{subsection.2.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}NetFate}{10}{subsection.2.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Ericsson CPE}{10}{subsection.2.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Ericsson vCPE architecture.\cite  {ericsson-vcpe}\relax }}{11}{figure.caption.13}}
+\newlabel{fig:ericsson_archi}{{2.7}{11}{Ericsson vCPE architecture.\cite {ericsson-vcpe}\relax }{figure.caption.13}{}}
+\citation{ericsson-vcpe}
+\citation{ericsson-vcpe}
+\citation{juniper-cpe}
+\citation{juniper-cpe}
+\citation{juniper-cpe}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Overview of Service Functions.\cite  {ericsson-vcpe}\relax }}{12}{figure.caption.14}}
+\newlabel{fig:ericsson_sf}{{2.8}{12}{Overview of Service Functions.\cite {ericsson-vcpe}\relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Juniper Cloud CPE}{12}{subsection.2.4.3}}
+\newlabel{fig:juniper_central}{{2.9a}{13}{Centralized deployment model.\relax }{figure.caption.15}{}}
+\newlabel{sub@fig:juniper_central}{{a}{13}{Centralized deployment model.\relax }{figure.caption.15}{}}
+\newlabel{fig:juniper_distributed}{{2.9b}{13}{Distributed deployment model.\relax }{figure.caption.15}{}}
+\newlabel{sub@fig:juniper_distributed}{{b}{13}{Distributed deployment model.\relax }{figure.caption.15}{}}
+\newlabel{fig:juniper_hybrid}{{2.9c}{13}{Hybrid deployment model.\relax }{figure.caption.15}{}}
+\newlabel{sub@fig:juniper_hybrid}{{c}{13}{Hybrid deployment model.\relax }{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Juniper Cloud CPE deployment model. \cite  {juniper-cpe}\relax }}{13}{figure.caption.15}}
+\newlabel{fig:juniper-cpe}{{2.9}{13}{Juniper Cloud CPE deployment model. \cite {juniper-cpe}\relax }{figure.caption.15}{}}
+\citation{vcpe-enhance}
+\citation{ericsson-vcpe}
+\citation{netfate}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}HSNL vCPE framework}{14}{section.2.5}}
+\newlabel{sec:hsnl_vcpe}{{2.5}{14}{HSNL vCPE framework}{section.2.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Deployment Model}{14}{subsection.2.5.1}}
 \citation{etsi-nfv-archi}
 \citation{etsi-nfv-archi}
 \citation{che-wei-master,che-wei-umedia}
 \citation{etsi-nfv-archi}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Service deployment model.\relax }}{11}{figure.caption.11}}
-\newlabel{fig:hsnl_service_deployment}{{2.7}{11}{Service deployment model.\relax }{figure.caption.11}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Architecture of the Main System}{11}{subsection.2.5.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.2.1}Reference Architecture - ETSI NFV MANO Model}{11}{subsubsection.2.5.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces Service deployment model.\relax }}{15}{figure.caption.16}}
+\newlabel{fig:hsnl_service_deployment}{{2.10}{15}{Service deployment model.\relax }{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Architecture of the Main System}{15}{subsection.2.5.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.2.1}Reference Architecture - ETSI NFV MANO Model}{15}{subsubsection.2.5.2.1}}
 \citation{che-wei-master}
 \citation{che-wei-master}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces ETSI MANO Architecture. \cite  {etsi-nfv-archi}\relax }}{12}{figure.caption.12}}
-\newlabel{fig:etsi_nfv_architecture}{{2.8}{12}{ETSI MANO Architecture. \cite {etsi-nfv-archi}\relax }{figure.caption.12}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.2.2}vCPE Platform NFV Architecture}{12}{subsubsection.2.5.2.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces HSNL vCPE MANO Architecture \cite  {che-wei-master}.\relax }}{13}{figure.caption.13}}
-\newlabel{fig:hsnl_vcpe_architecture}{{2.9}{13}{HSNL vCPE MANO Architecture \cite {che-wei-master}.\relax }{figure.caption.13}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}System Implementation}{13}{subsection.2.5.3}}
-\newlabel{ssec:hsnl_system_imple}{{2.5.3}{13}{System Implementation}{subsection.2.5.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces HSNL vCPE framework overview.\relax }}{14}{figure.caption.14}}
-\newlabel{fig:hsnl_vcpe_framework}{{2.10}{14}{HSNL vCPE framework overview.\relax }{figure.caption.14}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3.1}Infrastructure Controller}{14}{subsubsection.2.5.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3.2}Infrastructure Orchestrator}{14}{subsubsection.2.5.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces ETSI MANO Architecture. \cite  {etsi-nfv-archi}\relax }}{16}{figure.caption.17}}
+\newlabel{fig:etsi_nfv_architecture}{{2.11}{16}{ETSI MANO Architecture. \cite {etsi-nfv-archi}\relax }{figure.caption.17}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.2.2}vCPE Platform NFV Architecture}{16}{subsubsection.2.5.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces HSNL vCPE MANO Architecture \cite  {che-wei-master}.\relax }}{17}{figure.caption.18}}
+\newlabel{fig:hsnl_vcpe_architecture}{{2.12}{17}{HSNL vCPE MANO Architecture \cite {che-wei-master}.\relax }{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}System Implementation}{17}{subsection.2.5.3}}
+\newlabel{ssec:hsnl_system_imple}{{2.5.3}{17}{System Implementation}{subsection.2.5.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces HSNL vCPE framework overview.\relax }}{18}{figure.caption.19}}
+\newlabel{fig:hsnl_vcpe_framework}{{2.13}{18}{HSNL vCPE framework overview.\relax }{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3.1}Infrastructure Controller}{18}{subsubsection.2.5.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3.2}Infrastructure Orchestrator}{18}{subsubsection.2.5.3.2}}
 \citation{ryu}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3.3}Cloud Database}{15}{subsubsection.2.5.3.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3.4}VNF Controllers}{15}{subsubsection.2.5.3.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3.5}VNF Orchestrator}{15}{subsubsection.2.5.3.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3.3}Cloud Database}{19}{subsubsection.2.5.3.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3.4}VNF Controllers}{19}{subsubsection.2.5.3.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3.5}VNF Orchestrator}{19}{subsubsection.2.5.3.5}}
 \citation{che-wei-master}
 \citation{sdn-enabled}
 \citation{etsi-nfv-terminology,etsi-nfv-infra}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}System Implementation}{17}{chapter.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}System Implementation}{21}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{ch:implementation}{{3}{17}{System Implementation}{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Overview of Network Functions}{17}{section.3.1}}
-\newlabel{sec:desc_nfv_overview}{{3.1}{17}{Overview of Network Functions}{section.3.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Stateful Processing Component}{17}{subsection.3.1.1}}
+\newlabel{ch:implementation}{{3}{21}{System Implementation}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Overview of Network Functions}{21}{section.3.1}}
+\newlabel{sec:desc_nfv_overview}{{3.1}{21}{Overview of Network Functions}{section.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Stateful Processing Component}{21}{subsection.3.1.1}}
 \citation{sdn-ft}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of network functions.\relax }}{18}{figure.caption.15}}
-\newlabel{fig:nfv_overview}{{3.1}{18}{Overview of network functions.\relax }{figure.caption.15}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Stateless Processing Component}{18}{subsection.3.1.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Multiple Flow Table Strategy}{18}{section.3.2}}
-\newlabel{sec:multi_flow_table_strategy}{{3.2}{18}{Multiple Flow Table Strategy}{section.3.2}{}}
-\newlabel{RF1}{19}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Flow table order of vCPE service.\relax }}{19}{figure.caption.16}}
-\newlabel{fig:mft_table_overview}{{3.2}{19}{Flow table order of vCPE service.\relax }{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of network functions.\relax }}{22}{figure.caption.20}}
+\newlabel{fig:nfv_overview}{{3.1}{22}{Overview of network functions.\relax }{figure.caption.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Stateless Processing Component}{22}{subsection.3.1.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Multiple Flow Table Strategy}{22}{section.3.2}}
+\newlabel{sec:multi_flow_table_strategy}{{3.2}{22}{Multiple Flow Table Strategy}{section.3.2}{}}
+\newlabel{RF1}{23}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Flow table order of vCPE service.\relax }}{23}{figure.caption.21}}
+\newlabel{fig:mft_table_overview}{{3.2}{23}{Flow table order of vCPE service.\relax }{figure.caption.21}{}}
 \citation{multiple-flow-table}
 \citation{openflow-spec}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Service Control}{21}{section.3.3}}
-\newlabel{sec:service_control}{{3.3}{21}{Service Control}{section.3.3}{}}
-\newlabel{fig:service_control_all_enable}{{3.3a}{22}{All Services are enabled.\relax }{figure.caption.17}{}}
-\newlabel{sub@fig:service_control_all_enable}{{a}{22}{All Services are enabled.\relax }{figure.caption.17}{}}
-\newlabel{fig:service_control_disable2}{{3.3b}{22}{When service 2 is disabled, the force-ignoring rule is added into the table 1.\relax }{figure.caption.17}{}}
-\newlabel{sub@fig:service_control_disable2}{{b}{22}{When service 2 is disabled, the force-ignoring rule is added into the table 1.\relax }{figure.caption.17}{}}
-\newlabel{fig:service_control_last}{{3.3c}{22}{When last service (service N) is disabled, the force-ignoring rule is added into the table N-1 and the packet-in rules is added in to table N-2.\relax }{figure.caption.17}{}}
-\newlabel{sub@fig:service_control_last}{{c}{22}{When last service (service N) is disabled, the force-ignoring rule is added into the table N-1 and the packet-in rules is added in to table N-2.\relax }{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Service control in multiple flow table mechanism.\relax }}{22}{figure.caption.17}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Network functions}{23}{section.3.4}}
-\newlabel{sec:setwork_functions}{{3.4}{23}{Network functions}{section.3.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Firewall}{23}{subsection.3.4.1}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Firewall rules in Flow Entry\relax }}{24}{table.caption.18}}
-\newlabel{table:fw}{{3.1}{24}{Firewall rules in Flow Entry\relax }{table.caption.18}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}NAT}{24}{subsection.3.4.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Example of modification of IP address and port number by NAT service.\relax }}{25}{figure.caption.20}}
-\newlabel{fig:mft_nat}{{3.4}{25}{Example of modification of IP address and port number by NAT service.\relax }{figure.caption.20}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Flow entry for modifying the packet header fields\relax }}{25}{table.caption.21}}
-\newlabel{table:nat}{{3.2}{25}{Flow entry for modifying the packet header fields\relax }{table.caption.21}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}DHCP}{26}{subsection.3.4.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Forwarding}{26}{subsection.3.4.4}}
-\newlabel{ssec:forwarding}{{3.4.4}{26}{Forwarding}{subsection.3.4.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.5}Traffic Mirroring}{27}{subsection.3.4.5}}
-\newlabel{ssec:mirror}{{3.4.5}{27}{Traffic Mirroring}{subsection.3.4.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.6}QoS}{27}{subsection.3.4.6}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.6.1}Rate Limitation of Hosts}{28}{subsubsection.3.4.6.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.6.2}Rate Limitation of Applications}{28}{subsubsection.3.4.6.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Illustration of rate limiting for a certain host\relax }}{29}{figure.caption.22}}
-\newlabel{fig:mft_qos_rate_host}{{3.5}{29}{Illustration of rate limiting for a certain host\relax }{figure.caption.22}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Architecture of our application identification system in classification phase.\relax }}{30}{figure.caption.23}}
-\newlabel{fig:class_classifying}{{3.6}{30}{Architecture of our application identification system in classification phase.\relax }{figure.caption.23}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.6.3}The Flow Table Order of Forwarding and QoS Service}{30}{subsubsection.3.4.6.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Illustration of rate limiting for a certain application.\relax }}{31}{figure.caption.24}}
-\newlabel{fig:mft_qos_rate_app}{{3.7}{31}{Illustration of rate limiting for a certain application.\relax }{figure.caption.24}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Service Control}{25}{section.3.3}}
+\newlabel{sec:service_control}{{3.3}{25}{Service Control}{section.3.3}{}}
+\newlabel{fig:service_control_all_enable}{{3.3a}{26}{All Services are enabled.\relax }{figure.caption.22}{}}
+\newlabel{sub@fig:service_control_all_enable}{{a}{26}{All Services are enabled.\relax }{figure.caption.22}{}}
+\newlabel{fig:service_control_disable2}{{3.3b}{26}{When service 2 is disabled, the force-ignoring rule is added into the table 1.\relax }{figure.caption.22}{}}
+\newlabel{sub@fig:service_control_disable2}{{b}{26}{When service 2 is disabled, the force-ignoring rule is added into the table 1.\relax }{figure.caption.22}{}}
+\newlabel{fig:service_control_last}{{3.3c}{26}{When last service (service N) is disabled, the force-ignoring rule is added into the table N-1 and the packet-in rules is added in to table N-2.\relax }{figure.caption.22}{}}
+\newlabel{sub@fig:service_control_last}{{c}{26}{When last service (service N) is disabled, the force-ignoring rule is added into the table N-1 and the packet-in rules is added in to table N-2.\relax }{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Service control in multiple flow table mechanism.\relax }}{26}{figure.caption.22}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Network functions}{27}{section.3.4}}
+\newlabel{sec:setwork_functions}{{3.4}{27}{Network functions}{section.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Firewall}{27}{subsection.3.4.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Firewall rules in Flow Entry\relax }}{28}{table.caption.23}}
+\newlabel{table:fw}{{3.1}{28}{Firewall rules in Flow Entry\relax }{table.caption.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}NAT}{28}{subsection.3.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Example of modification of IP address and port number by NAT service.\relax }}{29}{figure.caption.25}}
+\newlabel{fig:mft_nat}{{3.4}{29}{Example of modification of IP address and port number by NAT service.\relax }{figure.caption.25}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Flow entry for modifying the packet header fields\relax }}{29}{table.caption.26}}
+\newlabel{table:nat}{{3.2}{29}{Flow entry for modifying the packet header fields\relax }{table.caption.26}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}DHCP}{30}{subsection.3.4.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Forwarding}{30}{subsection.3.4.4}}
+\newlabel{ssec:forwarding}{{3.4.4}{30}{Forwarding}{subsection.3.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.5}Traffic Mirroring}{31}{subsection.3.4.5}}
+\newlabel{ssec:mirror}{{3.4.5}{31}{Traffic Mirroring}{subsection.3.4.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.6}QoS}{31}{subsection.3.4.6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.6.1}Rate Limitation of Hosts}{32}{subsubsection.3.4.6.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.6.2}Rate Limitation of Applications}{32}{subsubsection.3.4.6.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Illustration of rate limiting for a certain host\relax }}{33}{figure.caption.27}}
+\newlabel{fig:mft_qos_rate_host}{{3.5}{33}{Illustration of rate limiting for a certain host\relax }{figure.caption.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Architecture of our application identification system in classification phase.\relax }}{34}{figure.caption.28}}
+\newlabel{fig:class_classifying}{{3.6}{34}{Architecture of our application identification system in classification phase.\relax }{figure.caption.28}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.6.3}The Flow Table Order of Forwarding and QoS Service}{34}{subsubsection.3.4.6.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Illustration of rate limiting for a certain application.\relax }}{35}{figure.caption.29}}
+\newlabel{fig:mft_qos_rate_app}{{3.7}{35}{Illustration of rate limiting for a certain application.\relax }{figure.caption.29}{}}
 \citation{edge-core-switch}
 \citation{iperf}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Performance Evaluation}{33}{chapter.4}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Performance Evaluation}{37}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{ch:evaluation}{{4}{33}{Performance Evaluation}{chapter.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Multiple Table Performance}{33}{section.4.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Multiple Table Performance Evaluation Scenario.\relax }}{34}{figure.caption.25}}
-\newlabel{fig:throughput_measurement_scenario}{{4.1}{34}{Multiple Table Performance Evaluation Scenario.\relax }{figure.caption.25}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Results of Multiple Table Performance Evaluation.\relax }}{35}{figure.caption.26}}
-\newlabel{fig:throughput_measurement}{{4.2}{35}{Results of Multiple Table Performance Evaluation.\relax }{figure.caption.26}{}}
+\newlabel{ch:evaluation}{{4}{37}{Performance Evaluation}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Multiple Table Performance}{37}{section.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Multiple Table Performance Evaluation Scenario.\relax }}{38}{figure.caption.30}}
+\newlabel{fig:throughput_measurement_scenario}{{4.1}{38}{Multiple Table Performance Evaluation Scenario.\relax }{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Results of Multiple Table Performance Evaluation.\relax }}{39}{figure.caption.31}}
+\newlabel{fig:throughput_measurement}{{4.2}{39}{Results of Multiple Table Performance Evaluation.\relax }{figure.caption.31}{}}
 \citation{edge-core-switch}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Limit the rate of a certain host.\relax }}{36}{figure.caption.27}}
-\newlabel{fig:integration_host}{{4.3}{36}{Limit the rate of a certain host.\relax }{figure.caption.27}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Integration Evaluation}{36}{section.4.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Evaluation of QoS When Host Bandwidth Is Limited}{36}{subsection.4.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Scenario of integration evaluation.\relax }}{37}{figure.caption.28}}
-\newlabel{fig:integration_evaluation}{{4.4}{37}{Scenario of integration evaluation.\relax }{figure.caption.28}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Evaluation of QoS When Application Bandwidth Is Limited}{37}{subsection.4.2.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Limit the rate of Filezilla.\relax }}{38}{figure.caption.29}}
-\newlabel{fig:integration_app_filezilla}{{4.5}{38}{Limit the rate of Filezilla.\relax }{figure.caption.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Limit the rate of a certain host.\relax }}{40}{figure.caption.32}}
+\newlabel{fig:integration_host}{{4.3}{40}{Limit the rate of a certain host.\relax }{figure.caption.32}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Integration Evaluation}{40}{section.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Evaluation of QoS When Host Bandwidth Is Limited}{40}{subsection.4.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Scenario of integration evaluation.\relax }}{41}{figure.caption.33}}
+\newlabel{fig:integration_evaluation}{{4.4}{41}{Scenario of integration evaluation.\relax }{figure.caption.33}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Evaluation of QoS When Application Bandwidth Is Limited}{41}{subsection.4.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Limit the rate of Filezilla.\relax }}{42}{figure.caption.34}}
+\newlabel{fig:integration_app_filezilla}{{4.5}{42}{Limit the rate of Filezilla.\relax }{figure.caption.34}{}}
 \bibstyle{IEEEtran}
 \bibdata{template}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{40}{chapter.5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{44}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{ch:conclusion}{{5}{40}{Conclusion and Future Work}{chapter.5}{}}
+\newlabel{ch:conclusion}{{5}{44}{Conclusion and Future Work}{chapter.5}{}}
 \bibcite{openflow-spec}{1}
 \bibcite{nfv-wp}{2}
-\bibcite{etsi-nfv-archi}{3}
-\bibcite{che-wei-master}{4}
-\bibcite{sdn-mckeown-2009-talk}{5}
-\bibcite{sdn-newnorm}{6}
-\bibcite{sdn-road}{7}
-\bibcite{sdn-compre-survey}{8}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{41}{chapter*.30}}
-\bibcite{openflow-mckeown-2008}{9}
-\bibcite{nfv-survey}{10}
-\bibcite{nec-vcpe}{11}
-\bibcite{vcpe-enhance}{12}
-\bibcite{nfv-home}{13}
-\bibcite{etsi-nfv-usecase}{14}
-\bibcite{virtual-rg}{15}
-\bibcite{security-vgw}{16}
-\bibcite{design-vrgw}{17}
-\bibcite{nfv-hgw-surrogate}{18}
-\bibcite{linux-cpe}{19}
-\bibcite{nfv-resoure-contrain-cpe}{20}
-\bibcite{cloud4nfv}{21}
-\bibcite{cloud4nfv-telco}{22}
-\bibcite{netfate}{23}
-\bibcite{che-wei-umedia}{24}
-\bibcite{etsi-nfv-mano}{25}
-\bibcite{etsi-nfv-mano-sdn}{26}
-\bibcite{multiple-flow-table}{27}
-\bibcite{sdn-enabled}{28}
-\bibcite{sdn-define}{29}
-\bibcite{onf}{30}
-\bibcite{ericcson-vcpe}{31}
-\bibcite{ryu}{32}
-\bibcite{etsi-nfv-terminology}{33}
-\bibcite{etsi-nfv-infra}{34}
-\bibcite{sdn-ft}{35}
-\bibcite{edge-core-switch}{36}
-\bibcite{iperf}{37}
+\bibcite{ericsson-vcpe}{3}
+\bibcite{juniper-cpe}{4}
+\bibcite{etsi-nfv-archi}{5}
+\bibcite{che-wei-master}{6}
+\bibcite{sdn-mckeown-2009-talk}{7}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{45}{chapter*.35}}
+\bibcite{sdn-newnorm}{8}
+\bibcite{sdn-road}{9}
+\bibcite{sdn-compre-survey}{10}
+\bibcite{openflow-mckeown-2008}{11}
+\bibcite{nfv-survey}{12}
+\bibcite{nec-vcpe}{13}
+\bibcite{vcpe-enhance}{14}
+\bibcite{nfv-home}{15}
+\bibcite{etsi-nfv-usecase}{16}
+\bibcite{virtual-rg}{17}
+\bibcite{security-vgw}{18}
+\bibcite{design-vrgw}{19}
+\bibcite{nfv-hgw-surrogate}{20}
+\bibcite{linux-cpe}{21}
+\bibcite{nfv-resoure-contrain-cpe}{22}
+\bibcite{cloud4nfv}{23}
+\bibcite{cloud4nfv-telco}{24}
+\bibcite{netfate}{25}
+\bibcite{che-wei-umedia}{26}
+\bibcite{etsi-nfv-mano}{27}
+\bibcite{etsi-nfv-mano-sdn}{28}
+\bibcite{multiple-flow-table}{29}
+\bibcite{sdn-enabled}{30}
+\bibcite{sdn-define}{31}
+\bibcite{onf}{32}
+\bibcite{ryu}{33}
+\bibcite{etsi-nfv-terminology}{34}
+\bibcite{etsi-nfv-infra}{35}
+\bibcite{sdn-ft}{36}
+\bibcite{edge-core-switch}{37}
+\bibcite{iperf}{38}

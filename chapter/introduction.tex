@@ -14,6 +14,8 @@ In the progress of vCPE development, the SDN is not involved at first. Most of p
 Cloud4NFV \cite{cloud4nfv, cloud4nfv-telco}, proposed by Portugal Telecom, started to use SDN technology on designing virtual CPE management and organization (MANO) platform for Telco cloud.
 Italy Telecom also proposed NetFATE \cite{netfate}, which is a network function deploy-to-edge model in which the NFs are designed by SDN and perform by SDN switch.
 Inspired from these two frameworks, our laboratory, High Speed Network Laboratory (HSNL), also proposed a vCPE framework and a few network functions, attempting to replace hardware-based CPE \cite{che-wei-master, che-wei-umedia}.
+There are other CPE virtualize frameworks achieved by leveraging NFV and SDN.
+Ericsson proposed an Cloud-based vCPE solution \cite{ericsson-vcpe} and Juniper also proposed a Hybrid Cloud CPE Deployment Model \cite{juniper-cpe}.
 
 However, these SDN-involved vCPE research most focused on how SDN benefits the design of NFV MANO \cite{etsi-nfv-mano, etsi-nfv-mano-sdn} platform or traffic steering between CPE nodes, not the CPE network function itself.
 When the NFV is deployed at network edge and performed by SDN switch, there will be restriction on the OpenFlow Table \cite{multiple-flow-table}.
