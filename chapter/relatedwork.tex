@@ -1,12 +1,12 @@
 \chapter{Related Work} \label{ch:related_work}
 
-In this chapter begins with a brief review of SDN and provide an overview of how SDN actually works in Section \ref{sec:sdn}, and then we move on describing the detailed work of OpenFlow which is the first SDN standards and the most well-known southbound protocol defined by Open Networking Foundation (ONF) in Section \ref{sec:openflow}.
+In this chapter begins on a brief review of SDN in Section \ref{sec:sdn}.
+Then we move on describing the detailed work of OpenFlow which is the first SDN standards and also the most well-known southbound protocol in Section \ref{sec:openflow}.
+In Section \ref{sec:nfv}, the NFV is introduced which is a network architecture concept of relocating network functions from dedicated appliances to generic servers.
 
-In Section \ref{sec:nfv}, the NFV is introduced which is a network architecture concept proposed by the European Telecommunications Standards Institute (ETSI) that uses virtualization technologies to virtualize network node functions into building blocks.
-
-Related works of Virtual CPE platform will be described in Section \ref{sec:related_vcpe}. At the first in this section, we will introduce Cloud4NFV and NetFATE, which our HSNL vCPE framework is inspired from. We will also introduce some vCPE products proposed by other telco.
-
-Finally, we will described our previous HSNL vCPE framework in detail in Section \ref{sec:hsnl_vcpe}.
+Related works of Virtual CPE platform will be described in Section \ref{sec:related_vcpe}.
+We will introduce NetFATE, which our HSNL vCPE framework is inspired from. We will also introduce vCPE products proposed by Ericsson and Juniper.
+Finally, we will described the HSNL vCPE framework of our laboratory, HSNL, in great detail in Section \ref{sec:hsnl_vcpe}.
 
 
 
@@ -21,30 +21,23 @@ Finally, we will described our previous HSNL vCPE framework in detail in Section
 \label{fig:sdn_archi}
 \end{figure}
 
-SDN has been one of the pillars of innovation in network infrastructures, allowing the decoupling of the control and data planes through an open and standard interface that enables the programmability of the network \cite{sdn-define}.
-SDN also centralizes application controls of the whole network so that network managers could directly implement their
-ideas.
+SDN has been one of the pillars of innovation in network infrastructures, allowing to decouple of the control plane and data plane and enable the programmability of the network through an open and standard interface. \cite{sdn-define}
+SDN also centralizes application controls of the whole network.
+With these benefits, network managers could directly implement their ideas on the network.
 
 Figure \ref{fig:sdn_archi} depicts a logical structure view of the SDN architecture.
-SDN applications or business applications are programs that built on top of the controller.
-These applications performs business logic and send requests to SDN controllers through Northbound APIs.
-The most used Northbound API is REST (Representational State Transfer) API.
+SDN applications and business applications are programs that built on top of the controller.
+These applications performs business logic and send requests to SDN controllers through northbound APIs.
+The most used northbound API is Representational State Transfer (REST) API.
 
-When receiving the requests from applications, the SDN controller uses the Southbound Interface to communicate with programmable SDN network devices.
-The most commonly used is the OpenFlow specification \cite{openflow-spec} defined by Open Networking Foundation (ONF) \cite{onf}.
+When receiving the requests from applications, the SDN controller uses the southbound interface to communicate with programmable SDN network devices.
+The most commonly used is the OpenFlow specification \cite{openflow-spec} defined by Open Networking Foundation (ONF) \cite{onf}, which will be presented in next section.
 
 
 
 
 
 \section{OpenFlow Protocol} \label{sec:openflow}
-
-Referred to Section \ref{sec:sdn}, SDN architectures generally have three components, SDN applications, SDN controllers, and SDN network devices.
-For communication between control plane and data plane, there is defined a southbound interface between Controller and network devices.
-In this section, we will introduce the detail of the most commonly used Southbound Interface, OpenFlow protocol.
-
-
-
 \subsection{OpenFlow Switch Components}
 
 \begin{figure}[!ht]
@@ -63,10 +56,11 @@ Fig. \ref{fig:openflow_switch_component} illustrates basic architecture of the O
 \label{fig:flow_entry}
 \end{figure}
 
-The flow table matches incoming packets to a particular flow and specifies the actions that are to be performed on the packets;
 There are flows entries in each flow table and each flow table entry contains match fields, priority, instructions, timeouts, and so on as shown in Fig. \ref{fig:flow_entry}.
+The flow table matches incoming packets to a particular flow entry and specifies the actions that are needed to be performed on the packets.
 
-The group table which is used to arrange multiple flow entries into a group and update the actions based on the group, the meter table can trigger a variety of bandwidth performance-related actions on a flow and the SDN controller communicates to the switch via the OpenFlow channel.
+
+The group table is used to arrange multiple flow entries into a group and update the actions based on the group. The meter table can trigger a variety of bandwidth performance-related actions on a flow. Through the the OpenFlow channel, SDN controller can communicates to the switch.
 
 
 
@@ -100,17 +94,15 @@ The group table which is used to arrange multiple flow entries into a group and 
 The Packet flow through the processing pipeline is described in Fig. \ref{fig:openflow_pipeline} and the workflow of packet handling through an OpenFlow switch on receipt of a packet is illustrated in Fig. \ref{fig:openflow_matching}.
 
 The processing of each packet always starts at the first flow table.
-When being processed by a flow table, the OpenFlow switch will do a table lookup based on the packet type, and various packet header fields, such as source MAC address or destination IP address.
+When being processed by a flow table, the OpenFlow switch will perform a table lookup based on the packet type, and various packet header fields, such as source MAC address or destination IP address.
 If a flow table entry field has a value of ANY (field omitted), it matches all possible values in the header.
 Once the packet is matched highest-priority matching flow entry in the flow table, the counters on the selected flow entry must be updated and the corresponding action must be added to the instruction set.
 
 The packet can execute the instruction set immediately, or execute after finishing the journey in switch.
-If actions applied in a previous table using the Apply-Actions changed the packet headers, those changes are reflected in the packet match fields.
+If actions applied in a previous table using the Apply-Actions changed the packet headers, those changes are applied immediately and effecting the matching in the next flow table.
 A flow entry can direct a packet to next table if there's a GOTO\_TABLE action in instruction set.
-The detail of packet matching will be described in next subsection.
 
-Every flow table must support a table-miss flow entry to handle the table missed condition, in which packets unmatched any flow entries in the flow table. The table-miss flow entry is identified by its wildcard patterns and the lowest priority (0). The instructions of the table-miss flow entry maybe the send packets to the controller, drop packets or direct packets to a subsequent table.
-
+Every flow table must support a table-miss flow entry to handle the table missed condition, in which packets unmatched any flow entries in the flow table. The table-miss flow entry is identified by its wildcard patterns and the lowest priority (0). The instructions of the table-miss flow entry may be sending packets to the controller (PACKET\_IN), dropping packets (DROP) or directing packets to a subsequent table (GOTO\_TABLE).
 
 
 
@@ -124,8 +116,6 @@ Every flow table must support a table-miss flow entry to handle the table missed
 \label{fig:nfv_and_sdn}
 \end{figure}
 
-
-Different from the concept of SDN, NFV is used to relocation of network functions from dedicated appliances to generic servers.
 Network functions developed by different vendors and provided based on different hardware. This makes them difficult to design, manage and deploy.
 To resolve these issues, telecom providers came together in a group called European Telecommunications Standards Institute (ETSI) and the ETSI setups the Industry Specification Group for Network Functions Virtualization (ISG NFV). The working group proposed a new architecture for network virtualization paradigm. The original NFV white paper \cite{nfv-wp}, described the problems that they are facing, along with their proposed solution.
 
@@ -137,7 +127,39 @@ The benefits of network functions virtualization are: (1) reducing CapEx and OpE
 
 
 \section{Related vCPE framework} \label{sec:related_vcpe}
+
+\subsection{ETSI NFV MANO Model}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=0.9\textwidth]{./fig/etsi_nfv_architecture}
+\caption{ETSI MANO Architecture. \cite{etsi-nfv-archi}}
+\label{fig:etsi_nfv_architecture}
+\end{figure}
+
+Shown in Fig. \ref{fig:etsi_nfv_architecture}, the right side of the ETSI-NFV architecture \cite{etsi-nfv-archi} are: NFV Orchestrator (NFVO), VNF Manager (VNFM), and Virtualized Infrastructure Manager (VIM). NFVO is responsible for the orchestration and management of NFVI resources and to implement network services on the NFVI. VNFM is responsible for the lifecycle management of VNF instances (instantiation, configuration, update, scale up/down, termination, etc). VIM is responsible for controlling/managing the NFVI resources.
+
 \subsection{NetFate}
+
+NetFATE \cite{netfate}, proposed by Italy Telecom, which is a network function deploy-to-edge model in which the NFs are designed by SDN and perform by SDN switch. NetFATE architecture is compliant with the ETSI NFV architecture\cite{etsi-nfv-archi} and the so-called Virtual Network Function as a Service (VNFaaS) the NetFATE platform aims at virtualizing network functions of both CPE devices and Provider Edge (PE) nodes.
+
+The main components of NetFATE are CPE nodes, the PE nodes, the data centers, and the orchestrator.
+The CPE nodes are access gateways that can be either home gateways in a residential environment, or medium/high performance routers in an enterprise environment.
+The PE nodes are the aggregation nodes of a telco network, and are typically shared by a high number of customers. Both CPE and PE nodes are included in the NFVI of NetFATE.
+
+The orchestrator runs on a dedicated server and communicates with all the NFVI nodes through the Telco operator IP network. Its goal is to allocate, migrate and terminate VMs running network functions, and consequently controlling the traffic paths according to the run-time evolution of the network.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\textwidth]{./fig/netfate.png}
+\caption{Virtual Firewall of NetFATE \cite{netfate}}
+\label{fig:netfate}
+\end{figure}
+
+There is a case study as shown in Fig. \ref{fig:netfate} which is a virtual firewall based on the proposed NetFATE architecture. The personal virtual firewall services required by client 1 and client 2, respectively. When client 1 accesses the Internet through CPE 1 node, and then switches to the access point CPE 2 node without having any downtime. The orchestrator node in the NetFATE architecture plays a key role in the overall platform that migrates the personal virtual firewall from the previous CPE node to the new one.
+
+The disadvantage of NetFATE is that NetFATE only tests the scenario of virtual firewall which lacks sufficient experimental results for other scenarios under NetFATE platform.
+
 
 
 
@@ -184,8 +206,8 @@ The traffic from end-used devices will be handle by SF and forward back immediat
 Transparent SFs use packet header to classify packet and to identify data flow.
 The traffic from customers will be forward along the selected service chain.
 
-% The advantages of Ericsson vCPE solution is easy-to-deploy by using tunneling from customer to datacenter.
-% However, the performance of the network functions may be a concern, since all traffic is needed to forward to data center.
+The advantages of Ericsson vCPE solution is easy-to-deploy by using tunneling from customer to datacenter.
+However, the performance of the network functions may be a concern, since all traffic is needed to forward to data center.
 
 
 
@@ -221,11 +243,15 @@ Juniper proposed a Cloud CPE solution \cite{juniper-cpe}. There are two kinds of
 In centralized cloud CPE deployment model, services can ordered through a customer portal or trigger by existing business support system (BSS). BSS automatically instantiates VNFs and service chaining. The vCPE functions are achieved by these service chain.
 In distributed cloud CPE deployment model, they distributed Juniper NFX250 service platform to customer location, which provides similar functionality to the physical CPE. A single NFX 250 device can support multiple VNFs.
 
-Juniper’s Cloud CPE simultaneously can support these Cloud CPE, called hybrid cloud CPE deployment model.
+Juniper’s Cloud CPE simultaneously can support both centralized and distributed model, called hybrid cloud CPE deployment model.
 
 
 
 \section{HSNL vCPE framework} \label{sec:hsnl_vcpe}
+
+
+HSNL virtual CPE platform \cite{che-wei-master, che-wei-umedia} is inspired by ETSI NFV MANO model and designed under the concept of the ETSI NFV reference architectural framework \cite{etsi-nfv-archi}.
+
 The following part of this paper moves on to describe in greater detail the HSNL vCPE framework. Our proposed vCPE functions, which is implemented by multiple flow table management mechanism, also can be deployed by this framework.
 
 
@@ -243,20 +269,9 @@ Fig. \ref{fig:hsnl_service_deployment} illustrates the service deployment model.
 
 
 \subsection{Architecture of the Main System}
-\subsubsection{Reference Architecture - ETSI NFV MANO Model}
 
-\begin{figure}[!t]
-\centering
-\includegraphics[width=0.9\textwidth]{./fig/etsi_nfv_architecture}
-\caption{ETSI MANO Architecture. \cite{etsi-nfv-archi}}
-\label{fig:etsi_nfv_architecture}
-\end{figure}
 
-HSNL virtual CPE platform \cite{che-wei-master, che-wei-umedia} is inspired by ETSI NFV MANO model and designed under the concept of the ETSI NFV reference architectural framework \cite{etsi-nfv-archi}.
-
-Shown in Fig. \ref{fig:etsi_nfv_architecture}, the right side of the ETSI-NFV architecture are: NFV Orchestrator (NFVO), VNF Manager (VNFM), and Virtualized Infrastructure Manager (VIM). NFVO is responsible for the orchestration and management of NFVI resources and to implement network services on the NFVI. VNFM is responsible for the lifecycle management of VNF instances (instantiation, configuration, update, scale up/down, termination, etc). VIM is responsible for controlling/managing the NFVI resources.
-
-\subsubsection{vCPE Platform NFV Architecture}
+\subsection{vCPE Platform NFV Architecture}
 
 \begin{figure}[!t]
 \centering
@@ -279,16 +294,16 @@ Turning now to the implementation of HSNL Virtual CPE platform.  The system over
 \end{figure}
 
 \subsubsection{Infrastructure Controller}
-The infrastructure controller comprises a Docker management server that can manage the Docker resources like containers and images and a OpenStack server that can manage the VM resources. The infrastructure controller does not manage customer authentication or maintaining the state of the running service; however, it follows the request from the infrastructure orchestrator to create, delete, start, stop, and inspect containers and VMs.
+The infrastructure controller comprises a Docker management server that can manage the Docker resources like containers and images. The infrastructure controller does not manage customer authentication or maintaining the state of the running service; it merely follows the request from the infrastructure orchestrator to create, delete, start, stop, and inspect containers.
 
 \subsubsection{Infrastructure Orchestrator}
-The infrastructure orchestrator plays a key role in our system. It connects and automates the workflows when our services are deployed. When a customer subscribes to our service, the infrastructure orchestrator first authenticates the customer, calls the infrastructure controller to create a container or a VM for the customer, and then updates the information in the database. The infrastructure orchestrator controls the entire life-cycle of our vCPE services.
+The infrastructure orchestrator plays a key role in our system. It connects and automates the workflows when our services are deployed. When a customer subscribes to our service, the infrastructure orchestrator first authenticates the customer, calls the infrastructure controller to create a container for the customer, and then updates the information in the database. The infrastructure orchestrator controls the entire life-cycle of our vCPE services.
 
 \subsubsection{Cloud Database}
 The cloud database is used for restoring the meta data of our vCPE services, which include each customer’s credentials, customer’s container/VM settings, and virtual CPE service states. The cloud database employs PostgreSQL, which is an open source, easily customizable and object-relational database system. Only the infrastructure orchestrator has permissions to access the cloud database.
 
 \subsubsection{VNF Controllers}
-VNF controllers comprises an SDN controller developed using Ryu framework \cite{ryu} and a remote launcher module. The SDN controller does not have a remote launcher module for remotely executing an SDN controller. We built a light-weight server as a launcher module to resolve this problem. The remote launcher module monitors the SDN controller process ID (PID) and kills the SDN controller PID on demand. Once the infrastructure controller  creates the container or the VM, the remote module will initially runs, waiting for requests from VNF Orchestrator. The virtual CPE functions are achieved by the synergies between the VNF controller and the SDN switch.
+VNF controllers comprises an SDN controller developed using Ryu framework \cite{ryu} and a remote launcher module. The original SDN controller does not have a remote launcher module for remotely executing an SDN controller. We built a light-weight server as a launcher module to resolve this problem. The remote launcher module monitors the SDN controller process ID (PID) and kills the SDN controller PID on demand. Once the infrastructure controller  creates the container, the remote module will initially runs, waiting for requests from VNF Orchestrator. The virtual CPE functions are achieved by the synergies between the VNF controller and the SDN switch.
 
 \subsubsection{VNF Orchestrator}
 The VNF orchestrator is a web application server hosted on Amazon web server, and provides to customers an online dashboard for vCPE services management and configuration. Through the web-based UI provided by the VNF orchestrator, customers can subscribe to the desired service without typing any command through the command line interface. After receiving the subscription message, the VNF orchestrator requests the infrastructure orchestrator to create a new VNF controller, and then sends the virtual CPE configuration to the new VNF controller. Based on configuration demands under different conditions, the network administrator can select any of the listed network functions on the dashboard, such as Firewall, NAT, DHCP, quality of service (QoS) management and our proposed virtual home gateway CPE functions which is implemented by multiple flow table mechanism.

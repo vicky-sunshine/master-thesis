@@ -31,6 +31,17 @@ M.~Chiosi, D.~Clarke, P.~Willis, A.~Reid, J.~Feger, M.~Bugenhagen, W.~Khan,
   virtualisation: An introduction, benefits, enablers, challenges and call for
   action,'' in \emph{SDN and OpenFlow World Congress}, 2012, pp. 22--24.
 
+\bibitem{etsi-nfv-archi}
+{NFV ISG}, ``{Network Functions Virtualisation (NFV); Virtual Network Functions
+  Architecture},'' ETSI, Tech. Rep. GS NFV-SWA 001 V1.1.1, Dec. 2014.
+
+\bibitem{netfate}
+A.~Lombardo, A.~Manzalini, G.~Schembra, G.~Faraci, C.~Rametta, and
+  V.~Riccobene, ``An open framework to enable {NetFATE} (network functions at
+  the edge),'' in \emph{Proceedings of the 2015 1st {IEEE} Conference on
+  Network Softwarization ({NetSoft})}.\hskip 1em plus 0.5em minus 0.4em\relax
+  {IEEE}, Apr. 2015.
+
 \bibitem{ericsson-vcpe}
 \BIBentryALTinterwordspacing
 P.~Cota and J.~Sabec, ``{CPE} virtualization by unifying {NFV}, {SDN} and cloud
@@ -43,10 +54,6 @@ P.~Cota and J.~Sabec, ``{CPE} virtualization by unifying {NFV}, {SDN} and cloud
 \bibitem{juniper-cpe}
 ``Juniper networks cloud cpe solution,''
   \url{https://www.juniper.net/assets/kr/kr/local/pdf/solutionbriefs/3510561-en.pdf}.
-
-\bibitem{etsi-nfv-archi}
-{NFV ISG}, ``{Network Functions Virtualisation (NFV); Virtual Network Functions
-  Architecture},'' ETSI, Tech. Rep. GS NFV-SWA 001 V1.1.1, Dec. 2014.
 
 \bibitem{che-wei-master}
 C.-W. Lin, ``{A Novel Virtual CPE Architecture and Service for Enterprises with
@@ -149,13 +156,6 @@ J.~Soares, C.~Goncalves, B.~Parreira, P.~Tavares, J.~Carapinha, J.~P. Barraca,
   R.~L. Aguiar, and S.~Sargento, ``Toward a telco cloud environment for service
   functions,'' \emph{{IEEE} Communications Magazine}, vol.~53, no.~2, pp.
   98--106, Feb. 2015.
-
-\bibitem{netfate}
-A.~Lombardo, A.~Manzalini, G.~Schembra, G.~Faraci, C.~Rametta, and
-  V.~Riccobene, ``An open framework to enable {NetFATE} (network functions at
-  the edge),'' in \emph{Proceedings of the 2015 1st {IEEE} Conference on
-  Network Softwarization ({NetSoft})}.\hskip 1em plus 0.5em minus 0.4em\relax
-  {IEEE}, Apr. 2015.
 
 \bibitem{che-wei-umedia}
 N.-F. Huang, C.-W. Lin, S.-J. Wu, C.-H. Li, and I.-J. Liao, ``A novel virtual
