@@ -136,13 +136,19 @@ TCP      & *           & *            & *        & 23       & drop   \\ \hline
 
 
 \subsection{NAT}
-The NAT service allows numerous hosts to use one public IP address for connecting to the network. Following is an example that illustrates the modification of the IP address and port number by using the NAT service. For an outgoing packet, the SDN switch does not have any flow entry in the flow table, and hence, a PACKET-IN event is triggered initially. The packet that is sent by a private network host is sent to the SDN controller, and the packet header fields are modified using the set-field action. The source IP address and source port number of the outgoing packet are modified to a public IP address and a new port number is remapped for NAT. For the incoming packet, the destination IP address and destination port number are modified to fit the private IP address and port number. Subsequently, the SDN controller adds these flow entries to the SDN switch; all packets must be sent to the controller
+The NAT service allows numerous hosts to use one public IP address for connecting to the network. Following is an example that illustrates the modification of the IP address and port number by using the NAT service. For a new connection, the first outgoing packet can’t match any flow entry in SDN switch, so it will be sent to controller by the PACKET-IN action in the last table. The controller will modify the source IP to the public IP which is set by the network manager and modified the source port to an un-used port. Then, the controller will send the modified packet back to the switch. After that, the controller will send a pair of rule requests to SDN switch: one is for adding rules for egress traffic and the other is for ingress traffic.
 
-In Fig. \ref{fig:mft_nat}, the public IP address of NAT is 140.114.71.178, and the host private IP address is 192.168.8.254 with the port number 7878. The client sent the packet to a server with the IP address 140.114.71.177 and port number 9898.
+There’s an example shown in Fig. \ref{fig:mft_nat}, the public IP address of NAT is 140.114.71.177, and the host private IP address is 192.168.8.254 with the port number 7777. The client sent the packet to a server with the IP address 140.114.71.178 and port number 8080.
 
-As shown in Table \ref{table:nat}, when the host sends the packet to the server (outgoing), a PACKET-IN event is triggered, and the packet is sent to the controller. The set-field action modifies the source IP address to a public IP address of NAT, 140.114.71.178, and the source port to 2000. When the server sends the packet back to the client (incoming), the packet header field is modified. The destination IP address and destination port number are modified to 192.168.8.254 and 7788, respectively.
+As shown in Table \ref{table:nat}, when the host sends the packet to the server (outgoing), a PACKET-IN event is triggered, and the packet is sent to the controller. The set-field action modifies the source IP address to a public IP address of NAT, 140.114.71.177, and the source port to 8888. When the server sends the packet back to the client (incoming), the packet header field is modified. The destination IP address and destination port number are modified to 192.168.8.254 and 7777, respectively.
 
-In the single flow table framework, two rules must be added to the SDN switch to match the outgoing and incoming situations. First, we predicted that the NAT service must be placed in the last table of the multiple flow table framework because the NAT service must set the packet header fields and enable connection to the outside network. Most importantly, the SDN switch is placed according to the order of tables to match the field. The outgoing and incoming situations must be considered. In consideration of all the aforementioned factors, we place the NAT service in the first and last tables in our multiple flow table framework.
+In the single flow table mechanism, the rules for NAT traffic contains not only SET-FIELD action but also the OUR-PORT action.
+We separate the SET-FIELD and OUT-PORT actions into two service: NAT and forwarding.
+The benefit of separating two kinds of rules is that the customers can decide enabling or disabling NAT service by themselves.
+If they disable the NAT service, they’re still able to connect to the Internet by forwarding service.
+The previous NAT service designed by single table mechanism didn’t achieve this flexibility.
+In the multiple flow table mechanism, the rules for handling ingress traffic are in the first table and rules for egress traffic are in the last table, since the QoS and forwarding service handle packets with private network packet header when NAT service is enabled.
+
 
 \begin{figure}[!t]
 \centering
@@ -159,13 +165,13 @@ In the single flow table framework, two rules must be added to the SDN switch to
 \begin{tabular}{|l|l|l|}
 \hline
 Direction       & Egress          & Ingress         \\ \hline
-Table           & 0               & 5               \\ \hline
+Table           & 5               & 0               \\ \hline
 Match src IP    & 192.168.8.254   & 140.114.71.178  \\ \hline
 Match dst IP    & 140.114.71.178  & 140.114.71.177  \\ \hline
 Match src port  & 7777            & 8080            \\ \hline
 Match dst port  & 8080            & 8888            \\ \hline
 
-Action          & \begin{tabular}[c]{@{}l@{}} src IP $\,\to\,$ 140.114.71.177; \\ src port $\,\to\,$ 8888 \end{tabular}   & \begin{tabular}[c]{@{}l@{}} dst IP $\,\to\,$ 192.168.8.254 ; \\ dst port $\,\to\,$ 7777 \end{tabular}   \\ \hline
+Action          & \begin{tabular}[c]{@{}l@{}} src IP $\,\to\,$ 140.114.71.177; \\ src port $\,\to\,$ 8888 \end{tabular}   & \begin{tabular}[c]{@{}l@{}} dst IP $\,\to\,$ 192.168.8.254; \\ dst port $\,\to\,$ 7777 \end{tabular}   \\ \hline
 \end{tabular}
 \end{table*}
 

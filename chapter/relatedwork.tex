@@ -99,7 +99,7 @@ If a flow table entry field has a value of ANY (field omitted), it matches all p
 Once the packet is matched highest-priority matching flow entry in the flow table, the counters on the selected flow entry must be updated and the corresponding action must be added to the instruction set.
 
 The packet can execute the instruction set immediately (APPLY-ACTION option), or execute after finishing the journey in switch (WRITE-ACTION option).
-If packets matches a entry containing SET-FIELD with APPLY-ACTION option in previous table, those changes are applied immediately and effecting the matching in the next flow table.
+If a packet matches an entry containing SET-FIELD with APPLY-ACTION option in previous table, those changes are applied immediately and effecting the matching in the next flow table.
 A flow entry can direct a packet to next table if there's a GOTO-TABLE action in instruction set.
 
 Every flow table must support a table-miss flow entry to handle the table missed condition, in which packets unmatched any flow entries in the flow table. The table-miss flow entry is identified by its wildcard patterns and the lowest priority (0). The instructions of the table-miss flow entry may be sending packets to the controller (PACKET-IN action), dropping packets (DROP action) or directing packets to a subsequent table (GOTO-TABLE action).
@@ -142,7 +142,7 @@ Shown in Fig. \ref{fig:etsi_nfv_architecture}, the right side of the ETSI-NFV ar
 
 
 \section{Related vCPE framework} \label{sec:related_vcpe}
-\subsection{NetFate}
+\subsection{NetFATE}
 
 NetFATE\cite{netfate}, proposed by Italy Telecom, which is a network function deploy-to-edge model in which the NFs are designed by SDN and perform by SDN switch. NetFATE architecture is compliant with the ETSI NFV architecture\cite{etsi-nfv-archi} and the so-called Virtual Network Function as a Service (VNFaaS) aims at virtualizing network functions of both CPE devices and Provider Edge (PE) nodes.
 
@@ -168,7 +168,7 @@ The disadvantage of \cite{netfate} is that it only tests the scenario of virtual
 
 \subsection{Ericsson CPE}
 Ericsson proposed a vCPE framework which achieved by unifying NFV, SDN and Cloud technologies in Internet providers’ networks and data centers \cite{ericsson-vcpe}.
-On the fig. \ref{fig:ericsson_archi}, it can be seen that Ericsson vCPE solution is built from several different components: access network, cloud data center, management and orchestration, applications (Virtual Network Functions) and self-care portal.
+On the Fig. \ref{fig:ericsson_archi}, it can be seen that Ericsson vCPE solution is built from several different components: access network, cloud data center, management and orchestration, applications (Virtual Network Functions) and self-care portal.
 
 \begin{figure}[!t]
 \centering
@@ -285,7 +285,7 @@ The HSNL virtual CPE architecture (Fig. \ref{fig:hsnl_vcpe_architecture}) expand
 
 
 \subsection{System Implementation} \label{ssec:hsnl_system_imple}
-Turning now to the implementation of HSNL Virtual CPE platform.  The system overview (Fig. \ref{fig:hsnl_vcpe_framework}) includes an infrastructure controller, an infrastructure orchestrator, a cloud database, VNF controllers and a VNF Orchestrator. Each component is introduced in the following subsubsections.
+Turning now to the implementation of HSNL Virtual CPE platform.  The system overview (Fig. \ref{fig:hsnl_vcpe_framework}) includes an infrastructure controller, an infrastructure orchestrator, a cloud database, VNF controllers and a VNF Orchestrator. Each component is introduced in the following parts.
 
 \begin{figure}[!t]
 \centering
