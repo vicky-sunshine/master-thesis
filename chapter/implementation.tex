@@ -28,12 +28,12 @@ If we want to update our service, we are required to update only the stateful co
 
 \section{Multiple Flow Table Strategy} \label{sec:multi_flow_table_strategy}
 
-\begin{sidewaysfigure*}
+\begin{figure}
 \centering
-\includegraphics[width=1.1\textwidth]{./fig/mft_table_overview}
+\includegraphics[width=0.4\textwidth]{./fig/mft_table_overview}
 \caption{Flow table order of vCPE service.}
 \label{fig:mft_table_overview}
-\end{sidewaysfigure*}
+\end{figure}
 
 In section \ref{sec:desc_nfv_overview}, we introduce the vCPE service design architecture.
 The network functions are achieved by the cooperation between the SDN controller on the cloud and SDN switch at the local network gateway.
@@ -48,7 +48,7 @@ The second is a condition where the packet requires two-stage processing.
 To resolve both restrictions, we implemented the network functions by using a multiple flow table strategy.
 
 The pipeline of OpenFlow flow table was illustrated in Section \ref{sec:openflow}.
-In our multiple flow table management mechanism, we set the GOTO\_TABLE N action as the table-miss action of table N-1. Therefore, the packet is processed table-by-table in a certain sequence.
+In our multiple flow table management mechanism, we set the GOTO-TABLE N action as the table-miss action of table N-1. Therefore, the packet is processed table-by-table in a certain sequence.
 
 In a multiple flow table strategy, it is most important to determine which flow table the rules should be inserted into.
 We used the purpose of network function as a demarcation, that is, SDN applications responsible for specific purpose inserted rules into one specific flow table to enable us to focus on the design of the network function itself.
@@ -63,44 +63,46 @@ In the following sections, we introduce the method of implementing these network
 
 \section{Service Control} \label{sec:service_control}
 
-\begin{figure}[!tp]
-  % \centering
-  \begin{subfigure}[b]{\textwidth}
-    \includegraphics[width=\textwidth]{./fig/service_control1.pdf}
-    \caption{All Services are enabled.}
-    \label{fig:service_control_all_enable}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[b]{\textwidth}
-    \includegraphics[width=\textwidth]{./fig/service_control2.pdf}
-    \caption{When service 2 is disabled, the force-ignoring rule is added into the table 1.}
-    \label{fig:service_control_disable2}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[b]{\textwidth}
-    \includegraphics[width=\textwidth]{./fig/service_control3.pdf}
-    \caption{When last service (service N) is disabled, the force-ignoring rule is added into the table N-1 and the packet-in rules is added in to table N-2.}
-    \label{fig:service_control_last}
-  \end{subfigure}
-  \caption{Service control in multiple flow table mechanism.}
-\end{figure}
+% \begin{figure}[!tp]
+%   % \centering
+%   \begin{subfigure}[b]{\textwidth}
+%     \includegraphics[width=\textwidth]{./fig/service_control1.pdf}
+%     \caption{All Services are enabled.}
+%     \label{fig:service_control_all_enable}
+%   \end{subfigure}
+%   \hfill
+%   \begin{subfigure}[b]{\textwidth}
+%     \includegraphics[width=\textwidth]{./fig/service_control2.pdf}
+%     \caption{When service 2 is disabled, the force-ignoring rule is added into the table 1.}
+%     \label{fig:service_control_disable2}
+%   \end{subfigure}
+%   \hfill
+%   \begin{subfigure}[b]{\textwidth}
+%     \includegraphics[width=\textwidth]{./fig/service_control3.pdf}
+%     \caption{When last service (service N) is disabled, the force-ignoring rule is added into the table N-1 and the PACKET-IN rules is added in to table N-2.}
+%     \label{fig:service_control_last}
+%   \end{subfigure}
+%   \caption{Service control in multiple flow table mechanism.}
+% \end{figure}
 
 
 Service control is used to enable or disable services.
-As shown in Fig. \ref{fig:service_control_all_enable}, a packet-in rule is always placed in the flow table of the last active service as a table miss in case there is no corresponding rule.
-To enable the service chain, the rules of each service except the last service contain an additional action GOTO\_TABLE, which enables the packets to continue to pass through all active services.
+% As shown in Fig. \ref{fig:service_control_all_enable},
+A PACKET-IN rule is always placed in the flow table of the last active service as a table miss in case there is no corresponding rule.
+To enable the service chain, the rules of each service except the last service contain an additional action GOTO-TABLE, which enables the packets to continue to pass through all active services.
 
-To disable a service, a force-ignoring rule is added into the table of the service. (Fig. \ref{fig:service_control_disable2})
-The force-ignoring rule has maximum priority with the action GOTO\_TABLE.
+To disable a service, a force-ignoring rule is added into the table of the service.
+% (Fig. \ref{fig:service_control_disable2})
+The force-ignoring rule has maximum priority with the action GOTO-TABLE.
 To enable a service, we just remove the force-ignoring rule.
 
-If the service we want to disabled is located at last table, we must not only modify the force-ignoring rule but also modify PACKET\_IN rules.
-The change is shown in Fig. \ref{fig:service_control_last}.
+If the service we want to disabled is located at last table, we must not only modify the force-ignoring rule but also modify PACKET-IN rules.
+% The change is shown in Fig. \ref{fig:service_control_last}.
 
 
 \section{Network functions} \label{sec:setwork_functions}
 \subsection{Firewall}
-The firewall service can dynamically block traffic and prevent the packets from causing a packet-in event.
+The firewall service can dynamically block traffic and prevent the packets from causing a PACKET-IN event.
 On the dashboard, we can specify the blocking policies. There are three kinds of policies:
 \begin{enumerate}[leftmargin=4em]
   \item block any traffic from a source IP or destination IP address;
@@ -134,17 +136,17 @@ TCP      & *           & *            & *        & 23       & drop   \\ \hline
 
 
 \subsection{NAT}
-The NAT service allows numerous hosts to use one public IP address for connecting to the network. Following is an example that illustrates the modification of the IP address and port number by using the NAT service. For an outgoing packet, the SDN switch does not have any flow entry in the flow table, and hence, a packet-in event is triggered initially. The packet that is sent by a private network host is sent to the SDN controller, and the packet header fields are modified using the set-field action. The source IP address and source port number of the outgoing packet are modified to a public IP address and a new port number is remapped for NAT. For the incoming packet, the destination IP address and destination port number are modified to fit the private IP address and port number. Subsequently, the SDN controller adds these flow entries to the SDN switch; all packets must be sent to the controller
+The NAT service allows numerous hosts to use one public IP address for connecting to the network. Following is an example that illustrates the modification of the IP address and port number by using the NAT service. For an outgoing packet, the SDN switch does not have any flow entry in the flow table, and hence, a PACKET-IN event is triggered initially. The packet that is sent by a private network host is sent to the SDN controller, and the packet header fields are modified using the set-field action. The source IP address and source port number of the outgoing packet are modified to a public IP address and a new port number is remapped for NAT. For the incoming packet, the destination IP address and destination port number are modified to fit the private IP address and port number. Subsequently, the SDN controller adds these flow entries to the SDN switch; all packets must be sent to the controller
 
 In Fig. \ref{fig:mft_nat}, the public IP address of NAT is 140.114.71.178, and the host private IP address is 192.168.8.254 with the port number 7878. The client sent the packet to a server with the IP address 140.114.71.177 and port number 9898.
 
-As shown in Table \ref{table:nat}, when the host sends the packet to the server (outgoing), a packet-in event is triggered, and the packet is sent to the controller. The set-field action modifies the source IP address to a public IP address of NAT, 140.114.71.178, and the source port to 2000. When the server sends the packet back to the client (incoming), the packet header field is modified. The destination IP address and destination port number are modified to 192.168.8.254 and 7788, respectively.
+As shown in Table \ref{table:nat}, when the host sends the packet to the server (outgoing), a PACKET-IN event is triggered, and the packet is sent to the controller. The set-field action modifies the source IP address to a public IP address of NAT, 140.114.71.178, and the source port to 2000. When the server sends the packet back to the client (incoming), the packet header field is modified. The destination IP address and destination port number are modified to 192.168.8.254 and 7788, respectively.
 
 In the single flow table framework, two rules must be added to the SDN switch to match the outgoing and incoming situations. First, we predicted that the NAT service must be placed in the last table of the multiple flow table framework because the NAT service must set the packet header fields and enable connection to the outside network. Most importantly, the SDN switch is placed according to the order of tables to match the field. The outgoing and incoming situations must be considered. In consideration of all the aforementioned factors, we place the NAT service in the first and last tables in our multiple flow table framework.
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=0.8\textwidth]{./fig/mft_nat.pdf}
+\includegraphics[width=0.8\textwidth]{./fig/mft_nat.png}
 \caption{Example of modification of IP address and port number by NAT service.}
 \label{fig:mft_nat}
 \end{figure}
@@ -154,13 +156,19 @@ In the single flow table framework, two rules must be added to the SDN switch to
 \caption{Flow entry for modifying the packet header fields}
 \label{table:nat}
 \centering
-\begin{tabular}{|l|l|l|l|l|l|}
+\begin{tabular}{|l|l|l|}
 \hline
-Direction & IP src         & IP dst          & src port     & dst port    &  action  \\ \hline
-Outgoing  &192.168.8.254   &140.114.71.177   & 7878         & 9898        & \begin{tabular}[c]{@{}l@{}}IP src $\,\to\,$ 140.114.71.178; \\ L4 src port $\,\to\,$ 2000\end{tabular} \\ \hline
-Ingoing   &140.114.71.177  &140.114.71.178   & 9898         & 2000        & \begin{tabular}[c]{@{}l@{}}IP dst $\,\to\,$ 192.168.8.254; \\ L4 dst port $\,\to\,$ 7878\end{tabular} \\ \hline
+Direction       & Egress          & Ingress         \\ \hline
+Table           & 0               & 5               \\ \hline
+Match src IP    & 192.168.8.254   & 140.114.71.178  \\ \hline
+Match dst IP    & 140.114.71.178  & 140.114.71.177  \\ \hline
+Match src port  & 7777            & 8080            \\ \hline
+Match dst port  & 8080            & 8888            \\ \hline
+
+Action          & \begin{tabular}[c]{@{}l@{}} src IP $\,\to\,$ 140.114.71.177; \\ src port $\,\to\,$ 8888 \end{tabular}   & \begin{tabular}[c]{@{}l@{}} dst IP $\,\to\,$ 192.168.8.254 ; \\ dst port $\,\to\,$ 7777 \end{tabular}   \\ \hline
 \end{tabular}
 \end{table*}
+
 
 
 \subsection{DHCP}
@@ -169,15 +177,15 @@ The DHCP service implements the DHCP protocol to dynamically assign IP addresses
 This service is executed through the following steps:
 \begin{enumerate}
 \item The controller adds a DHCP rule for DHCP packets when the service is enabled.
-\item All packets match this DHCP rule, causing a packet-in event.
-\item If the incoming packet is a DHCP discovery packet, the controller assigns an IP address, generates a DHCP offer, and then performs a PACKEt\_OUT event. If the incoming is a DHCP request, the controller generates a DHCP acknowledgement and PACKEt\_OUT the generated packet.
+\item All packets match this DHCP rule, causing a PACKET-IN event.
+\item If the incoming packet is a DHCP discovery packet, the controller assigns an IP address, generates a DHCP offer, and then performs a PACKEt-OUT event. If the incoming is a DHCP request, the controller generates a DHCP acknowledgement and PACKEt-OUT the generated packet.
 \end{enumerate}
 
 Our system supports multiple flow tables; however, a specific flow table for the DHCP service is not required because only one rule is installed for all hosts who request the DHCP service. When the service is disabled, the DHCP rule is deleted, and the packets continue to pass through our service chain. The subsequent DHCP packets can reach other DHCP servers by forwarding service.
 
 
 \subsection{Forwarding} \label{ssec:forwarding}
-In the forwarding service, when the first packet in a new connection is incoming, a PACKET\_IN event occurs because no corresponding rule is present. When the controller receives the packet, it records the IP-layer information, including the source IP address, destination IP address, input port number, source MAC address, and destination MAC address. By using the recorded information, the controller can install a 5-tuple forwarding rule with OUT\_PORT action for this connection, and the subsequent packets do not need to undergo the packet-in event. The 5-tuple comprises the source IP address, destination IP address, network layer protocol, source layer 4 port, and destination layer 4 port.
+In the forwarding service, when the first packet in a new connection is incoming, a PACKET-IN event occurs because no corresponding rule is present. When the controller receives the packet, it records the IP-layer information, including the source IP address, destination IP address, input port number, source MAC address, and destination MAC address. By using the recorded information, the controller can install a 5-tuple forwarding rule with OUT-PORT action for this connection, and the subsequent packets do not need to undergo the PACKET-IN event. The 5-tuple comprises the source IP address, destination IP address, network layer protocol, source layer 4 port, and destination layer 4 port.
 
 The reason why we choose these 5 fields to form 5-tuple is to gather per-session statistical information. The controller installs a pair of dummy rules for every connection, and then requests the switch to obtain current flow statistics every second. Thus, the real-time bandwidth statistics of each connection can be obtained by merely subtracting the byte count from the byte count of the last second.
 
@@ -211,6 +219,6 @@ To avoid some applications taking up a lot of bandwidth, we can limit the bandwi
 \end{figure}
 
 \subsubsection{The Flow Table Order of Forwarding and QoS Service}
-Because the location of NAT, DHCP, firewall and mirroring have been determined, we only need to decide the arrangement of QoS and forwarding. Assume that we place the QoS flow table after the forwarding flow table. In addition, we have only two services enabled, forwarding and QoS; therefore, the packet-in rule is in the last flow table of active service, QoS service. Then, suppose that a host is not limited by QoS policies. The first packet is not affected in both arrangements. For the subsequent packets, a difference can be observed. The packets that satisfy the rules in the forwarding flow table can not match rate limit rules in QoS flow table, because the host is not limited by QoS service; instead. As a result, the packets cause packet-in events by matching the packet-in rule in QoS service. This is unexpected because the packets already get the out-port action from the forwarding service. That is, it is not necessary to send these packet go to controller, and any packet-in event increases the controller’s load.
+Because the location of NAT, DHCP, firewall and mirroring have been determined, we only need to decide the arrangement of QoS and forwarding. Assume that we place the QoS flow table after the forwarding flow table. In addition, we have only two services enabled, forwarding and QoS; therefore, the PACKET-IN rule is in the last flow table of active service, QoS service. Then, suppose that a host is not limited by QoS policies. The first packet is not affected in both arrangements. For the subsequent packets, a difference can be observed. The packets that satisfy the rules in the forwarding flow table can not match rate limit rules in QoS flow table, because the host is not limited by QoS service; instead. As a result, the packets cause PACKET-IN events by matching the PACKET-IN rule in QoS service. This is unexpected because the packets already get the out-port action from the forwarding service. That is, it is not necessary to send these packet go to controller, and any PACKET-IN event increases the controller’s load.
 
-To reduce this load on the controller, we place the QoS flow table ahead of the forwarding flow table. In this scenario, all packets that pass through the QoS flow table continue to proceed to the forwarding flow table without satisfying any QoS rules. Then, all packets except the first packet are merely forwarded by the forwarding service instead of causing PACKET\_IN events. Thus, the controller’s load decreases.
+To reduce this load on the controller, we place the QoS flow table ahead of the forwarding flow table. In this scenario, all packets that pass through the QoS flow table continue to proceed to the forwarding flow table without satisfying any QoS rules. Then, all packets except the first packet are merely forwarded by the forwarding service instead of causing PACKET-IN events. Thus, the controller’s load decreases.

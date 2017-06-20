@@ -4,30 +4,29 @@
 % Cover
 \begin{document}
 \begin{CJK}{UTF8}{bkai}
+
 \input{./cover}
-\setcounter{secnumdepth}{3}
+
 \setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
 
 % Add watermark
 % \AddToShipoutPicture{\WatermarkPicture}
 
 \baselineskip 24pt
 \pagenumbering{roman}
+\setcounter{page}{1}
 
 % Abstract
 \addcontentsline{toc}{chapter}{Abstract}
 \input{./chapter/abstract}
 \newpage
 
-% % Abstract chinese
-% \addcontentsline{toc}{chapter}{中文摘要}
-% \input{./chapter/abstract_zh}
-% \newpage
-%
-% % Acknowledgement
-% \addcontentsline{toc}{chapter}{Acknowledgement}
-% \input{./chapter/acknowledgement}
-% \newpage
+% Abstract chinese
+\addcontentsline{toc}{chapter}{中文摘要}
+\input{./chapter/abstract_zh}
+\newpage
+
 
 \tableofcontents
 
