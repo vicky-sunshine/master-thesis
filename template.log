@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.9)  20 JUN 2017 13:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.9)  20 JUN 2017 14:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1893,7 +1893,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
 Here is how much of TeX's memory you used:
  14880 strings out of 493014
  220655 string characters out of 6133351
- 376581 words of memory out of 5000000
+ 376564 words of memory out of 5000000
  17598 multiletter control sequences out of 15000+600000
  62316 words of font info for 256 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1901,7 +1901,7 @@ Here is how much of TeX's memory you used:
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu4e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu51.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu52.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu53.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu54.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu57.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu58.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu59.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5b.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5d.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5e.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/arphic/bkaiu/bkaiu62.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu63.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu65.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu67.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu6a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu6c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu6e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu78.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7d.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu80.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu83.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu84.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu86.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu98.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu9e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiuff.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (54 pages, 3139662 bytes).
+Output written on template.pdf (54 pages, 3139652 bytes).
 PDF statistics:
  1109 PDF objects out of 1200 (max. 8388607)
  890 compressed objects within 9 object streams

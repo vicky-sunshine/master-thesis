@@ -5,11 +5,11 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Main components of a flow entry in a flow table. \cite {openflow-spec}\relax }}{5}{figure.caption.7}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Packet flow through the processing pipeline. \cite {openflow-spec}\relax }}{6}{figure.caption.8}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces The workflow of packet handling through an OpenFlow switch. \cite {openflow-spec}\relax }}{7}{figure.caption.9}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Network Functions Virtualization Relationship with SDN. \cite {nfv-wp}\relax }}{8}{figure.caption.10}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces NFV Relationship with SDN. \cite {nfv-wp}\relax }}{8}{figure.caption.10}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces ETSI MANO Architecture. \cite {etsi-nfv-archi}\relax }}{9}{figure.caption.11}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Virtual Firewall of NetFATE \cite {netfate}\relax }}{11}{figure.caption.12}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Ericsson vCPE architecture.\cite {ericsson-vcpe}\relax }}{12}{figure.caption.13}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Overview of Service Functions.\cite {ericsson-vcpe}\relax }}{13}{figure.caption.14}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Virtual Firewall of NetFATE. \cite {netfate}\relax }}{11}{figure.caption.12}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Ericsson vCPE architecture. \cite {ericsson-vcpe}\relax }}{12}{figure.caption.13}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Overview of Ericsson Service Functions. \cite {ericsson-vcpe}\relax }}{13}{figure.caption.14}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Juniper Cloud CPE deployment model. \cite {juniper-cpe}\relax }}{15}{figure.caption.15}
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Service deployment model.\relax }}{17}{figure.caption.16}
 \contentsline {figure}{\numberline {2.13}{\ignorespaces HSNL vCPE MANO Architecture \cite {che-wei-master}.\relax }}{18}{figure.caption.17}
