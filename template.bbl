@@ -52,7 +52,7 @@ P.~Cota and J.~Sabec, ``{CPE} virtualization by unifying {NFV}, {SDN} and cloud
 \BIBentrySTDinterwordspacing
 
 \bibitem{juniper-cpe}
-``Juniper networks cloud cpe solution,''
+``Juniper networks cloud {CPE} solution,''
   \url{https://www.juniper.net/assets/kr/kr/local/pdf/solutionbriefs/3510561-en.pdf}.
 
 \bibitem{che-wei-master}
@@ -65,7 +65,7 @@ N.~McKeown, ``Software-defined networking,'' \emph{INFOCOM keynote talk},
   vol.~17, no.~2, pp. 30--32, 2009.
 
 \bibitem{sdn-newnorm}
-O.~N. Fundation, ``Software-defined networking: The new norm for networks,''
+O.~N. Foundation, ``Software-defined networking: The new norm for networks,''
   \emph{ONF White Paper}, vol.~2, pp. 2--6, 2012.
 
 \bibitem{sdn-road}
@@ -82,6 +82,10 @@ D.~Kreutz, F.~M.~V. Ramos, P.~E. Verissimo, C.~E. Rothenberg, S.~Azodolmolky,
 N.~McKeown, T.~Anderson, H.~Balakrishnan, G.~Parulkar, L.~Peterson, J.~Rexford,
   S.~Shenker, and J.~Turner, ``{OpenFlow},'' \emph{{ACM} {SIGCOMM} Computer
   Communication Review}, vol.~38, no.~2, p.~69, Mar. 2008.
+
+\bibitem{sdn-define}
+``Software-defined networking ({SDN}) definition,''
+  \url{https://www.opennetworking.org/sdn-resources/sdn-definition}.
 
 \bibitem{nfv-survey}
 R.~Mijumbi, J.~Serrat, J.-L. Gorricho, N.~Bouten, F.~D. Turck, and R.~Boutaba,
@@ -173,20 +177,16 @@ N.-F. Huang, C.-W. Lin, S.-J. Wu, C.-H. Li, and I.-J. Liao, ``A novel virtual
   V1.1.1, Dec. 2015.
 
 \bibitem{multiple-flow-table}
-{Open Networking Fundation}, ``The benefits of multiple flow tables and ttps,''
-  {ONF}, Tech. Rep., 2015.
+{Open Networking Foundation}, ``The benefits of multiple flow tables and
+  ttps,'' {ONF}, Tech. Rep., 2015.
 
 \bibitem{sdn-enabled}
 J.~Matias, J.~Garay, N.~Toledo, J.~Unzilla, and E.~Jacob, ``Toward an
   {SDN}-enabled {NFV} architecture,'' \emph{{IEEE} Communications Magazine},
   vol.~53, no.~4, pp. 187--193, Apr. 2015.
 
-\bibitem{sdn-define}
-``Software-defined networking (sdn) definition,''
-  \url{https://www.opennetworking.org/sdn-resources/sdn-definition}.
-
 \bibitem{onf}
-``Open network fundation,'' \url{https://www.opennetworking.org/}.
+``Open network foundation,'' \url{https://www.opennetworking.org/}.
 
 \bibitem{ryu}
 ``Ryu {SDN} framework,'' \url{http://osrg.github.io/ryu/}.
@@ -201,7 +201,7 @@ J.~Matias, J.~Garay, N.~Toledo, J.~Unzilla, and E.~Jacob, ``Toward an
 
 \bibitem{sdn-ft}
 M.~Kuźniar, P.~Pereš{\' i}ni, and D.~Kostić, ``What you need to know about
-  sdn flow tables,'' in \emph{Passive and Active Measurement}.\hskip 1em plus
+  {SDN} flow tables,'' in \emph{Passive and Active Measurement}.\hskip 1em plus
   0.5em minus 0.4em\relax Springer Science + Business Media, 2015, pp.
   347--359.
 

@@ -4,47 +4,47 @@
 \contentsline {chapter}{List of Figures}{vi}{chapter*.4}
 \contentsline {chapter}{List of Tables}{viii}{chapter*.5}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Related Work}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}SDN}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}OpenFlow Protocol}{5}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}OpenFlow Switch Components}{5}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Flow Table Pipeline, Matching and Table-miss}{6}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}NFV}{8}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}The concept of NFV}{8}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}ETSI NFV MANO Model}{9}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Related vCPE framework}{10}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}NetFate}{10}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Ericsson CPE}{12}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Juniper Cloud CPE}{14}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}HSNL vCPE framework}{16}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Deployment Model}{16}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}vCPE Platform NFV Architecture}{16}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}System Implementation}{17}{subsection.2.5.3}
-\contentsline {subsubsection}{\numberline {2.5.3.1}Infrastructure Controller}{18}{subsubsection.2.5.3.1}
-\contentsline {subsubsection}{\numberline {2.5.3.2}Infrastructure Orchestrator}{19}{subsubsection.2.5.3.2}
-\contentsline {subsubsection}{\numberline {2.5.3.3}Cloud Database}{19}{subsubsection.2.5.3.3}
-\contentsline {subsubsection}{\numberline {2.5.3.4}VNF Controllers}{20}{subsubsection.2.5.3.4}
-\contentsline {subsubsection}{\numberline {2.5.3.5}VNF Orchestrator}{20}{subsubsection.2.5.3.5}
-\contentsline {chapter}{\numberline {3}System Implementation}{21}{chapter.3}
-\contentsline {section}{\numberline {3.1}Overview of Network Functions}{21}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Stateful Processing Component}{21}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Stateless Processing Component}{22}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Multiple Flow Table Strategy}{22}{section.3.2}
-\contentsline {section}{\numberline {3.3}Service Control}{25}{section.3.3}
-\contentsline {section}{\numberline {3.4}Network functions}{25}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Firewall}{25}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}NAT}{26}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}DHCP}{28}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Forwarding}{29}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Traffic Mirroring}{30}{subsection.3.4.5}
-\contentsline {subsection}{\numberline {3.4.6}QoS}{30}{subsection.3.4.6}
-\contentsline {subsubsection}{\numberline {3.4.6.1}Rate Limitation of Hosts}{30}{subsubsection.3.4.6.1}
-\contentsline {subsubsection}{\numberline {3.4.6.2}Rate Limitation of Applications}{31}{subsubsection.3.4.6.2}
-\contentsline {subsubsection}{\numberline {3.4.6.3}The Flow Table Order of Forwarding and QoS Service}{32}{subsubsection.3.4.6.3}
-\contentsline {chapter}{\numberline {4}Performance Evaluation}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Multiple Table Performance}{33}{section.4.1}
-\contentsline {section}{\numberline {4.2}Integration Evaluation}{36}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Evaluation of QoS When Host Bandwidth Is Limited}{36}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Evaluation of QoS When Application Bandwidth Is Limited}{37}{subsection.4.2.2}
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{40}{chapter.5}
-\contentsline {chapter}{Bibliography}{41}{chapter*.32}
+\contentsline {chapter}{\numberline {2}Related Work}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}SDN}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}OpenFlow Protocol}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}OpenFlow Switch Components}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Flow Table Pipeline, Matching and Table-miss}{8}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}NFV}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}The concept of NFV}{10}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}ETSI NFV MANO Model}{11}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Related vCPE framework}{12}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}NetFATE}{12}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Ericsson CPE}{13}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Juniper Cloud CPE}{17}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}HSNL vCPE framework}{17}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Deployment Model}{17}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}vCPE Platform NFV Architecture}{20}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}System Implementation}{21}{subsection.2.5.3}
+\contentsline {subsubsection}{\numberline {2.5.3.1}Infrastructure Controller}{21}{subsubsection.2.5.3.1}
+\contentsline {subsubsection}{\numberline {2.5.3.2}Infrastructure Orchestrator}{22}{subsubsection.2.5.3.2}
+\contentsline {subsubsection}{\numberline {2.5.3.3}Cloud Database}{22}{subsubsection.2.5.3.3}
+\contentsline {subsubsection}{\numberline {2.5.3.4}VNF Controllers}{22}{subsubsection.2.5.3.4}
+\contentsline {subsubsection}{\numberline {2.5.3.5}VNF Orchestrator}{23}{subsubsection.2.5.3.5}
+\contentsline {chapter}{\numberline {3}System Implementation}{24}{chapter.3}
+\contentsline {section}{\numberline {3.1}Overview of Network Functions}{24}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Stateful Processing Component}{24}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Stateless Processing Component}{25}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Multiple Flow Table Strategy}{25}{section.3.2}
+\contentsline {section}{\numberline {3.3}Service Control}{28}{section.3.3}
+\contentsline {section}{\numberline {3.4}Network functions}{29}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Firewall}{29}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}NAT}{30}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}DHCP}{32}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Forwarding}{33}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Traffic Mirroring}{34}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.6}QoS}{34}{subsection.3.4.6}
+\contentsline {subsubsection}{\numberline {3.4.6.1}Rate Limitation of Hosts}{34}{subsubsection.3.4.6.1}
+\contentsline {subsubsection}{\numberline {3.4.6.2}Rate Limitation of Applications}{34}{subsubsection.3.4.6.2}
+\contentsline {subsubsection}{\numberline {3.4.6.3}The Flow Table Order of Forwarding and QoS Service}{35}{subsubsection.3.4.6.3}
+\contentsline {chapter}{\numberline {4}Performance Evaluation}{37}{chapter.4}
+\contentsline {section}{\numberline {4.1}Multiple Table Performance}{37}{section.4.1}
+\contentsline {section}{\numberline {4.2}Integration Evaluation}{40}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Evaluation of QoS When Host Bandwidth Is Limited}{40}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Evaluation of QoS When Application Bandwidth Is Limited}{41}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{44}{chapter.5}
+\contentsline {chapter}{Bibliography}{45}{chapter*.32}

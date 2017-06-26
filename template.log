@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.9)  21 JUN 2017 00:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.9)  26 JUN 2017 22:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1237,14 +1237,30 @@ Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 
+l.14 
       [1
 color push 0 g 0 G
 color pop
 
 color push 0 g 0 G
 color pop
-]) (./chapter/relatedwork.tex [2
+] [2
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [3
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]) (./chapter/relatedwork.tex [4
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1253,12 +1269,12 @@ color pop
 Chapter 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
-<./fig/sdn_architecture.pdf, id=558, 677.6528pt x 451.50426pt>
+<./fig/sdn_architecture.pdf, id=576, 677.6528pt x 451.50426pt>
 File: ./fig/sdn_architecture.pdf Graphic file (type pdf)
  <use ./fig/sdn_architecture.pdf>
 Package pdftex.def Info: ./fig/sdn_architecture.pdf used on input line 19.
 (pdftex.def)             Requested size: 376.42575pt x 250.80827pt.
- [3
+ [5
 color push 0 g 0 G
 color pop
 
@@ -1269,76 +1285,76 @@ Overfull \hbox (4.79749pt too wide) in paragraph at lines 33--35
 []\OT1/ptm/m/n/12 (-20) When re-ceiv-ing the re-quests from ap-pli-ca-tions, the SDN con-troller uses the south-bound
  []
 
-<./fig/openflow_switch_component.pdf, id=568, 325.09676pt x 259.87509pt>
+<./fig/openflow_switch_component.pdf, id=585, 325.09676pt x 259.87509pt>
 File: ./fig/openflow_switch_component.pdf Graphic file (type pdf)
  <use ./fig/openflow_switch_component.pdf>
 Package pdftex.def Info: ./fig/openflow_switch_component.pdf used on input line 45.
 (pdftex.def)             Requested size: 209.12683pt x 167.17204pt.
- [4
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color pop
- <./fig/sdn_architecture.pdf>] <./fig/flow_entry.png, id=598, 1160.335pt x 80.3pt>
-File: ./fig/flow_entry.png Graphic file (type png)
- <use ./fig/flow_entry.png>
-Package pdftex.def Info: ./fig/flow_entry.png used on input line 54.
-(pdftex.def)             Requested size: 418.25368pt x 28.94472pt.
- [5
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color pop
- <./fig/openflow_switch_component.pdf> <./fig/flow_entry.png>] <./fig/openflow_pipeline.png, id=631, 1219.55624pt x 347.2975pt>
-File: ./fig/openflow_pipeline.png Graphic file (type png)
- <use ./fig/openflow_pipeline.png>
-Package pdftex.def Info: ./fig/openflow_pipeline.png used on input line 72.
-(pdftex.def)             Requested size: 418.25368pt x 119.10765pt.
- <./fig/openflow_pipeline2.png, id=632, 1225.57875pt x 351.3125pt>
-File: ./fig/openflow_pipeline2.png Graphic file (type png)
- <use ./fig/openflow_pipeline2.png>
-Package pdftex.def Info: ./fig/openflow_pipeline2.png used on input line 78.
-(pdftex.def)             Requested size: 418.25368pt x 119.88959pt.
- <./fig/openflow_matching.png, id=635, 856.19875pt x 652.4375pt>
-File: ./fig/openflow_matching.png Graphic file (type png)
- <use ./fig/openflow_matching.png>
-Package pdftex.def Info: ./fig/openflow_matching.png used on input line 89.
-(pdftex.def)             Requested size: 376.42575pt x 286.8444pt.
  [6
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color push 0 g 0 G
 color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/sdn_architecture.pdf>] <./fig/flow_entry.png, id=614, 1160.335pt x 80.3pt>
+File: ./fig/flow_entry.png Graphic file (type png)
+ <use ./fig/flow_entry.png>
+Package pdftex.def Info: ./fig/flow_entry.png used on input line 54.
+(pdftex.def)             Requested size: 418.25368pt x 28.94472pt.
+ [7
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/openflow_switch_component.pdf> <./fig/flow_entry.png>] <./fig/openflow_pipeline.png, id=647, 1219.55624pt x 347.2975pt>
+File: ./fig/openflow_pipeline.png Graphic file (type png)
+ <use ./fig/openflow_pipeline.png>
+Package pdftex.def Info: ./fig/openflow_pipeline.png used on input line 72.
+(pdftex.def)             Requested size: 418.25368pt x 119.10765pt.
+ <./fig/openflow_pipeline2.png, id=648, 1225.57875pt x 351.3125pt>
+File: ./fig/openflow_pipeline2.png Graphic file (type png)
+ <use ./fig/openflow_pipeline2.png>
+Package pdftex.def Info: ./fig/openflow_pipeline2.png used on input line 78.
+(pdftex.def)             Requested size: 418.25368pt x 119.88959pt.
+ <./fig/openflow_matching.png, id=651, 856.19875pt x 652.4375pt>
+File: ./fig/openflow_matching.png Graphic file (type png)
+ <use ./fig/openflow_matching.png>
+Package pdftex.def Info: ./fig/openflow_matching.png used on input line 89.
+(pdftex.def)             Requested size: 376.42575pt x 286.8444pt.
+ [8
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color pop
-color push 0 g 0 G
-color pop
- <./fig/openflow_pipeline.png> <./fig/openflow_pipeline2.png>] [7
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
 color push 0 g 0 G
 color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/openflow_matching.png>] <./fig/nfv_and_sdn.png, id=651, 941.5175pt x 498.86375pt>
+ <./fig/openflow_pipeline.png> <./fig/openflow_pipeline2.png>] [9
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/openflow_matching.png>] <./fig/nfv_and_sdn.png, id=667, 941.5175pt x 498.86375pt>
 File: ./fig/nfv_and_sdn.png Graphic file (type png)
  <use ./fig/nfv_and_sdn.png>
 Package pdftex.def Info: ./fig/nfv_and_sdn.png used on input line 116.
@@ -1348,7 +1364,7 @@ Overfull \hbox (20.11484pt too wide) in paragraph at lines 121--123
 \OT1/ptm/m/n/12 (-20) Telecom-mu-ni-ca-tions Stan-dards In-sti-tute (ETSI) and the ETSI se-tups the In-dus-try Spec-i-fi-ca-tion
  []
 
-[8
+[10
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1357,12 +1373,17 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/nfv_and_sdn.png>] <./fig/etsi_nfv_architecture.png, id=660, 857.2025pt x 791.95876pt>
+ <./fig/nfv_and_sdn.png>] <./fig/etsi_nfv_architecture.png, id=677, 857.2025pt x 791.95876pt>
 File: ./fig/etsi_nfv_architecture.png Graphic file (type png)
  <use ./fig/etsi_nfv_architecture.png>
 Package pdftex.def Info: ./fig/etsi_nfv_architecture.png used on input line 133.
 (pdftex.def)             Requested size: 376.42575pt x 347.77412pt.
- [9
+ [11
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [12
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1371,73 +1392,73 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/etsi_nfv_architecture.png>] <./fig/netfate.png, id=671, 528.97626pt x 609.27625pt>
+ <./fig/etsi_nfv_architecture.png>] <./fig/netfate.png, id=692, 528.97626pt x 609.27625pt>
 File: ./fig/netfate.png Graphic file (type png)
  <use ./fig/netfate.png>
 Package pdftex.def Info: ./fig/netfate.png used on input line 157.
 (pdftex.def)             Requested size: 292.77629pt x 337.22263pt.
- [10
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [11
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color pop
- <./fig/netfate.png>] <./fig/ericsson_archi.png, id=688, 992.70876pt x 510.90875pt>
-File: ./fig/ericsson_archi.png Graphic file (type png)
- <use ./fig/ericsson_archi.png>
-Package pdftex.def Info: ./fig/ericsson_archi.png used on input line 175.
-(pdftex.def)             Requested size: 376.42575pt x 193.73416pt.
- [12
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color pop
- <./fig/ericsson_archi.png>] <./fig/ericsson_sf.png, id=696, 881.2925pt x 584.1825pt>
-File: ./fig/ericsson_sf.png Graphic file (type png)
- <use ./fig/ericsson_sf.png>
-Package pdftex.def Info: ./fig/ericsson_sf.png used on input line 201.
-(pdftex.def)             Requested size: 376.42575pt x 249.51776pt.
  [13
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
+color pop
+] <./fig/ericsson_archi.png, id=703, 992.70876pt x 510.90875pt>
+File: ./fig/ericsson_archi.png Graphic file (type png)
+ <use ./fig/ericsson_archi.png>
+Package pdftex.def Info: ./fig/ericsson_archi.png used on input line 175.
+(pdftex.def)             Requested size: 376.42575pt x 193.73416pt.
+ [14
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
 color push 0 g 0 G
 color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/ericsson_sf.png>] <./fig/juniper_central.png, id=705, 719.3274pt x 321.8424pt>
+ <./fig/netfate.png>] <./fig/ericsson_sf.png, id=711, 881.2925pt x 584.1825pt>
+File: ./fig/ericsson_sf.png Graphic file (type png)
+ <use ./fig/ericsson_sf.png>
+Package pdftex.def Info: ./fig/ericsson_sf.png used on input line 201.
+(pdftex.def)             Requested size: 376.42575pt x 249.51776pt.
+ [15
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/ericsson_archi.png>] <./fig/juniper_central.png, id=720, 719.3274pt x 321.8424pt>
 File: ./fig/juniper_central.png Graphic file (type png)
  <use ./fig/juniper_central.png>
 Package pdftex.def Info: ./fig/juniper_central.png used on input line 222.
 (pdftex.def)             Requested size: 376.42575pt x 168.41977pt.
- <./fig/juniper_distributed.png, id=706, 643.203pt x 305.943pt>
+ <./fig/juniper_distributed.png, id=721, 643.203pt x 305.943pt>
 File: ./fig/juniper_distributed.png Graphic file (type png)
  <use ./fig/juniper_distributed.png>
 Package pdftex.def Info: ./fig/juniper_distributed.png used on input line 229.
 (pdftex.def)             Requested size: 376.42575pt x 179.04828pt.
- <./fig/juniper_hybrid.png, id=707, 697.1646pt x 301.6068pt>
+ <./fig/juniper_hybrid.png, id=722, 697.1646pt x 301.6068pt>
 File: ./fig/juniper_hybrid.png Graphic file (type png)
  <use ./fig/juniper_hybrid.png>
 Package pdftex.def Info: ./fig/juniper_hybrid.png used on input line 236.
 (pdftex.def)             Requested size: 376.42575pt x 162.84683pt.
 
 
-LaTeX Warning: Float too large for page by 4.08464pt on input line 242.
+LaTeX Warning: Float too large for page by 59.38467pt on input line 242.
 
-
+[16
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/ericsson_sf.png>]
 Overfull \hbox (4.22154pt too wide) in paragraph at lines 244--245
 []\OT1/ptm/m/n/12 (-20) Juniper pro-posed a Cloud CPE so-lu-tion [[]6[]]. The so-lu-tion have two kinds of de-ploy-ment
  []
@@ -1447,124 +1468,97 @@ Overfull \hbox (2.22284pt too wide) in paragraph at lines 246--248
 \OT1/ptm/m/n/12 (-20) cus-tomer por-tal or trig-gered by ex-ist-ing busi-ness sup-port sys-tem (BSS). BSS au-to-mat-i-cally
  []
 
-[14
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [15
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color pop
- <./fig/juniper_central.png> <./fig/juniper_distributed.png> <./fig/juniper_hybrid.png>] <./fig/hsnl_service_deployment.pdf, id=725, 554.07pt x 556.0775pt>
+<./fig/hsnl_service_deployment.pdf, id=735, 554.07pt x 556.0775pt>
 File: ./fig/hsnl_service_deployment.pdf Graphic file (type pdf)
  <use ./fig/hsnl_service_deployment.pdf>
 Package pdftex.def Info: ./fig/hsnl_service_deployment.pdf used on input line 265.
 (pdftex.def)             Requested size: 376.42575pt x 377.7883pt.
- <./fig/hsnl_vcpe_architecture.png, id=730, 902.37125pt x 842.14626pt>
-File: ./fig/hsnl_vcpe_architecture.png Graphic file (type png)
- <use ./fig/hsnl_vcpe_architecture.png>
-Package pdftex.def Info: ./fig/hsnl_vcpe_architecture.png used on input line 279.
-(pdftex.def)             Requested size: 376.42575pt x 351.3089pt.
- [16
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] <./fig/hsnl_vcpe_framework.pdf, id=741, 537.00626pt x 372.39125pt>
-File: ./fig/hsnl_vcpe_framework.pdf Graphic file (type pdf)
- <use ./fig/hsnl_vcpe_framework.pdf>
-Package pdftex.def Info: ./fig/hsnl_vcpe_framework.pdf used on input line 292.
-(pdftex.def)             Requested size: 376.42575pt x 261.03575pt.
  [17
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
-color push 0 g 0 G
 color pop
-color pop
-color push 0 g 0 G
-color pop
- <./fig/hsnl_service_deployment.pdf>] [18
+] [18
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color push 0 g 0 G
 color pop
-color pop
-color push 0 g 0 G
-color pop
- <./fig/hsnl_vcpe_architecture.png>] [19
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/hsnl_vcpe_framework.pdf>]) (./chapter/implementation.tex [20
+ <./fig/juniper_central.png> <./fig/juniper_distributed.png> <./fig/juniper_hybrid.png>] [19
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/hsnl_service_deployment.pdf>] <./fig/hsnl_vcpe_architecture.png, id=763, 902.37125pt x 842.14626pt>
+File: ./fig/hsnl_vcpe_architecture.png Graphic file (type png)
+ <use ./fig/hsnl_vcpe_architecture.png>
+Package pdftex.def Info: ./fig/hsnl_vcpe_architecture.png used on input line 279.
+(pdftex.def)             Requested size: 376.42575pt x 351.3089pt.
+ [20
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/hsnl_vcpe_architecture.png>] <./fig/hsnl_vcpe_framework.pdf, id=773, 537.00626pt x 372.39125pt>
+File: ./fig/hsnl_vcpe_framework.pdf Graphic file (type pdf)
+ <use ./fig/hsnl_vcpe_framework.pdf>
+Package pdftex.def Info: ./fig/hsnl_vcpe_framework.pdf used on input line 292.
+(pdftex.def)             Requested size: 376.42575pt x 261.03575pt.
+ [21
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/hsnl_vcpe_framework.pdf>] [22
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]) (./chapter/implementation.tex [23
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 ]
 Chapter 3.
-[21
+[24
 color push 0 g 0 G
 color pop
 
 color push 0 g 0 G
 color pop
-] <./fig/nfv_overview.pdf, id=782, 352.54602pt x 243.41309pt>
+] <./fig/nfv_overview.pdf, id=803, 352.54602pt x 243.41309pt>
 File: ./fig/nfv_overview.pdf Graphic file (type pdf)
  <use ./fig/nfv_overview.pdf>
 Package pdftex.def Info: ./fig/nfv_overview.pdf used on input line 23.
 (pdftex.def)             Requested size: 292.77629pt x 202.15164pt.
- <./fig/mft_table_overview.png, id=783, 1330.9725pt x 4251.885pt>
+ <./fig/mft_table_overview.png, id=804, 1330.9725pt x 4251.885pt>
 File: ./fig/mft_table_overview.png Graphic file (type png)
  <use ./fig/mft_table_overview.png>
 Package pdftex.def Info: ./fig/mft_table_overview.png used on input line 33.
 (pdftex.def)             Requested size: 167.2989pt x 534.40385pt.
- [22
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color pop
- <./fig/nfv_overview.pdf>] [23
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color pop
- <./fig/mft_table_overview.png>] [24
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [25
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
+ [25
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1575,24 +1569,10 @@ color pop
 color push 0 g 0 G
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
 color pop
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
-] <./fig/mft_nat.png, id=838, 887.315pt x 829.0975pt>
-File: ./fig/mft_nat.png Graphic file (type png)
- <use ./fig/mft_nat.png>
-Package pdftex.def Info: ./fig/mft_nat.png used on input line 155.
-(pdftex.def)             Requested size: 334.60422pt x 312.64398pt.
- [27
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [28
+ <./fig/nfv_overview.pdf>] [27
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1600,12 +1580,13 @@ color push 0 g 0 G
 color pop
 color pop
 color push 0 g 0 G
+color pop
+ <./fig/mft_table_overview.png>] [28
 color push 0 g 0 G
 color pop
-color pop
 color push 0 g 0 G
 color pop
- <./fig/mft_nat.png>] [29
+] [29
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1620,12 +1601,18 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
+color push 0 g 0 G
 color pop
-] <./fig/classification_classifying.png, id=863, 1559.8275pt x 1279.78125pt>
-File: ./fig/classification_classifying.png Graphic file (type png)
- <use ./fig/classification_classifying.png>
-Package pdftex.def Info: ./fig/classification_classifying.png used on input line 222.
-(pdftex.def)             Requested size: 376.42575pt x 308.83318pt.
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+] <./fig/mft_nat.png, id=864, 887.315pt x 829.0975pt>
+File: ./fig/mft_nat.png Graphic file (type png)
+ <use ./fig/mft_nat.png>
+Package pdftex.def Info: ./fig/mft_nat.png used on input line 155.
+(pdftex.def)             Requested size: 334.60422pt x 312.64398pt.
  [31
 color push 0 g 0 G
 color pop
@@ -1635,35 +1622,7 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/classification_classifying.png>]) (./chapter/evaluation.tex [32
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-]
-Chapter 4.
-<./fig/throughput_measurement_scenario.png, id=873, 1508.63625pt x 1279.78125pt>
-File: ./fig/throughput_measurement_scenario.png Graphic file (type png)
- <use ./fig/throughput_measurement_scenario.png>
-Package pdftex.def Info: ./fig/throughput_measurement_scenario.png used on input line 11.
-(pdftex.def)             Requested size: 418.25368pt x 354.80176pt.
-
-Overfull \hbox (8.78587pt too wide) in paragraph at lines 19--24
-\OT1/ptm/m/n/12 (-20) con-troller was run on the Dell Pow-erEdge R630 rack server, and the EdgeCore AS5712-54X
- []
-
-[33
-color push 0 g 0 G
-color pop
-
-color push 0 g 0 G
-color pop
-] <./fig/throughput_measurement.png, id=881, 630.1944pt x 410.4936pt>
-File: ./fig/throughput_measurement.png Graphic file (type png)
- <use ./fig/throughput_measurement.png>
-Package pdftex.def Info: ./fig/throughput_measurement.png used on input line 27.
-(pdftex.def)             Requested size: 418.25368pt x 272.44241pt.
- [34
+] [32
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1672,11 +1631,27 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/throughput_measurement_scenario.png>] <./fig/integration_host.png, id=891, 1228.59pt x 698.61pt>
-File: ./fig/integration_host.png Graphic file (type png)
- <use ./fig/integration_host.png>
-Package pdftex.def Info: ./fig/integration_host.png used on input line 48.
-(pdftex.def)             Requested size: 418.25368pt x 237.83339pt.
+color push 0 g 0 G
+color pop
+ <./fig/mft_nat.png>] [33
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [34
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] <./fig/classification_classifying.png, id=888, 1559.8275pt x 1279.78125pt>
+File: ./fig/classification_classifying.png Graphic file (type png)
+ <use ./fig/classification_classifying.png>
+Package pdftex.def Info: ./fig/classification_classifying.png used on input line 222.
+(pdftex.def)             Requested size: 376.42575pt x 308.83318pt.
  [35
 color push 0 g 0 G
 color pop
@@ -1686,7 +1661,30 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/throughput_measurement.png>] [36
+ <./fig/classification_classifying.png>]) (./chapter/evaluation.tex [36
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
+Chapter 4.
+<./fig/throughput_measurement_scenario.png, id=898, 1508.63625pt x 1279.78125pt>
+File: ./fig/throughput_measurement_scenario.png Graphic file (type png)
+ <use ./fig/throughput_measurement_scenario.png>
+Package pdftex.def Info: ./fig/throughput_measurement_scenario.png used on input line 11.
+(pdftex.def)             Requested size: 418.25368pt x 354.80176pt.
+ [37
+color push 0 g 0 G
+color pop
+
+color push 0 g 0 G
+color pop
+]
+Overfull \hbox (8.78587pt too wide) in paragraph at lines 19--24
+\OT1/ptm/m/n/12 (-20) con-troller was run on the Dell Pow-erEdge R630 rack server, and the EdgeCore AS5712-54X
+ []
+
+[38
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1695,7 +1693,35 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/integration_host.png>] <./fig/integration_evaluation.png, id=904, 1460.45625pt x 1538.74875pt>
+ <./fig/throughput_measurement_scenario.png>] <./fig/throughput_measurement.png, id=913, 630.1944pt x 410.4936pt>
+File: ./fig/throughput_measurement.png Graphic file (type png)
+ <use ./fig/throughput_measurement.png>
+Package pdftex.def Info: ./fig/throughput_measurement.png used on input line 27.
+(pdftex.def)             Requested size: 418.25368pt x 272.44241pt.
+ [39
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/throughput_measurement.png>] <./fig/integration_host.png, id=920, 1228.59pt x 698.61pt>
+File: ./fig/integration_host.png Graphic file (type png)
+ <use ./fig/integration_host.png>
+Package pdftex.def Info: ./fig/integration_host.png used on input line 48.
+(pdftex.def)             Requested size: 418.25368pt x 237.83339pt.
+ [40
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/integration_host.png>] <./fig/integration_evaluation.png, id=929, 1460.45625pt x 1538.74875pt>
 File: ./fig/integration_evaluation.png Graphic file (type png)
  <use ./fig/integration_evaluation.png>
 Package pdftex.def Info: ./fig/integration_evaluation.png used on input line 74.
@@ -1705,21 +1731,17 @@ Overfull \hbox (10.74396pt too wide) in paragraph at lines 80--85
 []\OT1/ptm/m/n/12 (-20) Our ex-per-i-men-tal en-vi-ron-ment is pre-sented in Fig. []4.4[]. In our ex-per-i-men-tal en-vi-ron-ment,
  []
 
-[37
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color pop
- <./fig/integration_evaluation.png>] <./fig/integration_app_filezilla.png, id=911, 1392.20125pt x 816.04875pt>
+<./fig/integration_app_filezilla.png, id=931, 1392.20125pt x 816.04875pt>
 File: ./fig/integration_app_filezilla.png Graphic file (type png)
  <use ./fig/integration_app_filezilla.png>
 Package pdftex.def Info: ./fig/integration_app_filezilla.png used on input line 92.
 (pdftex.def)             Requested size: 418.25368pt x 245.15271pt.
- [38
+ [41
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]) (./chapter/conclusion.tex [42
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1728,20 +1750,24 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./fig/integration_app_filezilla.png>]) (./chapter/conclusion.tex [39
+ <./fig/integration_evaluation.png>] [43
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
+color push 0 g 0 G
 color pop
-]
+color pop
+color push 0 g 0 G
+color pop
+ <./fig/integration_app_filezilla.png>]
 Chapter 5.
-) (./template.bbl [40
+) (./template.bbl [44
 color push 0 g 0 G
 color pop
 
 color push 0 g 0 G
 color pop
-] [41
+] [45
 color push 0 g 0 G
 color pop
 
@@ -1757,7 +1783,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [42
+] [46
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1781,11 +1807,11 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-Underfull \hbox (badness 1496) in paragraph at lines 120--123
+Underfull \hbox (badness 1496) in paragraph at lines 124--127
 \OT1/ptm/m/it/12 (+20) In-ter-na-tional Con-fer-ence on Emerg-ing Se-cu-rity In-for-ma-tion, Sys-tems and
  []
 
-[43
+[47
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1805,11 +1831,11 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-Underfull \hbox (badness 4108) in paragraph at lines 167--169
+Underfull \hbox (badness 4108) in paragraph at lines 171--173
 []\OT1/ptm/m/n/12 (+20) NFV ISG, ``Net-work Func-tions Vir-tu-al-i-sa-tion (NFV); Man-age-ment and
  []
 
-[44
+[48
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1829,8 +1855,8 @@ color pop
 color push 0 g 0 G
 color pop
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
- [45
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
+ [49
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1856,36 +1882,36 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 20F462DFB7D3140D2399BCBD93E7BCED;3504.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
+(rerunfilecheck)             Checksum: 0588F93CA79028851E10FA084AF10D24;3504.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15494 strings out of 493014
- 230400 string characters out of 6133351
- 377402 words of memory out of 5000000
+ 15501 strings out of 493014
+ 230446 string characters out of 6133351
+ 377613 words of memory out of 5000000
  18090 multiletter control sequences out of 15000+600000
  86497 words of font info for 338 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,15n,39p,1105b,9398s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,15n,39p,1105b,9410s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu30.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu4e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu4f.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu50.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu51.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu52.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu53.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu54.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu55.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu56.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu57.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu58.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/arphic/bkaiu/bkaiu59.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5b.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5d.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu5f.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu60.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu61.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu62.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu63.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu64.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu65.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu66.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu67.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu68.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu69.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu6a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu6b.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu6c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu6d.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu6e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu70.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu71.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu72.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu73.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu74.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu75.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu76.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu78.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu79.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7b.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7d.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu7f.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu80.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu82.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu83.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu84.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu86.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu88.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arp
 hic/bkaiu/bkaiu89.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8c.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8d.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu8f.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu90.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu93.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu95.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu96.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu97.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu98.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu9a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiu9b.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/arphic/bkaiu/bkaiu9e.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/arphic/bkaiu/bkaiuff.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (54 pages, 3374917 bytes).
+Output written on template.pdf (58 pages, 3378716 bytes).
 PDF statistics:
- 1231 PDF objects out of 1440 (max. 8388607)
- 952 compressed objects within 10 object streams
- 174 named destinations out of 1000 (max. 500000)
+ 1259 PDF objects out of 1440 (max. 8388607)
+ 976 compressed objects within 10 object streams
+ 181 named destinations out of 1000 (max. 500000)
  36647 words of extra memory for PDF output out of 42996 (max. 10000000)
 

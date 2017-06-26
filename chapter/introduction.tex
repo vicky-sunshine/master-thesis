@@ -2,26 +2,45 @@
 In recent times, researchers have shown an increasing interest in evolving network infrastructures.
 Software-defined networking (SDN) and network functions virtualization (NFV) are key roles for this evolution.
 SDN \cite{sdn-mckeown-2009-talk, sdn-newnorm, sdn-road, sdn-compre-survey} has been widely studied for almost a decade since the first OpenFlow \cite{openflow-mckeown-2008, openflow-spec} article had be presented in 2008.
-The main concept of SDN is separating data plane and control plane to enable smart control on switch and give a brand-new viewpoint on network research, and makes innovation on industries.
+SDN has been one of the pillars of innovation in network infrastructures, the main concept of SDN is separating data plane and control plane to enable smart control on switch and the programmability of the network through an open and standard interface\cite{sdn-define}.
+This emerging network architecture give a brand-new viewpoint on network research and makes innovation on industries.
+Compared with the solutions on legacy network, it is more extensible on configuration and possible for enabling modifications of traffic flows on SDN architecture.
 
 As SDN was developed, NFV \cite{nfv-wp, etsi-nfv-archi, nfv-survey} has been introduced by Telco operators at the same time.
 The network services offered by operators previously performed by specific hardware appliances and it is difficult to decrease the OPEX and CAPEX on service deployment and management.
-In this context, NFV is proposed to innovate in the service delivery arena.
-The concept of NFV is to reduce the coupling between network functions (NFs) and hardware devices.
+In this context, NFV is proposed to innovate in the service delivery arena to resolve these issues.
+The concept of NFV is to reduce the coupling between network functions (NFs) and specialized hardware devices and aims to replace traditional hardware-based network appliances with virtual appliances.
 Virtual Customer Premise Equipment (vCPE) \cite{nec-vcpe, vcpe-enhance}, in particular virtual residential gateway (vRGW) \cite{nfv-home}, is one of the network services which benefited from NFV \cite{etsi-nfv-usecase}.
 
+
+The current issue with existing hardware CPE are difficult to provide value-added services, complex to introduce new services, and time-consuming and expensive for service deployment \cite{nec-vcpe}.
+In contrast, vCPE abstracts the intelligence of such devices into software-based functionality and different services can act as different Virtual Network Functions (VNFs).
+Service providers will be able to provide services through Internet and the customer may need to buy only one low-cost device.
+
 In the progress of vCPE development, the SDN is not involved at first. Most of previous researches focused on other technology to virtualize and deploy the CPE node \cite{virtual-rg, security-vgw, design-vrgw, nfv-hgw-surrogate, linux-cpe, nfv-resoure-contrain-cpe}.
-Cloud4NFV \cite{cloud4nfv, cloud4nfv-telco}, proposed by Portugal Telecom, started to use SDN technology on designing virtual CPE management and organization (MANO) platform for Telco cloud.
+Cloud4NFV \cite{cloud4nfv, cloud4nfv-telco}, proposed by Portugal Telecom, started to use SDN technology on designing virtual CPE management and organization (MANO) integrated cloud portal for Telco cloud.
 Italy Telecom also proposed NetFATE \cite{netfate}, which is a network function deploy-to-edge model in which the NFs are designed by SDN and perform by SDN switch.
 Inspired from these two frameworks, our laboratory, High Speed Network Laboratory (HSNL), also proposed a vCPE framework and a few network functions, attempting to replace hardware-based CPE \cite{che-wei-master, che-wei-umedia}.
 There are other CPE virtualization frameworks achieved by leveraging NFV and SDN.
-Ericsson proposed an Cloud-based vCPE solution \cite{ericsson-vcpe} and Juniper also proposed a hybrid cloud CPE deployment model \cite{juniper-cpe}.
+Ericsson proposed a Cloud-based vCPE solution \cite{ericsson-vcpe} and Juniper also proposed a hybrid cloud CPE deployment model \cite{juniper-cpe}.
 
-However, these SDN-involved vCPE research most focused on how SDN benefits the design of NFV MANO \cite{etsi-nfv-mano, etsi-nfv-mano-sdn} platform or traffic steering between CPE nodes, not the CPE network function itself.
+However, these SDN-involved vCPE research most focused on how SDN benefits the design of NFV MANO \cite{etsi-nfv-mano, etsi-nfv-mano-sdn} platform or traffic steering between CPE nodes, not the CPE network function itself. NetFATE demonstrated an CPE architecture built with SDN technology, but the disadvantage of \cite{netfate} is that it only tested the scenario of virtual firewall in this paper which lacked sufficient experimental results for other scenarios under NetFATE platform.
+\cite{che-wei-master} also focused on the the design of deployment framework and the most serious weakness is that the proposed services could not be enable at the same time since the network functions are designed in single flow table.
+
 When the NFV is deployed at network edge and performed by SDN switch, there will be restriction on the OpenFlow Table \cite{multiple-flow-table}.
-In this paper, we proposed a multiple flow table mechanism to implement network functions which achieved vRGW and explain how to use it to resolve the table restriction.
-We also evaluate the new VNF implemented by the proposed mechanism, and compare with the single-table mechanism.
-This new VNF can also be deployed to the network edge by the previous HSNL vCPE framework.
+In \cite{multiple-flow-table}, two conditions under which a single flow table is too restrictive were reported.
+The first is a condition where a single packet must perform independent actions based on matching with different fields.
+The second is a condition where the packet requires two-stage processing.
+Each of the above categories can, in theory, be handled in a single table, but the handling is generally awkward and the need to combine matching fields forces an explosion of the number flow entries. Under these both restriction, the vCPE network function can not enable this
+To resolve both restrictions, we implemented the network functions by using a multiple flow table strategy.
+
+Therefore, the purpose of this paper can be summarized as follows:
+\begin{enumerate}
+
+\item We proposed a multiple flow table mechanism to implement network functions which achieved vRGW and explain how to use it to resolve the table restriction.
+\item The proposed CPE can enable forwarding, traffic mirroring, Network Address Translation (NAT), Dynamic Host Configuration Protocol (DHCP), firewall and QoS management to their customer at the same time.
+\item To analysis the new VNF implemented by the proposed mechanism, this study integrate all of functions mention above to evaluate it compare with the single-table mechanism.
+\end{enumerate}
 
 This paper is structured as follows.
 Chapter \ref{ch:related_work} briefly introduces SDN technology, NFV architecture, the OpenFlow protocol, related studied of vCPE framework and the previous HSNL vCPE framework.
